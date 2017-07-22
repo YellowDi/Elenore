@@ -190,7 +190,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Source Code Pro", "Monaco", "Inconsolata", monospace;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 code,
@@ -2002,6 +2002,13 @@ table th {
   transform-origin: left bottom;
 }
 
+@media screen and (min-width: 769px) {
+  .hamburger, .header-toggle {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 .heading {
   display: block;
   font-size: 11px;
@@ -2144,6 +2151,10 @@ table th {
 .tag.is-danger {
   background: #ed6c63;
   color: white;
+}
+
+.column {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -2706,8 +2717,33 @@ table th {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .media-left {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .media-left {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .media-right {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .media-right {
+    margin-left: 20px;
+  }
+}
+
 .media-content {
   flex: 1;
+  text-align: left;
 }
 
 .media-content .textarea {
@@ -2716,6 +2752,7 @@ table th {
 
 .media {
   align-items: flex-start;
+  text-align: left;
 }
 
 .media .content:not(:last-child) {
@@ -2926,6 +2963,12 @@ a.menu-block:hover {
 }
 
 @media screen and (min-width: 769px) {
+  .header {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 769px) {
   .header-toggle {
     display: none;
   }
@@ -3060,6 +3103,7 @@ a.menu-block:hover {
     background: white;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
     display: none;
+    min-width: 120px;
     position: absolute;
     right: 0;
     top: 50px;
