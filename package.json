@@ -26,8 +26,8 @@
   },
   "scripts": {
     "build": "npm run clean && npm run build-sass && npm run build-sass-min",
-    "build-sass": "node-sass --output-style expanded --source-map true --output css/ bulma.sass --outFile css/bulma.css",
-    "build-sass-min": "node-sass --output-style compressed --source-map true --output css/ bulma.sass css/bulma.min.css",
+    "build-sass": "node-sass --output-style expanded --source-map true --output css/ Elenore.sass --outFile css/Elenore.css",
+    "build-sass-min": "node-sass --output-style compressed --source-map true --output css/ Elenore.sass css/Elenore.min.css",
     "clean": "rm -rf css",
     "pre-push": "npm run build",
     "start": "npm run build-sass -- --watch"
