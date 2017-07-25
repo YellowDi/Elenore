@@ -26,11 +26,16 @@
     font-size: $size-small
     line-height: 1
     margin-top: 5px
+<<<<<<< .merge_file_iGetSR
   .icon
     &:first-child
       margin-right: 4px
     &:last-child
       margin-left: 4px
+=======
+  .icon.is-small
+    margin: 4px 0
+>>>>>>> .merge_file_a56GRL
   &:hover
     color: $control-hover
   &:active
@@ -80,10 +85,14 @@
       color: $text-strong
   &.is-small
     +button-small
+    .icon.is-small
+      margin: 0
   &.is-medium
     +button-medium
   &.is-large
     +button-large
+    .icon.is-medium
+      margin: -4px 0px -4px -4px
   &.is-fullwidth
     display: block
     width: 100%
