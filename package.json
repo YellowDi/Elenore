@@ -21,15 +21,26 @@
     "url": "https://github.com/YellowDi/Elenore/issues"
   },
   "devDependencies": {
-    "node-sass": "~3.4.2",
-    "captain-git-hook": "~1.0.5"
+    "autoprefixer": "^7.1.1",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.0",
+    "rimraf": "^2.6.1"
   },
   "scripts": {
-    "build": "npm run clean && npm run build-sass && npm run build-sass-min",
-    "build-sass": "node-sass --output-style expanded --source-map true --output css/ Elenore.sass --outFile css/Elenore.css",
-    "build-sass-min": "node-sass --output-style compressed --source-map true --output css/ Elenore.sass css/Elenore.min.css",
-    "clean": "rm -rf css",
-    "pre-push": "npm run build",
-    "start": "npm run build-sass -- --watch"
-  }
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --output css/Elenore.css css/Elenore.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true Elenore.sass css/Elenore.css",
+    "deploy": "npm run build && npm run docs",
+    "start": "npm run build-sass -- --watch",
+    "start-test": "npm run test-sass -- --watch",
+    "test-sass": "node-sass --output-style expanded docs/Elenore-test.sass docs/css/Elenore-test.css"
+  },
+  "files": [
+    "css",
+    "sass",
+    "bulma.sass",
+    "LICENSE",
+    "README.md"
+  ]
 }
