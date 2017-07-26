@@ -35,12 +35,17 @@
   img
     max-height: 24px
   a
-    flex: 1
+    flex-grow: 1
   .fa
     font-size: 21px
     line-height: 24px
   .button + .button
     margin-left: 10px
+  .tag
+    &:first-child
+      margin-right: 5px
+    &:last-child
+      margin-left: 5px
   +mobile
     text-align: left
 
