@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 0.1.1
+
+* Remove `flex: 1` shorthand
+
 ## 0.1.0
 
 * BREAKING: `.control.is-grouped` now uses `.control` elements as direct children
