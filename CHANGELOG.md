@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 0.1.2
+
+* Add `.flex-shrink`
+
 ## 0.1.1
 
 * Remove `flex: 1` shorthand
