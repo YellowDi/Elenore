@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 0.1.5
+
+* Added: modularity
+
 ## 0.1.4
 
 * Added: grid modules
