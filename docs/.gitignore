@@ -1,10 +1,14 @@
+# Files
 .DS_Store
+_config.local.yml
+css/Elenore-test.css
+Elenore-test.sass
+Elenore-website-local.sass
+npm-debug.log
+
+# Folders
 .sass-cache
 /_sass
 /Elenore
-/css
 /styles/node_modules
-_config.local.yml
 _site
-Elenore-website-local.sass
-npm-debug.log
