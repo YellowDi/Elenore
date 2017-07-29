@@ -1,8 +1,20 @@
 # Elenore Changelog
 
+## 0.1.4
+
+* Added: grid modules
+
+## 0.1.3
+
+* Added: docs folder
+* Added: Illuminate.css
+* Added: new colors
+* Fixed: color luminance
+* Remove: mixins
+
 ## 0.1.2
 
-* Add `.flex-shrink`
+* Added: `.flex-shrink`
 
 ## 0.1.1
 
