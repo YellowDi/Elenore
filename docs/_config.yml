@@ -1,0 +1,19 @@
+# Meta
+
+title:         "Elenore: a modern CSS framework based on Flexbox"
+description:   "Elenore is an open source CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free."
+
+# Build
+
+markdown:      kramdown
+permalink:     pretty
+url:           http://yellowdi.github.io/Elenore
+
+# Variables
+
+baseurl:       ""
+cssurl:        "/css/Elenore-docs.css"
+documentation: "/documentation/overview/start/"
+download:      https://github.com/YellowDi/Elenore/archive/0.1.2.zip
+github:        https://github.com/YellowDi/Elenore
+version:       0.1.2
