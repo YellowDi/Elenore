@@ -7,12 +7,11 @@ description:   "Elenore is an open source CSS framework based on Flexbox and bui
 
 markdown:      kramdown
 permalink:     pretty
-url:           http://yellowdi.github.io/Elenore
+url:           https://yellowdi.github.io/Elenore
 
 # Variables
 
 baseurl:       ""
-cssurl:        "/css/Elenore-docs.css"
 documentation: "/documentation/overview/start/"
 download:      https://github.com/YellowDi/Elenore/archive/0.1.2.zip
 github:        https://github.com/YellowDi/Elenore
