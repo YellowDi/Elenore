@@ -2,9 +2,9 @@
   <div class="nav-left">
     <a class="nav-item is-brand" href="{{ site.url }}/">
       {% if page.route == 'index' %}
-        <img src="{{ site.url }}/images/Elenore-type.png" alt="{{ site.title }}">
+        <img src="{{ site.url }}/images/elenore-type.png" alt="{{ site.title }}">
       {% else %}
-        <img src="{{ site.url }}/images/Elenore-type-white.png" alt="{{ site.title }}">
+        <img src="{{ site.url }}/images/elenore-type-white.png" alt="{{ site.title }}">
       {% endif %}
     </a>
   </div>
@@ -27,7 +27,7 @@
     <a class="nav-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.url }}/">
       Home
     </a>
-    <a class="nav-item {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.documentation }}">
+    <a class="nav-item {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.url }}/documentation/overview/start">
       Documentation
     </a>
 
