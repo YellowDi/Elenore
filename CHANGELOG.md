@@ -1,5 +1,15 @@
 # Elenore Changelog
 
+## 0.1.7
+
+* Fixed: container flex
+* Fixed: nav-item flex
+* Fixed: media-number flex
+
+## 0.1.6
+
+* Added: table variables
+
 ## 0.1.5
 
 * Added: modularity

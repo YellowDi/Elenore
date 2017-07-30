@@ -13,6 +13,6 @@ url:           https://yellowdi.github.io/Elenore
 
 baseurl:       ""
 documentation: "/documentation/overview/start/"
-download:      https://github.com/YellowDi/Elenore/archive/0.1.6.zip
+download:      https://github.com/YellowDi/Elenore/archive/0.1.7.zip
 github:        https://github.com/YellowDi/Elenore
-version:       0.1.6
+version:       0.1.7
