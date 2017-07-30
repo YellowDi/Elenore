@@ -1,5 +1,14 @@
 # Elenore Changelog
 
+## 0.2.0
+
+* Fixed: remove multiple imports
+
+## 0.1.8
+
+* Fixed: new brand colors
+* Fixed: remove modal example container class
+
 ## 0.1.7
 
 * Fixed: container flex

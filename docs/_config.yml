@@ -11,8 +11,7 @@ url:           https://yellowdi.github.io/Elenore
 
 # Variables
 
-baseurl:       ""
 documentation: "/documentation/overview/start/"
-download:      https://github.com/YellowDi/Elenore/archive/0.1.7.zip
+download:      https://github.com/YellowDi/Elenore/archive/0.2.0.zip
 github:        https://github.com/YellowDi/Elenore
-version:       0.1.7
+version:       0.2.0

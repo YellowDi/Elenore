@@ -22,10 +22,11 @@ doc-subtab: modular
         <br>
         The file is located in the <code>Elenore/sass/grid</code> folder.
         <br>
-        Simply <strong>import</strong> it directly:
+        Simply <strong>import</strong> the utilities dependencies, and then the files you need directly:
       </p>
 {% highlight sass %}
-@import "Elenore/sass/grid/columns.sass"
+@import "Elenore/sass/utilities/_all
+@import "Elenore/sass/grid/columns"
 {% endhighlight %}
       <p>
         Now you can use the classes <code>.columns</code> (for the container) and <code>.column</code> directly:
