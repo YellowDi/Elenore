@@ -1,31 +1,24 @@
 # Elenore Changelog
 
-## 0.3.4
-
-* Deprecate `.media-number`
-* Fix `.level-item` height
-
-## 0.3.3
-
-* Input icons require the `.icon` container
-
-## 0.3.2
-
-* Add `.content` table
-* Fix inputs with icons
-
-## 0.3.1
-
-* Add :focus state
-* Fix table
-* Remove table .is-icon and .is-link
-
 ## 0.3.0
 
-* Use `rem` and `em`
+* Use `rem` and `em` (!)
+* Fix Font Awesome icons in buttons (!)
+* Fix message colors (!)
+* Use `{% capture %}` to ensure same display as code snippet (!)
+
 * Move variables to their own file
 * Remove small tag
-* Fix Font Awesome icons in buttons
+* Add `:focus` state
+* Fix table
+* Remove table `.is-icon` and `.is-link`
+* Add `.content` table
+* Fix inputs with icons
+* Input icons require the `.icon` container
+* Deprecate `.media-number`
+* Fix `.level-item` height
+* Fix `.menu` spacing
+* Deprecate `.menu-nav`
 
 ## 0.2.0
 
