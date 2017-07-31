@@ -22,6 +22,12 @@ Elenore uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (mo
 * Internet Explorer 10+
 * Safari 9+
 
+## Documentation
+
+The documentation resides in the [docs](docs) directory, and is built with the Ruby-based [Jekyll](https://jekyllrb.com/) tool.
+
+Browse the [online documentation here.](https://yellowdi.github.io/Elenore/)
+
 ## Copyright and license
 
 Code copyright 2017 YellowDi. Code released under [the MIT license](https://github.com/YellowDi/Elenore/blob/master/LICENSE).
