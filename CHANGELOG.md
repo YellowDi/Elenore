@@ -1,5 +1,10 @@
 # Elenore Changelog
 
+## 0.3.5
+
+*	Fixed: button spacing
+* Added: image placeholders
+
 ## 0.3.4
 
 * Fixed: `.columns`

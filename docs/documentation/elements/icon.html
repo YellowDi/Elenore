@@ -10,7 +10,7 @@ doc-subtab: icon
   <div class="container">
     <h1 class="title">Icons</h1>
     <h2 class="subtitle">
-      Elenore is compatible with <strong><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></strong> icons.
+      Bulma is compatible with <strong><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></strong> icons.
     </h2>
 
     <hr>
@@ -19,16 +19,17 @@ doc-subtab: icon
       <p>Because the icons can take a few seconds to load, and because you want control over the <strong>space</strong> the icons will take, you can use the <code>icon</code> class as a container:</p>
     </div>
 
-    <div class="example">
-      <span class="icon">
-        <i class="fa fa-home"></i>
-      </span>
-    </div>
-
-{% highlight html %}
+{% capture icon_example %}
 <span class="icon">
   <i class="fa fa-home"></i>
 </span>
+{% endcapture %}
+    <div class="example">
+      {{icon_example}}
+    </div>
+
+{% highlight html %}
+{{icon_example}}
 {% endhighlight %}
 
     <div class="content">
@@ -41,7 +42,7 @@ doc-subtab: icon
 
     <div class="content">
       <p>Font Awesome icons use a font-size of <strong>28px</strong> by default, and are best rendered when using <strong>multiples of 7</strong>.</p>
-      <p>The Elenore <code>icon</code> container is always slightly bigger than the font-size used:</p>
+      <p>The Bulma <code>icon</code> container is always slightly bigger than the font-size used:</p>
     </div>
 
     <table class="table">
