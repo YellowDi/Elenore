@@ -13,6 +13,6 @@ fontawesome:   https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.c
 # Variables
 
 documentation: "/documentation/overview/start/"
-download:      https://github.com/YellowDi/Elenore/archive/0.3.3.zip
+download:      https://github.com/YellowDi/Elenore/archive/0.3.4.zip
 github:        https://github.com/YellowDi/Elenore
-version:       0.3.3
+version:       0.3.4

@@ -1,5 +1,10 @@
 # Elenore Changelog
 
+## 0.3.4
+
+* Fixed: `.columns`
+* Fixed: `.tile`
+
 ## 0.3.3
 
 * Fixed: `.panel`
