@@ -1,23 +1,28 @@
 # Elenore Changelog
 
+## 0.3.1
+
+* Added: invert outlined buttons
+* Fixed: `.nav`
+
 ## 0.3.0
 
 * Use `rem` and `em` (!)
-* Fix Font Awesome icons in buttons (!)
-* Fix message colors (!)
+* Fixed: Font Awesome icons in buttons (!)
+* Fixed: message colors (!)
 * Use `{% capture %}` to ensure same display as code snippet (!)
 
 * Move variables to their own file
 * Remove small tag
-* Add `:focus` state
-* Fix table
+* Added: `:focus` state
+* Fixed: table
 * Remove table `.is-icon` and `.is-link`
-* Add `.content` table
-* Fix inputs with icons
+* Added: `.content` table
+* Fixed: inputs with icons
 * Input icons require the `.icon` container
 * Deprecate `.media-number`
-* Fix `.level-item` height
-* Fix `.menu` spacing
+* Fixed: `.level-item` height
+* Fixed: `.menu` spacing
 * Deprecate `.menu-nav`
 
 ## 0.2.0
