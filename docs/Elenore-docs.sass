@@ -3,7 +3,6 @@
 @import "../Elenore"
 
 // Override
-
 .button
   +tablet
     small
@@ -24,8 +23,41 @@ body.page-grid .column > .notification
     margin-left: 0.75rem
 
 // Additional
+svg
+  max-height: 100%
+  max-width: 100%
 
 $carbon-space: 15px
+
+#carbon
+  max-width: 340px
+  min-height: 100px + ($carbon-space * 2)
+  padding: $carbon-space
+  +tablet
+    margin-left: auto
+    margin-right: auto
+    width: 340px
+
+#carbonads
+  text-align: left
+  a:hover
+    text-decoration: underline
+  span
+    display: block
+  .carbon-img
+    float: left
+    height: 100px
+    width: 130px
+    img
+      display: block
+  .carbon-text
+    display: block
+    color: $text-strong
+    margin-left: 130px + $carbon-space
+  .carbon-poweredby
+    font-size: $size-small
+    margin-left: $carbon-space
+
 $github: #333333
 
 #github
@@ -96,7 +128,7 @@ $curve: cubic-bezier(0, 0.71, 0.29, 1)
   animation-fill-mode: both
   animation-name: floatUp
   animation-timing-function: $curve
-  border-radius: 20px
+  border-radius: 24px
   display: inline-block
   height: 240px
   margin-bottom: 40px
@@ -132,9 +164,9 @@ $curve: cubic-bezier(0, 0.71, 0.29, 1)
         fill: $turquoise
 
   +mobile
-    border-radius: 10px
-    height: 120px
-    width: 120px
+    border-radius: 16px
+    height: 160px
+    width: 160px
 
 #Elenore
   animation: slideDown 500ms both
@@ -144,9 +176,25 @@ $curve: cubic-bezier(0, 0.71, 0.29, 1)
   animation: slideUp 500ms both
   animation-delay: 1.2s
 
+#npm
+  animation: fadeIn 500ms both
+  animation-delay: 1.4s
+  background: none
+  margin: -10px 0 20px
+  code
+    border-radius: $radius
+    color: $link
+    display: inline-block
+    font-size: 16px
+    padding: 16px 32px
+
 #ghbtns
   animation: slideDown 500ms both
   animation-delay: 1.6s
+
+html.route-index #carbon
+  animation: slideUp 500ms both
+  animation-delay: 1.8s
 
 #download
   animation: fadeIn 500ms both
@@ -273,6 +321,9 @@ $structure-invert: $danger-invert
   .expand
     border-right-width: 1px
     right: 50px
+  +tablet
+    pre
+      white-space: pre-wrap
 
 +tablet
   .section:not(.is-fullwidth) > .example:not(.is-fullwidth)
@@ -293,6 +344,11 @@ $structure-invert: $danger-invert
       border-left: none
       border-radius: 0
       border-right: none
+
+#newsletter
+  .input
+    border-color: $white
+    box-shadow: none
 
 html
   \::-moz-selection

@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 0.3.3
+
+* Input icons require the `.icon` container
+
 ## 0.3.2
 
 * Add `.content` table
