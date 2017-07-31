@@ -1,5 +1,10 @@
 # Elenore Changelog
 
+## 0.3.4
+
+* Deprecate `.media-number`
+* Fix `.level-item` height
+
 ## 0.3.3
 
 * Input icons require the `.icon` container
