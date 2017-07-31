@@ -3,13 +3,11 @@ layout: default
 route: documentation
 ---
 
-<section class="hero is-primary">
-  <div class="hero-head">
-    <div class="container">
-      {% include header.html %}
-    </div>
-  </div>
+<div class="container">
+  {% include header.html %}
+</div>
 
+<section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-vcentered">
@@ -21,6 +19,9 @@ route: documentation
             Everything you need to <strong>create a website</strong> with Elenore
           </p>
         </div>
+        <div class="column is-narrow">
+          {% include carbon.html %}
+        </div>
       </div>
     </div>
   </div>
@@ -30,7 +31,7 @@ route: documentation
       <nav class="tabs is-boxed">
         <ul>
           <li {% if page.doc-tab == 'overview' %}class="is-active"{% endif %}>
-            <a href="{{ site.url }}/documentation/overview/start">Overview</a>
+            <a href="{{ site.documentation }}">Overview</a>
           </li>
           <li {% if page.doc-tab == 'modifiers' %}class="is-active"{% endif %}>
             <a href="{{ site.url }}/documentation/modifiers/syntax">Modifiers</a>

@@ -28,6 +28,11 @@
   top: 50%
 
 =delete
+  // We need even pixel dimensions to ensure the delete cross can be perfectly centered
+  $dimension-small: roundToEvenNumber(1.5 * removeUnit($size-6) * removeUnit($size-small)) * 1px
+  $dimension-normal: roundToEvenNumber(1.5 * removeUnit($size-6) * removeUnit($size-normal)) * 1px
+  $dimension-medium: roundToEvenNumber(1.5 * removeUnit($size-6) * removeUnit($size-medium)) * 1px
+  $dimension-large: roundToEvenNumber(1.5 * removeUnit($size-6) * removeUnit($size-large)) * 1px
   +unselectable
   -moz-appearance: none
   -webkit-appearance: none
@@ -37,13 +42,13 @@
   cursor: pointer
   display: inline-block
   font-size: $size-normal
-  height: 1.5em
+  height: $dimension-normal
   outline: none
   position: relative
   transform: rotate(45deg)
   transform-origin: center center
   vertical-align: top
-  width: 1.5em
+  width: $dimension-normal
   &:before,
   &:after
     background-color: $white
@@ -66,11 +71,14 @@
     background-color: rgba($black, 0.4)
   // Sizes
   &.is-small
-    font-size: $size-small
+    height: $dimension-small
+    width: $dimension-small
   &.is-medium
-    font-size: $size-medium
+    height: $dimension-medium
+    width: $dimension-medium
   &.is-large
-    font-size: $size-large
+    height: $dimension-large
+    width: $dimension-large
 
 =fa($size, $dimensions)
   display: inline-block
@@ -139,6 +147,9 @@
   position: relative
   width: 1rem
 
+=overflow-touch
+  -webkit-overflow-scrolling: touch
+
 =overlay($offset: 0)
   bottom: $offset
   left: $offset
@@ -152,18 +163,6 @@
     &:#{$placeholder}-placeholder
       @content
 
-=replace($background, $width, $height)
-  background-color: $background
-  background-position: center center
-  background-repeat: no-repeat
-  background-size: $width $height
-  display: block
-  height: $height
-  outline: none
-  overflow: hidden
-  text-indent: -290486px
-  width: $width
-
 =unselectable
   -webkit-touch-callout: none
   -webkit-user-select: none
@@ -174,8 +173,10 @@
 // Responsiveness
 
 $tablet: 769px !default
-$desktop: 980px !default
-$widescreen: 1180px !default
+$desktop: 1000px !default // 960px container + 40px
+$widescreen: 1192px !default // 1152px container + 40
+// 960 and 1152 have been chosen because
+// they are divisible by both 12 and 16
 
 =from($device)
   @media screen and (min-width: $device)
