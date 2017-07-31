@@ -1,64 +1,137 @@
+$button:                     $grey-darker !default
+$button-background:          $white !default
+$button-border:              $grey-lighter !default
+
+$button-hover: $link-hover !default
+$button-hover-border: $link-hover-border !default
+
+$button-focus: $link-focus !default
+$button-focus-border: $link-focus-border !default
+
+$button-active: $link-active !default
+$button-active-border: $link-active-border !default
+
+$button-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
+
+@function buttonIconSpacing($button-size, $icon-width)
+  // The rem height of the button
+  $button-height: 2.5 * $button-size
+  // For the button to be square, the horizontal padding + the icon width must equal the button height.
+  // We know that $horizontal-padding = 2em
+  $horizontal-padding: 2 * $button-size
+  // We want to solve:
+  // $button-height = $horizontal-padding + $icon-width + $x
+  $x: $button-height - $horizontal-padding - $icon-width
+  // We divide by 2 to apply this margin on both the left and right sides
+  $negative-margin: abs($x) / 2
+  // We need to remove 1px for the border as well
+  @return calc(-1px - #{$negative-margin})
+
+=button-icon($button-size)
+  .icon
+    &:first-child
+      margin-left: buttonIconSpacing($button-size, 1.5rem)
+    &:last-child
+        margin-right: buttonIconSpacing($button-size, 1.5rem)
+    &.is-small
+      &:first-child
+        margin-left: buttonIconSpacing($button-size, 1rem)
+      &:last-child
+        margin-right: buttonIconSpacing($button-size, 1rem)
+    &.is-medium
+      &:first-child
+        margin-left: buttonIconSpacing($button-size, 2rem)
+      &:last-child
+        margin-right: buttonIconSpacing($button-size, 2rem)
+    &.is-large
+      &:first-child
+        margin-left: buttonIconSpacing($button-size, 3rem)
+      &:last-child
+        margin-right: buttonIconSpacing($button-size, 3rem)
+
+// The button sizes use mixins so they can be used at different breakpoints
 =button-small
   border-radius: $radius-small
-  font-size: 11px
-  height: 24px
-  line-height: 16px
-  padding-left: 6px
-  padding-right: 6px
+  font-size: $size-small
+  +button-icon($size-small)
 =button-medium
-  font-size: 18px
-  height: 40px
-  padding-left: 14px
-  padding-right: 14px
+  font-size: $size-medium
+  +button-icon($size-medium)
 =button-large
-  font-size: 22px
-  height: 48px
-  padding-left: 20px
-  padding-right: 20px
+  font-size: $size-large
+  +button-icon($size-large)
 
 .button
   +control
   +unselectable
+  background-color: $button-background
+  border: 1px solid $button-border
+  color: $button
   cursor: pointer
   justify-content: center
-  padding-left: 10px
-  padding-right: 10px
+  padding-left: 1em
+  padding-right: 1em
   text-align: center
   white-space: nowrap
   strong
     color: inherit
-  small
-    display: block
-    font-size: $size-small
-    line-height: 1
-    margin-top: 5px
-  .icon,
-  .tag
-    &:first-child
-      margin-left: -2px
-      margin-right: 4px
-    &:last-child
-      margin-left: 4px
-      margin-right: -2px
+  +button-icon($size-normal)
+  .icon
+    &:first-child:not(:last-child)
+      margin-right: 0.25rem !important
+    &:last-child:not(:first-child)
+      margin-left: 0.25rem !important
+  // States
   &:hover,
+  &.is-hovered
+    border-color: $button-hover-border
+    color: $button-hover
   &:focus,
+  &.is-focused
+    border-color: $button-focus-border
+    box-shadow: 0 0 0.5em rgba($button-focus-border, 0.5)
+    color: $button-focus
+  &:active,
   &.is-active
-    color: $control-hover
-  &:active
-    box-shadow: inset 0 1px 2px rgba($black, 0.2)
+    border-color: $button-active-border
+    box-shadow: $button-shadow-inset
+    color: $button-active
   // Colors
+  &.is-link
+    background-color: transparent
+    border-color: transparent
+    color: $text
+    text-decoration: underline
+    &:hover,
+    &.is-hovered,
+    &:focus,
+    &.is-focused,
+    &:active,
+    &.is-active
+      background-color: $background
+      color: $text-strong
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
     &.is-#{$name}
       background-color: $color
-      border-width: 0
+      border-color: transparent
       color: $color-invert
       &:hover,
+      &.is-hovered
+        background-color: darken($color, 2.5%)
+        border-color: transparent
+        color: $color-invert
       &:focus,
+      &.is-focused
+        border-color: transparent
+        box-shadow: 0 0 0.5em rgba($color, 0.5)
+        color: $color-invert
+      &:active,
       &.is-active
         background-color: darken($color, 5%)
         border-color: transparent
+        box-shadow: $button-shadow-inset
         color: $color-invert
       &.is-inverted
         background-color: $color-invert
@@ -78,15 +151,6 @@
           background-color: $color
           border-color: $color
           color: $color-invert
-  &.is-link
-    background-color: transparent
-    border-width: 0
-    color: $text
-    text-decoration: underline
-    &:hover,
-    &:focus
-      background-color: $background
-      color: $text-strong
   // Sizes
   &.is-small
     +button-small
