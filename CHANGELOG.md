@@ -1,11 +1,17 @@
 # Elenore Changelog
 
+## 0.3.1
+
+* Add :focus state
+* Fix table
+* Remove table .is-icon and .is-link
+
 ## 0.3.0
 
-# Use `rem` and `em`
-# Move variables to their own file
-# Remove small tag
-# Fix Font Awesome icons in buttons
+* Use `rem` and `em`
+* Move variables to their own file
+* Remove small tag
+* Fix Font Awesome icons in buttons
 
 ## 0.2.0
 
