@@ -1,5 +1,10 @@
 # Elenore Changelog
 
+## 0.3.2
+
+* Add `.content` table
+* Fix inputs with icons
+
 ## 0.3.1
 
 * Add :focus state
