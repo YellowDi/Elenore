@@ -13,6 +13,44 @@ doc-subtab: card
 
     <hr>
 
+    <div class="content">
+      <p>The <strong>card</strong> component comprises several elements that you can mix and match:</p>
+      <ul>
+        <li>
+          <code>card</code>: the main container
+          <ul>
+            <li>
+              <code>card-header</code>: a horizontal bar with a shadow
+              <ul>
+                <li>
+                  <code>card-header-title</code>: a left-aligned bold text
+                </li>
+                <li>
+                  <code>card-header-icon</code>: a placeholder for an icon
+                </li>
+              </ul>
+            </li>
+            <li>
+              <code>card-image</code>: a fullwidth container for a reponsive image
+            </li>
+            <li>
+              <code>card-content</code>: a multi-purpose container for <em>any</em> other element
+            </li>
+            <li>
+              <code>card-footer</code>: a horizontal list of controls
+              <ul>
+                <li>
+                  <code>card-footer-item</code>: a repeatable list item
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <hr>
+
 {% capture card_example %}
 <div class="card">
   <div class="card-image">
@@ -28,8 +66,8 @@ doc-subtab: card
         </figure>
       </div>
       <div class="media-content">
-        <p class="title is-4">YellowDi</p>
-        <p class="subtitle is-6">@YellowDi</p>
+        <p class="title is-4">John Smith</p>
+        <p class="subtitle is-6">@johnsmith</p>
       </div>
     </div>
 
@@ -38,7 +76,7 @@ doc-subtab: card
       Phasellus nec iaculis mauris.
       <a>#css</a> <a>#responsive</a>
       <br>
-      <small>11:09 PM</small>
+      <small>11:09 PM - 1 Jan 2016</small>
     </div>
   </div>
 </div>
@@ -73,7 +111,7 @@ doc-subtab: card
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
       <a>#css</a> <a>#responsive</a>
       <br>
-      <small>11:09 PM</small>
+      <small>11:09 PM - 1 Jan 2016</small>
     </div>
   </div>
   <footer class="card-footer">
@@ -90,6 +128,36 @@ doc-subtab: card
   <div class="column">
 {% highlight html %}
 {{card_header_example}}
+{% endhighlight %}
+  </div>
+</div>
+
+    <hr>
+
+{% capture card_title_example %}
+<div class="card">
+  <div class="card-content">
+    <p class="title">
+      If Tetris has taught me anything it's that errors pile up and accomplishments disappear.
+    </p>
+    <p class="subtitle">
+      Mark Twain
+    </p>
+  </div>
+  <footer class="card-footer">
+    <p class="card-footer-item">
+      <span>More quotes by <a href="#">Mark Twain</a></span>
+    </p>
+  </footer>
+</div>
+{% endcapture %}
+<div class="columns">
+  <div class="column is-one-third">
+{{card_title_example}}
+  </div>
+  <div class="column">
+{% highlight html %}
+{{card_title_example}}
 {% endhighlight %}
   </div>
 </div>
