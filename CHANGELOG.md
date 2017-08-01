@@ -1,5 +1,17 @@
 # Elenore Changelog
 
+## 0.3.8
+
+* Fixed: loading spinner color
+* Fixed: invalid sass syntax
+* Fixed: the name of the example section
+* Added: !default to $button-shadow-inset
+* Added: `lang` attribute to `html` tag
+
+## 0.3.7
+
+* Fixed: rem change breaks build
+
 ## 0.3.6
 
 * Fixed: `.delete`
