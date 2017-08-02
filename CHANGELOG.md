@@ -1,5 +1,19 @@
 # Elenore Changelog
 
+## 0.4.1
+
+* Fix max-width container
+* Fix notification delete
+* Fix nav-right without nav-menu
+* Fix hero and notification buttons
+* Fix has-addons z-index
+* Feature select color modifiers
+* Fix -ms-expand
+* Fix better `+center` mixin
+* Fix `dl` styles
+* Fix `pre` `margin-bottom`
+* Fix icon alignment
+
 ## 0.4.0
 
 * **Default font-size is 16px**
