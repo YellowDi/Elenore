@@ -3,6 +3,8 @@
 ## 0.4.2
 
 * Fix customize Elenore
+* Fix loading select
+* Fix control height
 
 ## 0.4.1
 
