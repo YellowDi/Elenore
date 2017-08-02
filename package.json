@@ -5,6 +5,7 @@
   "author": "YellowDi <yellowdi@me.com>",
   "description": "Modern CSS framework based on Flexbox",
   "main": "Elenore.sass",
+  "style": "Elenore/css/Elenore.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YellowDi/Elenore.git"
