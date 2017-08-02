@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 0.4.2
+
+* Fix customize Elenore
+
 ## 0.4.1
 
 * Fix max-width container

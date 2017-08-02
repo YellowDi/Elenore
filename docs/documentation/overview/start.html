@@ -34,7 +34,7 @@ doc-subtab: start
       <div class="message-body">
         <p>If you want to use icons with Elenore, don't forget to include <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>:</p>
 {% highlight html %}
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endhighlight %}
       </div>
     </div>
@@ -53,9 +53,12 @@ doc-subtab: start
       </div>
       <div class="media-content">
         <p class="title is-5">
-          <strong>Clone</strong> the repository:
+          <strong>Download</strong> the source files:
         </p>
-        <a href="https://github.com/YellowDi/Elenore">https://github.com/YellowDi/Elenore</a>
+{% highlight bash %}
+npm install Elenore
+{% endhighlight %}
+        <div class="content">or clone the repository: <a href="https://github.com/YellowDi/Elenore">https://github.com/YellowDi/Elenore</a></div>
       </div>
     </article>
 
@@ -65,52 +68,37 @@ doc-subtab: start
       </div>
       <div class="media-content">
         <p class="title is-5">
-          <strong>Set</strong> your variables:<br>
+          <strong>Set</strong> your variables
+        </p>
+        <p class="subtitle is-6">
+          Add your own colors, set new fonts, override Elenore styles...
+        </p>
 {% highlight sass %}
-// Override initial variables here
-// You can add new ones or update existing ones:
+// 1. Import the initial variables
+@import "../sass/utilities/initial-variables"
 
-$blue: #72d0eb // Update blue
-$pink: #ffb3b3 // Add pink
-$family-serif: "Georgia", serif // Add a serif family
+// 2. Set your own initial variables
+// Update blue
+$blue: #72d0eb
+// Add pink
+$pink: #ffb3b3
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif
 
-// Override generated variables here
-// For example, by default, the $danger color is $red and the font is sans-serif
-// You can change these values:
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink
+// Use the existing orange as the danger color
+$danger: $orange
+// Use the new serif family
+$family-primary: $family-serif
 
-$danger: $orange // Use the existing orange
-$family-primary: $family-serif // Use the new serif family
+// 4. Import the rest of Elenore
+@import "../Elenore"
 {% endhighlight %}
         </p>
       </div>
     </article>
 
-    <article class="media is-large">
-      <div class="media-left">
-        <p class="title is-5">3</p>
-      </div>
-      <div class="media-content">
-        <p class="title is-5">
-          <strong>Import</strong> Elenore <em>after</em> having set your variables:<br>
-{% highlight sass %}
-// Override initial variables here
-// You can add new ones or update existing ones:
-
-$blue: #72d0eb // Update blue
-$pink: #ffb3b3 // Add pink
-$family-serif: "Georgia", serif // Add a serif family
-
-// Override generated variables here
-// For example, by default, the $danger color is $red and the font is sans-serif
-// You can change these values:
-
-$danger: $orange // Use the existing orange
-$family-primary: $family-serif // Use the new serif family
-
-@import "Elenore"
-{% endhighlight %}
-        </p>
-      </div>
-    </article>
   </div>
 </section>
