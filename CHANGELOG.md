@@ -13,6 +13,7 @@
 * Fix `dl` styles
 * Fix `pre` `margin-bottom`
 * Fix icon alignment
+* Fix bold nav menu
 
 ## 0.4.0
 
