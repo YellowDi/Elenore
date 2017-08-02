@@ -17,6 +17,7 @@
 * Fix nav container
 * Fix nav grouped buttons
 * Fix container example
+* Fix select expanded
 
 ## 0.4.0
 
