@@ -5,6 +5,14 @@
 * Fix customize Elenore
 * Fix loading select
 * Fix control height
+* Fix is-grouped control
+* Fix checkbox/radio wrapping
+* Feature has-icons placement
+* Fix selected table row
+* Add customize page
+* Fix columns negative horizontal margin
+* Fix pagination wrapping
+* Fix color keys as strings
 
 ## 0.4.1
 
