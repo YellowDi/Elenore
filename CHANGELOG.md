@@ -3,6 +3,7 @@
 ## 0.4.3
 
 * Fix selected row on striped table
+* Fix remove flex-shrink for is-expanded
 
 ## 0.4.2
 
