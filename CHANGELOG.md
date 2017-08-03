@@ -5,6 +5,7 @@
 * Fix selected row on striped table
 * Fix remove flex-shrink for is-expanded
 * Add icons support for select dropdown
+* Fix delete button as flexbox item
 
 ## 0.4.2
 
