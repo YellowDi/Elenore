@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 0.4.3
+
+* Fix selected row on striped table
+
 ## 0.4.2
 
 * Fix customize Elenore
