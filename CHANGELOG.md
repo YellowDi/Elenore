@@ -4,6 +4,7 @@
 
 * Fix selected row on striped table
 * Fix remove flex-shrink for is-expanded
+* Add icons support for select dropdown
 
 ## 0.4.2
 
