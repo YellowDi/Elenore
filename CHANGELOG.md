@@ -2,12 +2,14 @@
 
 ## 0.4.4
 
+* Added: New navbar with dropdown support
 * Added: new feature: Breadcrumb component
 * Added: responsive `is-*-touch` tags for .column sizes
 * Added: `is-hidden` to helpers in docs
 * Added: figure/figcaption as content element
 * Added: <sup> and <sub> support to content
 * Added: `is-halfheight` to hero
+* Fixed: Breadcrumb and Navbar in docs
 * Fixed: Code examples broken because of `text-align: center`
 * Fixed: Loading spinner resizes with controls
 * Fixed: Remove `height: auto` from media elements
