@@ -9,10 +9,13 @@ markdown:      kramdown
 permalink:     pretty
 url:           https://yellowdi.github.io/Elenore
 fontawesome:   https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
+exclude:       ['fontawesome', 'node_modules', 'templates', '.babelrc', 'Elenore-docs.sass', 'docker-compose.yml', 'package.json', 'yarn.lock']
 
 # Variables
 
 documentation: "/documentation/overview/start/"
-download:      https://github.com/YellowDi/Elenore/archive/0.4.3.zip
+download:      https://github.com/YellowDi/Elenore/archive/0.4.4.zip
 github:        https://github.com/YellowDi/Elenore
-version:       0.4.3
+twitter:       https://twitter.com/YellowDi
+version:       0.4.4
+vernum:        42

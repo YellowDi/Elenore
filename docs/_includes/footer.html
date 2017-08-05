@@ -1,20 +1,40 @@
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Elenore</strong> by <a href="http://yellowdi.github.io">YellowDi</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-      </p>
-      <p>
-        <a class="icon" href="https://github.com/YellowDi/Elenore">
-          <i class="fa fa-github"></i>
-        </a>
-      </p>
+    <div class="columns">
+      <div class="column is-6">
+        <div id="about" class="content">
+          <strong xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Elenore</strong> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://yellowdi.github.io" property="cc:attributionName" rel="cc:attributionURL">YellowDi</a>.
+        </div>
+      </div>
+      <div class="column is-6">
+        <div id="sister">
+          <p>
+            More <strong>helpful</strong> tools:
+          </p>
+          <ul>
+            <li>
+              <a href="https://yellowdi.github.io/Illuminate.css/">
+                <img src="{{site.url}}/images/illuminate-logo.png" alt="illuminate.css logo">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <p id="tsp">
+      <small>
+        Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        <br>
+        Website content licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+      </small>
+    </p>
   </div>
 </footer>
 
-<script src="{{ site.url }}/javascript/jquery-2.2.0.min.js"></script>
-<script src="{{ site.url }}/javascript/clipboard.min.js"></script>
-<script src="{{ site.url }}/javascript/main.js"></script>
+<script src="{{ site.url }}/vendor/clipboard-1.7.1.min.js"></script>
+<script src="{{ site.url }}/lib/main.js"></script>
+
+{% if page.route == 'index' %}
+  <script type="text/javascript" src="{{ site.url }}/lib/index.js"></script>
+{% endif %}

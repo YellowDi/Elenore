@@ -1,46 +1,62 @@
 # Elenore Changelog
 
+## 0.4.4
+
+* Added: new feature: Breadcrumb component
+* Added: responsive `is-*-touch` tags for .column sizes
+* Added: `is-hidden` to helpers in docs
+* Added: figure/figcaption as content element
+* Added: <sup> and <sub> support to content
+* Added: `is-halfheight` to hero
+* Fixed: Code examples broken because of `text-align: center`
+* Fixed: Loading spinner resizes with controls
+* Fixed: Remove `height: auto` from media elements
+* Fixed: Documentation typo
+* Fixed: Make use of +fullhd mixin for columns
+* Fixed: Add min/max height/width to delete class size modifiers
+* Fixed: Section docs update
+
 ## 0.4.3
 
-* Fix selected row on striped table
-* Fix remove flex-shrink for is-expanded
-* Add icons support for select dropdown
-* Fix delete button as flexbox item
-* Add static button
+* Fixed: selected row on striped table
+* Fixed: remove flex-shrink for is-expanded
+* Added: icons support for select dropdown
+* Fixed: delete button as flexbox item
+* Added: static button
 
 ## 0.4.2
 
-* Fix customize Elenore
-* Fix loading select
-* Fix control height
-* Fix is-grouped control
-* Fix checkbox/radio wrapping
+* Fixed: customize Elenore
+* Fixed: loading select
+* Fixed: control height
+* Fixed: is-grouped control
+* Fixed: checkbox/radio wrapping
 * Feature has-icons placement
-* Fix selected table row
-* Add customize page
-* Fix columns negative horizontal margin
-* Fix pagination wrapping
-* Fix color keys as strings
+* Fixed: selected table row
+* Added: customize page
+* Fixed: columns negative horizontal margin
+* Fixed: pagination wrapping
+* Fixed: color keys as strings
 
 ## 0.4.1
 
-* Fix max-width container
-* Fix notification delete
-* Fix nav-right without nav-menu
-* Fix hero and notification buttons
-* Fix has-addons z-index
+* Fixed: max-width container
+* Fixed: notification delete
+* Fixed: nav-right without nav-menu
+* Fixed: hero and notification buttons
+* Fixed: has-addons z-index
 * Feature select color modifiers
-* Fix -ms-expand
-* Fix better `+center` mixin
-* Fix `dl` styles
-* Fix `pre` `margin-bottom`
-* Fix icon alignment
-* Fix bold nav menu
-* Fix nav container
-* Fix nav grouped buttons
-* Fix container example
-* Fix select expanded
-* Fix separate animations
+* Fixed: -ms-expand
+* Fixed: better `+center` mixin
+* Fixed: `dl` styles
+* Fixed: `pre` `margin-bottom`
+* Fixed: icon alignment
+* Fixed: bold nav menu
+* Fixed: nav container
+* Fixed: nav grouped buttons
+* Fixed: container example
+* Fixed: select expanded
+* Fixed: separate animations
 
 ## 0.4.0
 
@@ -49,12 +65,12 @@
 * **New `.pagination` sizes**
 * **New `$fullhd` breakpoint (1344px)**
 
-* Remove monospace named fonts
-* Remove icon spacing logic
-* Split icon container dimensions and icon size
-* Fix delete button by using pixels instead of (r)em
-* Fix level on mobile
-* Add new `.is-spaced` modifer for titles and subtitles
+* Removed: monospace named fonts
+* Removed: icon spacing logic
+* Changed: Split icon container dimensions and icon size
+* Fixed: delete button by using pixels instead of (r)em
+* Fixed: level on mobile
+* Added: new `.is-spaced` modifer for titles and subtitles
 
 ## 0.3.8
 
