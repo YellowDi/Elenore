@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 0.4.5
+
+* Fixed: Notification strong color
+
 ## 0.4.4
 
 * Added: New navbar with dropdown support
