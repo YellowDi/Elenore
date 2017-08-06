@@ -2,6 +2,7 @@
 
 ## 0.4.5
 
+* Fixed: #1 Card header icon position
 * Fixed: JavaScript `nav-burger` example
 * Fixed: Notification strong color
 
