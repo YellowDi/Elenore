@@ -2,6 +2,7 @@
 
 ## 0.4.5
 
+* Added: modifiers in `navbar`
 * Fixed: Pagination disabled border
 * Fixed: Box in hero as text and background white
 * Fixed: #1 Card header icon position
