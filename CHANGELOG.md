@@ -2,6 +2,7 @@
 
 ## 0.4.5
 
+* Fixed: JavaScript `nav-burger` example
 * Fixed: Notification strong color
 
 ## 0.4.4
