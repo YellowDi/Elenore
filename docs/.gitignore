@@ -2,9 +2,10 @@
 .DS_Store
 .jekyll-metadata
 _config.local.yml
-Elenore-test.sass
-Elenore-website-local.sass
-css/Elenore-test.css
+_config.version.yml
+elenore-test.sass
+elenore-website-local.sass
+css/elenore-test.css
 npm-debug.log
 
 # Folders
