@@ -56,7 +56,13 @@
           </a>
           <hr class="navbar-divider">
           <div class="navbar-item">
-            <div>version <p class="has-text-info">{{ site.version }}</p></div>
+            <div>
+              <p class="has-text-info is-size-6-desktop"><strong>{{ site.version }}</strong></p>
+              {{#unless site.deprecated}}
+              <small>
+                <a class="view-all-versions" href="/versions">View all versions</a>
+              </small>
+            </div>
           </div>
         </div>
       </div>

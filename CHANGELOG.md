@@ -2,13 +2,19 @@
 
 ## 0.4.5
 
-### New features
+### Changed
 
 * The breakpoints and `.container` **gap** can be customized with the new `$gap` variable
 * The `.container` has 2 new modifiers: `.is-widescreen` and `.is-fullhd`
 
-* Added: badge
+### Added
+
+* New [dropdown button](https://yellowdi.github.io/Elenore/documentation/components/dropdown/)!
+* New [badge](https://yellowdi.github.io/Elenore/documentation/components/badge/)!
 * Added: modifiers in `.navbar`
+
+### Fixed
+
 * Fixed: Textarea now respects rows attribute
 * Fixed: `body` scrollbar
 * Fixed: `.help` class behaviour in horizontal form `is-grouped` field

@@ -14,8 +14,8 @@ exclude:       ['fontawesome', 'node_modules', 'templates', '.babelrc', 'elenore
 # Variables
 
 documentation: "/documentation/overview/start/"
-download:      https://github.com/YellowDi/Elenore/archive/0.4.4.zip
+download:      https://github.com/YellowDi/Elenore/archive/0.4.5.zip
 github:        https://github.com/YellowDi/Elenore
 twitter:       https://twitter.com/YellowDi
-version:       0.4.4
-vernum:        43
+version:       0.4.5
+vernum:        44
