@@ -1,8 +1,27 @@
 # Elenore
 
+[![npm](https://img.shields.io/npm/v/bulma.svg)](https://www.npmjs.com/package/bulma)
+
 Elenore is a modern CSS framework based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
 
 [![Elenore: a Flexbox CSS framework](https://raw.githubusercontent.com/YellowDi/Elenore/master/images/Elenore-logo.png)](https://yellowdi.github.io/Elenore/)
+
+## Quick install
+
+Elenore is in early but active development! Try it out now:
+
+### NPM
+
+```sh
+npm install elenore
+```
+**or**
+
+### Bower
+
+```sh
+bower install elenore
+```
 
 ## CSS only
 
@@ -16,11 +35,13 @@ There is **no** JavaScript included. People generally want to use their own JS i
 
 Elenore uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (most) Flexbox features compatible with earlier browser versions. According to [Can I use](http://caniuse.com/#feat=flexbox), Elenore is compatible with:
 
-* Chrome 45+
-* Edge 13+
-* Firefox 43+
-* Internet Explorer 10+
-* Safari 9+
+* Chrome
+* Edge
+* Firefox
+* Opera
+* Safari
+
+Internet Explorer (10+) is only partially supported.
 
 ## Documentation
 

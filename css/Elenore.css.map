@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "Elenore.css",
+	"file": "elenore.css",
 	"sources": [
-		"../Elenore.sass",
+		"../elenore.sass",
 		"../sass/utilities/_all.sass",
 		"../sass/utilities/initial-variables.sass",
 		"../sass/utilities/functions.sass",

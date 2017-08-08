@@ -1,11 +1,11 @@
 {
-  "name": "Elenore",
+  "name": "elenore",
   "version": "0.4.4",
   "homepage": "http://yellowdi.github.io/Elenore",
   "author": "YellowDi <yellowdi@me.com>",
   "description": "Modern CSS framework based on Flexbox",
-  "main": "Elenore.sass",
-  "style": "Elenore/css/Elenore.css",
+  "main": "elenore.sass",
+  "style": "Elenore/css/elenore.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YellowDi/Elenore.git"
@@ -29,22 +29,22 @@
   },
   "scripts": {
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
-    "build-autoprefix": "postcss --use autoprefixer --output css/Elenore.css css/Elenore.css",
+    "build-autoprefix": "postcss --use autoprefixer --output css/elenore.css css/elenore.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true Elenore.sass css/Elenore.css",
+    "build-sass": "node-sass --output-style expanded --source-map true elenore.sass css/elenore.css",
     "deploy": "npm run build && npm run docs",
     "docs": "npm run docs-sass && npm run docs-autoprefix",
-    "docs-autoprefix": "postcss --use autoprefixer --output docs/css/Elenore-docs.css docs/css/Elenore-docs.css",
-    "docs-sass": "node-sass --output-style expanded docs/Elenore-docs.sass docs/css/Elenore-docs.css",
+    "docs-autoprefix": "postcss --use autoprefixer --output docs/css/Elenore-docs.css docs/css/elenore-docs.css",
+    "docs-sass": "node-sass --output-style expanded docs/elenore-docs.sass docs/css/elenore-docs.css",
     "start": "npm run build-sass -- --watch",
     "start-docs": "npm run docs-sass -- --watch",
     "start-test": "npm run test-sass -- --watch",
-    "test-sass": "node-sass --output-style expanded docs/Elenore-test.sass docs/css/Elenore-test.css"
+    "test-sass": "node-sass --output-style expanded docs/elenore-test.sass docs/css/elenore-test.css"
   },
   "files": [
     "css",
     "sass",
-    "Elenore.sass",
+    "elenore.sass",
     "LICENSE",
     "README.md"
   ]
