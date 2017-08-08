@@ -4,6 +4,7 @@
 
 * Added: badge
 * Added: modifiers in `.navbar`
+* Fixed: `body` scrollbar
 * Fixed: `.help` class behaviour in horizontal form `is-grouped` field
 * Fixed: Pagination disabled border
 * Fixed: Box in hero as text and background white
