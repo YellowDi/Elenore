@@ -1,0 +1,75 @@
+---
+layout: documentation
+doc-tab: components
+doc-subtab: badge
+---
+
+{% include subnav-components.html %}
+
+{% capture badge_example %}
+  <div class="block">
+    <span class="badge" data-badge="">
+      Notifications
+    </span>
+    <span class="badge is-badge-info" data-badge="">
+      Notifications
+    </span>
+    <span class="badge is-badge-warning" data-badge="">
+      Notifications
+    </span>
+    <span class="badge is-badge-danger" data-badge="">
+      Notifications
+    </span>
+  </div>
+  <div class="block">
+    <span class="badge" data-badge="32">
+      Notifications
+    </span>
+    <span class="badge" data-badge="64">
+      Notifications
+    </span>
+    <span class="badge" data-badge="128">
+      Notifications
+    </span>
+  </div>
+  <div class="block">
+    <a class="button badge" data-badge="">Button</a>
+    <a class="button badge" data-badge="1024">Button</a>
+  </div>
+  <div class="block">
+    <a class="button is-primary badge" data-badge="">Button</a>
+    <a class="button is-primary badge" data-badge="1024">Button</a>
+  </div>
+{% endcapture %}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Badge</h1>
+    <h2 class="subtitle">
+      Easily highlight new or unread items by adding a <strong>Badge</strong> to links, navs, and more.
+    </h2>
+
+    <hr>
+
+    <div class="columns">
+      <div class="column is-4">
+        <div class="content">
+          <p>
+            Badges are most often used as counters, such as an indication of unread notifications. The <code>.badge</code> element is simply a little colored number hover to an element.
+            <br> For example, you can include the number of items on a button
+          </p>
+        </div>
+      </div>
+
+      <div class="column is-8">
+        {{badge_example}}
+      </div>
+
+    </div>
+
+    {% highlight html %}
+    {{badge_example}}
+    {% endhighlight %}
+
+  </div>
+</section>

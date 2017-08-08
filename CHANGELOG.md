@@ -2,8 +2,9 @@
 
 ## 0.4.5
 
-* Fixed: `.help` class behaviour in horizontal form `is-grouped` field
+* Added: badge
 * Added: modifiers in `.navbar`
+* Fixed: `.help` class behaviour in horizontal form `is-grouped` field
 * Fixed: Pagination disabled border
 * Fixed: Box in hero as text and background white
 * Fixed: #1 Card header icon position
