@@ -1,17 +1,24 @@
 <nav class="navbar">
-  <div class="container">
+  <div class="container is-fullhd">
     <div class="navbar-brand">
       {% if site.vernum >= 43 %}
         <a class="navbar-item is-tab {% if page.doc-subtab == 'breadcrumb' %}is-active{% endif %}" href="{{ site.url }}/documentation/components/breadcrumb/">
           Breadcrumb
         </a>
       {% endif %}
-      <a class="navbar-item is-tab {% if page.doc-subtab == 'badge' %}is-active{% endif %}" href="{{ site.url }}/documentation/components/badge/">
-        Badge
-      </a>
+      {% if site.vernum >= 44 %}
+        <a class="navbar-item is-tab {% if page.doc-subtab == 'badge' %}is-active{% endif %}" href="{{ site.url }}/documentation/components/badge/">
+          Badge
+        </a>
+      {% endif %}
       <a class="navbar-item is-tab {% if page.doc-subtab == 'card' %}is-active{% endif %}" href="{{ site.url }}/documentation/components/card/">
         Card
       </a>
+      {% if site.vernum >= 44 %}
+        <a class="navbar-item is-tab {% if page.doc-subtab == 'dropdown' %}is-active{% endif %}" href="{{ site.url }}/documentation/components/dropdown/">
+          Dropdown
+        </a>
+      {% endif %}
       <a class="navbar-item is-tab {% if page.doc-subtab == 'level' %}is-active{% endif %}" href="{{ site.url }}/documentation/components/level/">
         Level
       </a>

@@ -2,6 +2,11 @@
 
 ## 0.4.5
 
+### New features
+
+* The breakpoints and `.container` **gap** can be customized with the new `$gap` variable
+* The `.container` has 2 new modifiers: `.is-widescreen` and `.is-fullhd`
+
 * Added: badge
 * Added: modifiers in `.navbar`
 * Fixed: Textarea now respects rows attribute
