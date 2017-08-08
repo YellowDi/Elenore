@@ -2,11 +2,12 @@
 
 ## 0.4.5
 
-* Added: modifiers in `navbar`
+* Fixed: `.help` class behaviour in horizontal form `is-grouped` field
+* Added: modifiers in `.navbar`
 * Fixed: Pagination disabled border
 * Fixed: Box in hero as text and background white
 * Fixed: #1 Card header icon position
-* Fixed: JavaScript `nav-burger` example
+* Fixed: JavaScript `.nav-burger` example
 * Fixed: Notification strong color
 
 ## 0.4.4

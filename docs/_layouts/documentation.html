@@ -4,7 +4,7 @@ route: documentation
 ---
 
 <div class="container">
-  {% include navbar.html %}
+  {% include navbar.html id="Documentation" %}
 </div>
 
 <section class="hero is-dark is-bold">
@@ -35,6 +35,9 @@ route: documentation
           </li>
           <li {% if page.doc-tab == 'grid' %}class="is-active"{% endif %}>
             <a href="{{ site.url }}/documentation/grid/columns">Grid</a>
+          </li>
+          <li {% if page.doc-tab == 'form' %}class="is-active"{% endif %}>
+            <a href="{{ site.url }}/documentation/form/general">Form</a>
           </li>
           <li {% if page.doc-tab == 'elements' %}class="is-active"{% endif %}>
             <a href="{{ site.url }}/documentation/elements/box/">Elements</a>
