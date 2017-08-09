@@ -1,5 +1,11 @@
 # Elenore Changelog
 
+## 0.4.6
+
+### Fixed
+
+* Fixed: box missing variables
+
 ## 0.4.5
 
 ### Changed
