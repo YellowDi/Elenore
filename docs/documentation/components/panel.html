@@ -2,7 +2,114 @@
 layout: documentation
 doc-tab: components
 doc-subtab: panel
+variables:
+- name: $panel-item-border
+  value: 1px solid $border
+- name: $panel-heading-background-color
+  value: $background
+- name: $panel-heading-color
+  value: $text-strong
+- name: $panel-heading-line-height
+  value: 1.25
+- name: $panel-heading-padding
+  value: 0.5em 0.75em
+- name: $panel-heading-radius
+  value: $radius
+- name: $panel-heading-size
+  value: 1.25em
+- name: $panel-heading-weight
+  value: $weight-light
+- name: $panel-tab-border-bottom
+  value: 1px solid $border
+- name: $panel-tab-active-border-bottom-color
+  value: $link-active-border
+- name: $panel-tab-active-color
+  value: $link-active
+- name: $panel-list-item-color
+  value: $text
+- name: $panel-list-item-hover-color
+  value: $link
+- name: $panel-block-color
+  value: $text-strong
+- name: $panel-block-hover-background-color
+  value: $background
+- name: $panel-block-active-border-left-color
+  value: $link
+- name: $panel-block-active-color
+  value: $link-active
+- name: $panel-block-active-icon-color
+  value: $link
+- name: $panel-icon-color
+  value: $text-light
 ---
+
+{% capture panel_example %}
+<nav class="panel">
+  <p class="panel-heading">
+    repositories
+  </p>
+  <div class="panel-block">
+    <p class="control has-icons-left">
+      <input class="input is-small" type="text" placeholder="search">
+      <span class="icon is-small is-left">
+        <i class="fa fa-search"></i>
+      </span>
+    </p>
+  </div>
+  <p class="panel-tabs">
+    <a class="is-active">all</a>
+    <a>public</a>
+    <a>private</a>
+    <a>sources</a>
+    <a>forks</a>
+  </p>
+  <a class="panel-block is-active">
+    <span class="panel-icon">
+      <i class="fa fa-book"></i>
+    </span>
+    Elenore
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fa fa-book"></i>
+    </span>
+    Radioedit
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fa fa-book"></i>
+    </span>
+    Illuminate.css
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fa fa-book"></i>
+    </span>
+    yellowdi.github.io
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fa fa-code-fork"></i>
+    </span>
+    kenjiSpecial/webgl-sketch-dojo
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fa fa-code-fork"></i>
+    </span>
+    Config
+  </a>
+  <label class="panel-block">
+    <input type="checkbox">
+    Remember me
+  </label>
+  <div class="panel-block">
+    <button class="button is-primary is-outlined is-fullwidth">
+      reset all filters
+    </button>
+  </div>
+</nav>
+{% endcapture %}
 
 {% include subnav-components.html %}
 
@@ -10,6 +117,12 @@ doc-subtab: panel
   <div class="container">
     <h1 class="title">Panel</h1>
     <h2 class="subtitle">A composable <strong>panel</strong>, for compact controls</h2>
+    {%
+      include meta.html
+      colors=false
+      sizes=false
+      variables=true
+    %}
 
     <hr>
 
@@ -39,83 +152,16 @@ doc-subtab: panel
       </p>
     </div>
 
-{% capture panel_example %}
-<nav class="panel">
-  <p class="panel-heading">
-    Repositories
-  </p>
-  <div class="panel-block">
-    <p class="control has-icons-left">
-      <input class="input is-small" type="text" placeholder="Search">
-      <span class="icon is-small is-left">
-        <i class="fa fa-search"></i>
-      </span>
-    </p>
-  </div>
-  <p class="panel-tabs">
-    <a class="is-active">All</a>
-    <a>Public</a>
-    <a>Private</a>
-    <a>Sources</a>
-    <a>Forks</a>
-  </p>
-  <a class="panel-block is-active">
-    <span class="panel-icon">
-      <i class="fa fa-book"></i>
-    </span>
-    Elenore
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fa fa-book"></i>
-    </span>
-    Radioedit
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fa fa-book"></i>
-    </span>
-    Illuminate.css
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fa fa-book"></i>
-    </span>
-    jgthms.github.io
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fa fa-code-fork"></i>
-    </span>
-    kenjiSpecial/webgl-sketch-dojo
-  </a>
-  <a class="panel-block">
-    <span class="panel-icon">
-      <i class="fa fa-code-fork"></i>
-    </span>
-    Config
-  </a>
-  <label class="panel-block">
-    <input type="checkbox">
-    Remember me
-  </label>
-  <div class="panel-block">
-    <button class="button is-primary is-outlined is-fullwidth">
-      Reset all filters
-    </button>
-  </div>
-</nav>
-{% endcapture %}
     <div class="columns">
       <div class="column is-4">
-{{panel_example}}
+        {{panel_example}}
       </div>
       <div class="column">
-{% highlight html %}
-{{panel_example}}
-{% endhighlight %}
+        {% highlight html %}{{panel_example}}{% endhighlight %}
       </div>
     </div>
+
+    {% include variables.html %}
 
   </div>
 </section>

@@ -4,43 +4,7 @@ doc-tab: overview
 doc-subtab: customize
 ---
 
-{% include subnav-overview.html %}
-
-<section class="section">
-  <div class="container">
-    <h1 class="title">Customizing with Sass</h1>
-    <h2 class="subtitle">Create your <strong>own theme</strong> with a simple set of <strong>variables</strong></h2>
-
-    <hr>
-
-    <div class="content">
-      <p>If you're familiar with <a href="http://sass-lang.com/">Sass</a> and want to <strong>customize</strong> Elenore with your own colors and variables:</p>
-    </div>
-
-    <article class="media is-large">
-      <div class="media-left">
-        <p class="title is-5">1</p>
-      </div>
-      <div class="media-content">
-        <p class="title is-5">
-          <strong>Clone</strong> the repository:
-        </p>
-        <div class="content"><a href="https://github.com/YellowDi/Elenore">https://github.com/YellowDi/Elenore</a></div>
-      </div>
-    </article>
-
-    <article class="media is-large">
-      <div class="media-left">
-        <p class="title is-5">2</p>
-      </div>
-      <div class="media-content">
-        <p class="title is-5">
-          <strong>Set</strong> your variables
-        </p>
-        <p class="subtitle is-6">
-          Add your own colors, set new fonts, override Elenore styles...
-        </p>
-{% highlight sass %}
+{% capture sass %}
 // 1. Import the initial variables
 @import "../sass/utilities/initial-variables"
 
@@ -63,9 +27,49 @@ $danger: $orange
 $family-primary: $family-serif
 
 // 4. Import the rest of Elenore
-@import "../Elenore"
-{% endhighlight %}
+@import "../elenore"
+{% endcapture %}
+
+{% include subnav-overview.html %}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Customizing with Sass</h1>
+    <h2 class="subtitle">Create your <strong>own theme</strong> with a simple set of <strong>variables</strong></h2>
+
+    <hr>
+
+    <div class="content">
+      <p>If you're familiar with <a href="http://sass-lang.com/">Sass</a> and want to <strong>customize</strong> Elenore with your own colors and variables, just install Elenore via <strong>npm</strong>:</p>
+    </div>
+
+    <article class="media is-large">
+      <div class="media-left">
+        <p class="title is-5">1</p>
+      </div>
+      <div class="media-content">
+        <p class="title is-5">
+          <strong>Download</strong> the source files:
         </p>
+        {% highlight bash %}npm install elenore{% endhighlight %}
+        <div class="content">or clone the repository: <a href="https://github.com/YellowDi/Elenore">https://github.com/YellowDi/Elenore</a></div>
+      </div>
+    </article>
+
+    <article class="media is-large">
+      <div class="media-left">
+        <p class="title is-5">2</p>
+      </div>
+      <div class="media-content">
+        <p class="title is-5">
+          <strong>Set</strong> your variables
+        </p>
+        <p class="subtitle is-6">
+          Add your own colors, set new fonts, override Elenore styles...
+        </p>
+        <div class="highlight-full">
+          {% highlight sass %}{{ sass }}{% endhighlight %}
+        </div>
       </div>
     </article>
 
