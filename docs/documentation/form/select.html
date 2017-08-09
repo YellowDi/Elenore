@@ -269,6 +269,12 @@ doc-subtab: select
     <h2 class="subtitle">
       The browser built-in <strong>select dropdown</strong>, styled accordingly
     </h2>
+    {%
+      include meta.html
+      colors=true
+      sizes=true
+      variables=false
+    %}
 
     <hr>
 
@@ -314,9 +320,7 @@ doc-subtab: select
       </div>
     {% endif %}
 
-    <hr>
-
-    <h3 id="select-color" class="title">Colors</h3>
+    {% include heading.html name="Colors" %}
 
     <div class="columns">
       <div class="column is-half">
@@ -327,8 +331,8 @@ doc-subtab: select
       </div>
     </div>
 
-    <hr>
-    <h3 id="select-size" class="title">Sizes</h3>
+    {% include heading.html name="Sizes" %}
+
     <div class="columns">
       <div class="column is-half">
         {{sizes_example}}
@@ -413,7 +417,7 @@ doc-subtab: select
       <div class="column is-half">
         <div class="content">
           <p>
-            If the control contains an icon, Bulma will make sure the icon remains <strong>centered</strong>, no matter the size of the input <em>or</em> of the icon.
+            If the control contains an icon, Elenore will make sure the icon remains <strong>centered</strong>, no matter the size of the input <em>or</em> of the icon.
           </p>
         </div>
         {{has_icons_small_example}}
