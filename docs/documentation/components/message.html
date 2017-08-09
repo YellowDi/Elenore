@@ -210,9 +210,20 @@ variables:
       </div>
     </div>
 
+    {% include heading.html name="Colors" %}
+
+    <div class="columns">
+      <div class="column is-half">
+        {{message_colors_example}}
+      </div>
+      <div class="column is-half">
+        {% highlight html %}{{message_colors_example}}{% endhighlight %}
+      </div>
+    </div>
+
     <hr>
 
-    <h3 class="subtitle">Message body only</h3>
+    <h3 class="title">Message body only</h3>
     <div class="content">
       <p>You can <strong>omit</strong> the message header:</p>
     </div>
@@ -225,26 +236,7 @@ variables:
       </div>
     </div>
 
-    <hr style="margin-bottom: 0;">
-
-    <h3 id="colors" class="title" style="padding-top: 1.5rem;">
-      Colors
-    </h3>
-
-    <div class="columns">
-      <div class="column is-half">
-        {{message_colors_example}}
-      </div>
-      <div class="column is-half">
-        {% highlight html %}{{message_colors_example}}{% endhighlight %}
-      </div>
-    </div>
-
-    <hr style="margin-bottom: 0;">
-
-    <h3 id="sizes" class="title" style="padding-top: 1.5rem;">
-      Sizes
-    </h3>
+    {% include heading.html name="Sizes" %}
 
     <div class="columns">
       <div class="column is-half">
