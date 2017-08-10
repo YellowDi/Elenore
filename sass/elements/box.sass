@@ -1,18 +1,16 @@
 $box-color: $text !default
 $box-background-color: $white !default
 $box-radius: $radius !default
-$box-shadow: 0 1px 2px rgba(37, 40, 43, 0.1)
-$box-border-color: 1px solid rgba(37, 40, 43, 0.1)
+$box-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default
 $box-padding: 1.25rem !default
 
-$box-link-hover-shadow: 0 1px 2px rgba(37, 40, 43, 0.2)
-$box-border-active-color: 1px solid $primary
+$box-link-hover-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px $link !default
+$box-link-active-shadow: inset 0 1px 2px rgba($black, 0.2), 0 0 0 1px $link !default
 
 .box
   +block
   background-color: $box-background-color
   border-radius: $box-radius
-  border: $box-border-color
   box-shadow: $box-shadow
   color: $box-color
   display: block
@@ -23,4 +21,4 @@ a.box
   &:focus
     box-shadow: $box-link-hover-shadow
   &:active
-    border: $box-border-active-color
+    box-shadow: $box-link-active-shadow

@@ -102,6 +102,7 @@ Variable name changes (mostly appending `-color`):
 
 * Fixed: box missing variables
 * Fixed：`.dropdown` wrapping
+* Fixed：missing default statements to box and image
 
 ## 0.4.5
 
