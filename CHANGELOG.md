@@ -104,6 +104,7 @@ Variable name changes (mostly appending `-color`):
 * Fixed: `.dropdown` wrapping
 * Fixed: missing default statements to box and image
 * Fixed: `.is-size-7` helper is missing
+* Fixed: Tabs sass file throwing error with `!important`
 
 ## 0.4.5
 
