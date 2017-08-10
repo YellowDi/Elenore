@@ -5,6 +5,7 @@
 ### Added
 
 * New [List of tags](https://yellowdi.github.io/Elenore/documentation/elements/tag/#list-of-tags)
+* New [File upload element](https://yellowdi.github.io/Elenore/documentation/form/file/)
 * New **variable naming system**: `component`-`subcomponent`-`state`-`property`
 * Improved **customization** thanks to new set of variables
 
