@@ -105,6 +105,7 @@ Variable name changes (mostly appending `-color`):
 * Fixed: missing default statements to box and image
 * Fixed: `.is-size-7` helper is missing
 * Fixed: Tabs sass file throwing error with `!important`
+* Fixed: Variable `$table-head-color` isn't used
 
 ## 0.4.5
 
