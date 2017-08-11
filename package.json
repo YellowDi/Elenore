@@ -1,6 +1,6 @@
 {
   "name": "elenore",
-  "version": "0.4.5",
+  "version": "1.0.0",
   "homepage": "http://yellowdi.github.io/Elenore",
   "author": "YellowDi <yellowdi@me.com>",
   "description": "Modern CSS framework based on Flexbox",
@@ -29,12 +29,12 @@
   },
   "scripts": {
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
-    "build-autoprefix": "postcss --use autoprefixer --output css/elenore.css css/elenore.css",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/elenore.css css/elenore.css",
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true elenore.sass css/elenore.css",
     "deploy": "npm run build && npm run docs",
     "docs": "npm run docs-sass && npm run docs-autoprefix",
-    "docs-autoprefix": "postcss --use autoprefixer --output docs/css/Elenore-docs.css docs/css/elenore-docs.css",
+    "docs-autoprefix": "postcss --use autoprefixer --map false --output docs/css/elenore-docs.css docs/css/elenore-docs.css",
     "docs-sass": "node-sass --output-style expanded docs/elenore-docs.sass docs/css/elenore-docs.css",
     "start": "npm run build-sass -- --watch",
     "start-docs": "npm run docs-sass -- --watch",
