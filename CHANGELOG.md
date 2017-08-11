@@ -107,6 +107,7 @@ Variable name changes (mostly appending `-color`):
 * Fixed: `.is-size-7` helper is missing
 * Fixed: Tabs sass file throwing error with `!important`
 * Fixed: Variable `$table-head-color` isn't used
+* Fixed: `navbar-brand` overflowing on mobile
 
 ## 0.4.5
 
