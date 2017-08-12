@@ -6,12 +6,13 @@ $navbar-item-hover-color: $black !default
 $navbar-item-hover-background-color: $background !default
 $navbar-item-active-color: $black !default
 $navbar-item-active-background-color: transparent !default
+$navbar-item-img-max-height: 1.75rem !default
 
 $navbar-tab-hover-background-color: transparent !default
-$navbar-tab-hover-border-bottom-color: $dark !default
-$navbar-tab-active-color: $dark !default
+$navbar-tab-hover-border-bottom-color: $black !default
+$navbar-tab-active-color: $black !default
 $navbar-tab-active-background-color: transparent !default
-$navbar-tab-active-border-bottom-color: $dark !default
+$navbar-tab-active-border-bottom-color: $black !default
 $navbar-tab-active-border-bottom-style: solid !default
 $navbar-tab-active-border-bottom-width: 3px !default
 
@@ -228,6 +229,9 @@ a.navbar-item,
       transform: translateY(-5px)
       transition-duration: $speed
       transition-property: opacity, transform
+    &.is-right
+      left: auto
+      right: 0
   .navbar-divider
     display: block
   .container > .navbar
