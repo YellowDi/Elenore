@@ -1,5 +1,5 @@
-<nav class="navbar">
-  <div class="container">
+<nav class="navbar has-shadow">
+  <div class="container is-widescreen">
     <div class="navbar-brand">
       <a class="navbar-item is-tab {% if page.doc-subtab == 'box' %}is-active{% endif %}" href="{{ site.url }}/documentation/elements/box/">
         Box
@@ -18,6 +18,9 @@
       </a>
       <a class="navbar-item is-tab {% if page.doc-subtab == 'image' %}is-active{% endif %}" href="{{ site.url }}/documentation/elements/image/">
         Image
+      </a>
+      <a class="navbar-item is-tab {% if page.doc-subtab == 'modal' %}is-active{% endif %}" href="{{ site.url }}/documentation/elements/modal/">
+        Modal
       </a>
       <a class="navbar-item is-tab {% if page.doc-subtab == 'notification' %}is-active{% endif %}" href="{{ site.url }}/documentation/elements/notification/">
         Notification

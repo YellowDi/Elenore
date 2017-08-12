@@ -1,5 +1,13 @@
 # Elenore Changelog
 
+## 1.1.0
+
+* New [Color](https://yellowdi.github.io/Elenore/documentation/overview/colors)
+* Added: responsive helpers to text-align helpers
+* Fixed: `.pagination` isn't using `$pagination-background`
+* Fixed: `.navbar-dropdown` with **right** alignment
+* Fixed: Text case helpers
+
 ## 1.0.0
 
 ### Added

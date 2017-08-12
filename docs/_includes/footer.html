@@ -1,40 +1,11 @@
-<footer class="footer">
+<footer class="footer is-index">
   <div class="container">
-    <div class="columns">
-      <div class="column is-6">
-        <div id="about" class="content">
-          <strong xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Elenore</strong>
-        </div>
-      </div>
-      <div class="column is-6">
-        <div id="sister">
-          <p>
-            More <strong>helpful</strong> tools:
-          </p>
-          <ul>
-            <li>
-              <a href="https://yellowdi.github.io/Illuminate.css/">
-                <img src="{{site.url}}/images/illuminate-logo.png" alt="illuminate.css logo">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="content has-text-centered">
+	    <img src="{{ site.url }}/images/elenore-icon-outlined.png" alt="Elenore logo" width="100">
+	    <div class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 | Yellow</div>
     </div>
-
-    <p id="tsp">
-      <small>
-        Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-        <br>
-        Website content licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
-      </small>
-    </p>
   </div>
 </footer>
 
 <script src="{{ site.url }}/vendor/clipboard-1.7.1.min.js"></script>
 <script src="{{ site.url }}/lib/main.js"></script>
-
-{% if page.route == 'index' %}
-  <script type="text/javascript" src="{{ site.url }}/lib/index.js"></script>
-{% endif %}

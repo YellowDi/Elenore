@@ -3,11 +3,11 @@ layout: default
 route: documentation
 ---
 
-<div class="container">
+<div class="container is-widescreen">
   {% include navbar.html id="Documentation" %}
 </div>
 
-<section class="hero is-dark is-bold">
+<section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-vcentered">
@@ -24,7 +24,7 @@ route: documentation
   </div>
 
   <div class="hero-foot">
-    <div class="container">
+    <div class="container is-widescreen">
       <nav class="tabs is-boxed">
         <ul>
           <li {% if page.doc-tab == 'overview' %}class="is-active"{% endif %}>
@@ -47,7 +47,7 @@ route: documentation
           </li>
           <li {% if page.doc-tab == 'components' %}class="is-active"{% endif %}>
             {% if site.vernum >= 43 %}
-              <a href="{{ site.url }}/documentation/components/badge/">Components</a>
+              <a href="{{ site.url }}/documentation/components/breadcrumb/">Components</a>
             {% else %}
               <a href="{{ site.url }}/documentation/components/card/">Components</a>
             {% endif %}

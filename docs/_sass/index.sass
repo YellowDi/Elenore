@@ -1,85 +1,20 @@
-.index-container
-  margin-left: auto
-  margin-right: auto
-  max-width: 700px
+.hero-body
+  .is-index
+    .title
+      font-size: 15vw
+    .subtitle
+      font-size: 4vh
+    p
+      font-size: 3vh
+      font-weight: 200
+      line-height: 2
+      a
+        font-weight: 800
+        text-decoration: underline
 
-.index-figure
-  display: flex
-  img:first-child
-    height: 128px
-    width: 128px
-
-.index-carbon
-  background-color: white
-  border-radius: 5px
-  box-shadow: 0 0 1rem rgba(#000, 0.2)
-  display: flex
-  flex-shrink: 0
-  width: 240px
-  #huggingFace
-
-.index-title
-  color: $text-strong
-  font-size: 1.2rem
-  font-weight: bold
-  line-height: 1.6rem
-  margin-bottom: 1rem
-
-.index-subtitle
-  line-height: 1.6rem
-  a
-    color: inherit
-  strong:first-child
-    color: $primary
-
-.index-share
-  align-items: center
-  display: flex
-  justify-content: center
-  margin-top: 1rem
-  .share-button
-    height: 48px
-    width: 48px
-    svg
-      height: 24px
-      width: 24px
-
-.index-button
-  margin-top: 1rem
-
-+mobile
-  .index
-    padding: 6rem 1.5rem
-  .index-figure
-    align-items: center
-    flex-direction: column
-    justify-content: center
-    margin-bottom: 30px
-    img:last-child
-      height: 40px
-  .index-carbon
-    justify-content: center
-    margin: 0 auto 2rem
-  .index-subtitle
-    margin-top: 10px
-
-+desktop
-  .index
-    padding: 8rem 1.5rem
-  .index-figure
-    align-items: center
-    justify-content: center
-    margin-bottom: 30px
-    img:last-child
-      height: 80px
-      margin-left: 20px
-  .index-carbon
-    margin-left: 1rem
-    margin-right: 2rem
-  .index-content
-    align-items: center
-    display: flex
-  .index-text
-    margin-right: 2rem
-  .index-share
-    justify-content: flex-start
+.hero
+  &.is-index
+    background-image: url('../images/elenore-bg.png')
+    background-position: top right
+    background-repeat: no-repeat
+    background-size: 45%

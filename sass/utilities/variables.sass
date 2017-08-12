@@ -17,13 +17,13 @@ $white-ter:    hsl(0, 0%, 96%) !default
 $white-bis:    hsl(0, 0%, 98%) !default
 $white:        hsl(0, 0%, 100%) !default
 
-$orange:       hsl(14,  100%, 53%) !default
+$orange:       hsl(36,  100%, 57%) !default
 $yellow:       hsl(48,  100%, 67%) !default
 $green:        hsl(141, 71%,  48%) !default
-$turquoise:    hsl(171, 100%, 41%) !default
+$turquoise:    hsl(164, 95%,  43%) !default
 $blue:         hsl(217, 71%,  53%) !default
 $purple:       hsl(271, 100%, 71%) !default
-$red:          hsl(348, 100%, 61%) !default
+$red:          hsl(4, 90%, 58%) !default
 
 // Typography
 $family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default
@@ -68,11 +68,11 @@ $speed: 86ms !default
 ////////////////////////////////////////////////
 // 2. Primary colors
 
-$primary: $turquoise !default
+$primary: $yellow !default
 
 $info: $blue !default
 $success: $green !default
-$warning: $yellow !default
+$warning: $turquoise !default
 $danger: $red !default
 
 $light: $white-ter !default
@@ -91,10 +91,10 @@ $blue-invert: findColorInvert($blue) !default
 $purple-invert: findColorInvert($purple) !default
 $red-invert: findColorInvert($red) !default
 
-$primary-invert: $turquoise-invert !default
+$primary-invert: $yellow-invert !default
 $info-invert: $blue-invert !default
 $success-invert: $green-invert !default
-$warning-invert: $yellow-invert !default
+$warning-invert: $orange-invert !default
 $danger-invert: $red-invert !default
 $light-invert: $dark !default
 $dark-invert: $light !default
@@ -119,11 +119,11 @@ $pre: $text !default
 $pre-background: $background !default
 
 // Link colors
-$link: $primary !default
+$link: $grey-darker !default
 $link-invert: $primary-invert !default
 $link-visited: $purple !default
 
-$link-hover: $grey-darker !default
+$link-hover: $grey-light !default
 $link-hover-border: $grey-light !default
 
 $link-focus: $grey-darker !default
