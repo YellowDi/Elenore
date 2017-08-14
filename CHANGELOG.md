@@ -7,6 +7,7 @@
 * Fixed: `.pagination` isn't using `$pagination-background`
 * Fixed: `.navbar-dropdown` with **right** alignment
 * Fixed: Text case helpers
+* Fixed: `.navbar-item img` max height
 
 ## 1.0.0
 
