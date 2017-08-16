@@ -2772,6 +2772,10 @@ a.box:active {
   height: unset;
 }
 
+.textarea.has-fixed-size {
+  resize: none;
+}
+
 .checkbox,
 .radio {
   cursor: pointer;
