@@ -4,6 +4,7 @@
 
 * New [Color](https://yellowdi.github.io/Elenore/documentation/overview/colors)
 * Added: responsive helpers to text-align helpers
+* Added: `!importnant` to non responsive display helpers
 * Fixed: `.pagination` isn't using `$pagination-background`
 * Fixed: `.navbar-dropdown` with **right** alignment
 * Fixed: Text case helpers
