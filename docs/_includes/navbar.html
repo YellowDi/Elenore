@@ -13,8 +13,16 @@
     </span>
 
     <div class="nav-right nav-menu" id="navMenu{{ include.id }}">
-      <a class="nav-item is-tab" href="{{ site.github }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a class="nav-item is-tab" href="{{ site.download }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+      <a class="nav-item is-tab" href="{{ site.github }}" target="_blank">
+        <span class="icon" style="color: #333;">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </span>
+      </a>
+      <a class="nav-item is-tab" href="{{ site.download }}" target="_blank">
+        <span class="icon" style="color: #333;">
+          <i class="fa fa-download" aria-hidden="true"></i>
+        </span>
+      </a>
       <a class="nav-item is-tab {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.url }}/">Home</a>
       <a class="nav-item is-tab {% if page.route == 'documentation' %}is-active{% endif %}" href="{{ site.url }}/documentation/overview/start/">Docs</a>
     </div>

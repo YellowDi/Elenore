@@ -5,6 +5,7 @@
 * Added: a new modifier class for disabling resizability of a textarea
 * Added: `!important` to non responsive display helpers
 * Fixed: `.navbar-item img` max height
+* Fixed: `$family-primary` customisation
 
 ## 1.1.0
 
