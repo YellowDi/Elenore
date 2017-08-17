@@ -3,7 +3,7 @@
 ## 1.1.1
 
 * Added: a new modifier class for disabling resizability of a textarea
-* Added: `!importnant` to non responsive display helpers
+* Added: `!important` to non responsive display helpers
 * Fixed: `.navbar-item img` max height
 
 ## 1.1.0
