@@ -103,8 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if ($highlights.length > 0) {
     $highlights.forEach($el => {
-      const copy = '<button class="copy">Copy</button>';
-      const expand = '<button class="expand">Expand</button>';
+      const copy = '<button class="el-copy">Copy</button>';
+      const expand = '<button class="el-expand">Expand</button>';
       $el.insertAdjacentHTML('beforeend', copy);
 
       if ($el.firstElementChild.scrollHeight > 480 && $el.firstElementChild.clientHeight <= 480) {
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function addHighlightControls() {
-    const $highlightButtons = getAll('.highlight .copy, .highlight .expand');
+    const $highlightButtons = getAll('.highlight .el-copy, .highlight .el-expand');
 
     $highlightButtons.forEach($el => {
       $el.addEventListener('mouseenter', () => {
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    const $highlightExpands = getAll('.highlight .expand');
+    const $highlightExpands = getAll('.highlight .el-expand');
 
     $highlightExpands.forEach($el => {
       $el.addEventListener('click', () => {
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  new Clipboard('.copy', {
+  new Clipboard('.el-copy', {
     target: function(trigger) {
       return trigger.previousSibling;
     }

@@ -969,10 +969,6 @@ doc-subtab: form
     {% if site.vernum >= 43 %}
       <div class="columns">
         <div class="column is-half">
-          <p style="margin-bottom: 0.5rem;">
-            <span class="tag is-success">New!</span>
-            <span class="tag is-info">0.4.3</span>
-          </p>
           <div class="content">
             <p>
               You can resize the loading spinner by appending <code>is-small</code>, <code>is-medium</code> or <code>is-large</code> to the <code>control</code> container.
@@ -1034,10 +1030,6 @@ doc-subtab: form
       <div class="column is-half">
         <div class="content">
           <p>
-            <span class="tag is-success">New!</span>
-            <span class="tag is-info">0.4.2</span>
-          </p>
-          <p>
             You can now append icons to <strong>select dropdowns</strong> as well.
           </p>
         </div>
@@ -1050,7 +1042,7 @@ doc-subtab: form
 
     <div class="content">
       <p>
-        If the control contains an icon, Elenore will make sure the icon remains <strong>centered</strong>, no matter the size of the input <em>or</em> of the icon.
+        If the control contains an icon, Bulma will make sure the icon remains <strong>centered</strong>, no matter the size of the input <em>or</em> of the icon.
       </p>
     </div>
 
@@ -1096,7 +1088,7 @@ doc-subtab: form
     <div class="content">
       <p>If you want to <strong>attach</strong> controls together, use the <code>has-addons</code> modifier on the <code>control</code> container:</p>
     </div>
-    <div class="example">
+    <div class="el-example">
         {{addons_example}}
     </div>
         {% highlight html %}{{addons_example}}{% endhighlight %}
@@ -1105,14 +1097,10 @@ doc-subtab: form
     </div>
 
     <div class="content">
-      <p>
-        <span class="tag is-success">New!</span>
-        <span class="tag is-info">0.4.2</span>
-      </p>
       <p>It can be useful to append a <a href="{{site.url}}/documentation/elements/button#static-button">static button</a>.</p>
     </div>
 
-    <div class="example">
+    <div class="el-example">
         {{addons_static_example}}
     </div>
         {% highlight html %}{{addons_static_example}}{% endhighlight %}
@@ -1120,7 +1108,7 @@ doc-subtab: form
     <div class="content">
       <p>Use the <code>is-expanded</code> modifier on the element you want to fill up the remaining space (in this case, the input):</p>
     </div>
-    <div class="example">
+    <div class="el-example">
         {{addons_expanded_example}}
     </div>
         {% highlight html %}{{addons_expanded_example}}{% endhighlight %}
@@ -1128,7 +1116,7 @@ doc-subtab: form
     <div class="content">
       <p>If you want a full width select dropdown, pair <code>control is-expanded</code> with <code>select is-fullwidth</code>.</p>
     </div>
-    <div class="example">
+    <div class="el-example">
       {{addons_expanded_fullwidth_example}}
     </div>
     {% highlight html %}{{addons_expanded_fullwidth_example}}{% endhighlight %}
@@ -1136,11 +1124,11 @@ doc-subtab: form
     <div class="content">
       <p>Use the <code>has-addons-centered</code> or the <code>has-addons-right</code> modifers to alter the <strong>alignment</strong>.</p>
     </div>
-    <div class="example">
+    <div class="el-example">
       {{addons_center_example}}
     </div>
     {% highlight html %}{{addons_center_example}}{% endhighlight %}
-    <div class="example">
+    <div class="el-example">
       {{addons_right_example}}
     </div>
     {% highlight html %}{{addons_right_example}}{% endhighlight %}
@@ -1158,7 +1146,7 @@ doc-subtab: form
         Add the <code>is-expanded</code> modifier on the control element you want to <strong>fill up the remaining space</strong>.
       </p>
     </div>
-    <div class="example">
+    <div class="el-example">
       {{group_example}}
     </div>
     {% highlight html %}{{group_example}}{% endhighlight %}
@@ -1178,15 +1166,12 @@ doc-subtab: form
       </ul>
       <p>You can of course use <code>is-grouped</code> or <code>has-addons</code> for the child elements.</p>
     </div>
-    <div class="example">
+    <div class="el-example">
       {{horizontal_form_example}}
     </div>
     {% highlight html %}{{horizontal_form_example}}{% endhighlight %}
 
     <div class="content">
-      <p>
-        <span class="tag is-success">New!</span>
-      </p>
       <p>
         To preserve the <strong>vertical alignment</strong> of labels with each type and size of control, the <code>.field-label</code> comes with <strong>4 size modifiers</strong>:
       </p>
@@ -1205,7 +1190,7 @@ doc-subtab: form
         </li>
       </ul>
     </div>
-    <div class="example">
+    <div class="el-example">
       {{field_label_example}}
     </div>
     {% highlight html %}{{field_label_example}}{% endhighlight %}

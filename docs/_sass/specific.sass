@@ -3,7 +3,7 @@
     td:nth-child(2)
       width: 320px
 
-.color
+.el-color
   border-radius: 2px
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1)
   display: inline-block
@@ -12,12 +12,7 @@
   margin-right: 8px
   width: 24px
 
-.view-all-versions
-  color: $text-light
-  &:hover
-    text-decoration: underline
-
-.feature-title
+.el-feature-title
   color: $text-light
   a
     border-bottom: 1px solid transparent
@@ -25,19 +20,15 @@
     &:hover
       border-bottom-color: $primary
 
-.anchor-title
+.el-anchor-title
   padding-top: 1.5rem
   position: relative
   +until($widescreen)
     padding-left: 2rem
 
-.anchor-link
+.el-anchor-link
   position: absolute
   right: calc(100% + 1rem)
   +until($widescreen)
     left: 0
     right: auto
-
-.emoji
-  margin-right: 0.5em
-  margin-top: 2px

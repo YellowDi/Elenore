@@ -23,17 +23,17 @@ doc-subtab: media-object
       <p>The <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code">media object</a> is a UI element perfect for repeatable and nestable content.</p>
     </div>
 
-    <div class="structure">
+    <div class="el-structure">
       <article class="media">
-        <figure class="media-left structure-item" title="media-left">
+        <figure class="media-left el-structure-item" title="media-left">
           <p class="image is-64x64">
             <img src="{{site.url}}/images/placeholders/128x128.png">
           </p>
         </figure>
-        <div class="media-content structure-item is-structure-right" title="media-content">
+        <div class="media-content el-structure-item el-is-structure-right" title="media-content">
           <div class="content">
             <p>
-              <strong>YellowDi</strong> <small>@YellowDi</small> <small>31m</small>
+              <strong>Media heading</strong>
               <br>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
             </p>
@@ -52,7 +52,7 @@ doc-subtab: media-object
             </div>
           </nav>
         </div>
-        <div class="media-right structure-item" title="media-right">
+        <div class="media-right bd-structure-item" title="media-right">
           <button class="delete"></button>
         </div>
       </article>
@@ -68,7 +68,7 @@ doc-subtab: media-object
   <div class="media-content">
     <div class="content">
       <p>
-        <strong>YellowDi</strong> <small>@YellowDi</small> <small>31m</small>
+        <strong>Media heading</strong>
         <br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
       </p>
@@ -92,7 +92,7 @@ doc-subtab: media-object
   </div>
 </article>
 {% endcapture %}
-<div class="example">
+<div class="el-example">
 {{media_example}}
 </div>
 {% highlight html %}
@@ -100,7 +100,7 @@ doc-subtab: media-object
 {% endhighlight %}
 
     <div class="content">
-      <p>You can include <em>any</em> other Elenore element, like inputs, textareas, icons, buttons... or even a <strong>nav bar</strong>.</p>
+      <p>You can include <em>any</em> other Bulma element, like inputs, textareas, icons, buttons... or even a <strong>nav bar</strong>.</p>
     </div>
 
 {% capture media_bis_example %}
@@ -133,7 +133,7 @@ doc-subtab: media-object
   </div>
 </article>
 {% endcapture %}
-<div class="example">
+<div class="el-example">
 {{media_bis_example}}
 </div>
 {% highlight html %}
@@ -156,7 +156,7 @@ doc-subtab: media-object
   <div class="media-content">
     <div class="content">
       <p>
-        <strong>Barbara Middleton</strong>
+        <strong>Media heading</strong>
         <br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
         <br>
@@ -173,7 +173,7 @@ doc-subtab: media-object
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Sean Brown</strong>
+            <strong>Media heading</strong>
             <br>
             Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
             <br>
@@ -200,7 +200,7 @@ doc-subtab: media-object
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Kayli Eunice </strong>
+            <strong>Media heading</strong>
             <br>
             Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
             <br>
@@ -231,7 +231,7 @@ doc-subtab: media-object
   </div>
 </article>
 {% endcapture %}
-<div class="example">
+<div class="el-example">
 {{media_nested_example}}
 </div>
 {% highlight html %}

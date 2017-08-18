@@ -466,7 +466,7 @@ variables:
 
     <div class="columns">
       <div class="column">
-        <div class="callout is-primary">
+        <div class="el-callout is-primary">
           {{button_inverted_example}}
         </div>
       </div>
@@ -479,7 +479,7 @@ variables:
 
     <div class="columns">
       <div class="column">
-        <div class="callout is-primary">
+        <div class="el-callout is-primary">
           {{button_inverted_outlined_example}}
         </div>
       </div>
@@ -539,7 +539,16 @@ variables:
 
     <div class="columns">
       <div class="column">
-        {{button_loading_example}}
+        <div class="block">
+          {{button_loading_example}}
+        </div>
+        <div class="message is-info">
+          <div class="message-body">
+            <p>
+              Since the loading spinner is implemented using the <code>:after</code> pseudo-element, it is not support by the <code>&lt;input type="submit"&gt;</code> element.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="column">
         {% highlight html %}{{button_loading_example}}{% endhighlight %}
@@ -553,10 +562,6 @@ variables:
     <div class="columns">
       <div class="column">
         <div class="content">
-          <p>
-            <span class="tag is-success">New!</span>
-            <span class="tag is-info">0.4.2</span>
-          </p>
           <p>
             You can create a <strong>non-interactive button</strong> by using the <code>is-static</code> modifier. This is useful to align a text label with an input, for example when using <a href="{{site.url}}/documentation/form/general#form-addons">form addons</a>.
           </p>
@@ -601,10 +606,7 @@ variables:
       <div class="column">
         <div class="content">
           <p>
-            <span class="tag is-success">New!</span>
-          </p>
-          <p>
-            If the button only contains an icon, Elenore will make sure the button remains <strong>square</strong>, no matter the size of the button <em>or</em> of the icon.
+            If the button only contains an icon, Bulma will make sure the button remains <strong>square</strong>, no matter the size of the button <em>or</em> of the icon.
           </p>
         </div>
         {{button_only_icon_example}}
@@ -620,7 +622,7 @@ variables:
     <div class="content">
       <p>If you want to <strong>group</strong> buttons together, use the <code>is-grouped</code> modifier on the <code>field</code> container:</p>
     </div>
-    <div class="example">
+    <div class="el-example">
       {{button_group_example}}
     </div>
     {% highlight html %}{{button_group_example}}{% endhighlight %}
@@ -632,7 +634,7 @@ variables:
       <p>If you want to use buttons as <strong>addons</strong>, use the <code>has-addons</code> modifier on the <code>field</code> container:</p>
     </div>
 
-    <div class="example">
+    <div class="el-example">
       {{button_addons_example}}
     </div>
     {% highlight html %}{{button_addons_example}}{% endhighlight %}
@@ -644,7 +646,7 @@ variables:
       <p>You can group together addons as well:</p>
     </div>
 
-    <div class="example">
+    <div class="el-example">
       {{button_group_addons_example}}
     </div>
     {% highlight html %}{{button_group_addons_example}}{% endhighlight %}
