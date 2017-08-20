@@ -33,8 +33,8 @@ route: documentation
           <li {% if page.doc-tab == 'modifiers' %}class="is-active"{% endif %}>
             <a href="{{ site.url }}/documentation/modifiers/syntax">Modifiers</a>
           </li>
-          <li {% if page.doc-tab == 'grid' %}class="is-active"{% endif %}>
-            <a href="{{ site.url }}/documentation/grid/columns">Grid</a>
+          <li {% if page.doc-tab == 'columns' %}class="is-active"{% endif %}>
+            <a href="{{ site.url }}/documentation/columns/basics">Columns</a>
           </li>
           <li {% if page.doc-tab == 'layout' %}class="is-active"{% endif %}>
             <a href="{{ site.url }}/documentation/layout/container/">Layout</a>
@@ -62,7 +62,7 @@ route: documentation
 
 <section class="section">
   <div class="container">
-    <p class="has-text-grey-light">
+    <p class="has-text-centered has-text-grey-light">
       This page is <strong class="has-text-grey">open source</strong>.
       <a class="has-text-grey" href="https://github.com/yellowdi/elenore/blob/master/docs/{{ page.path }}" style="border-bottom: 1px solid currentColor;">
         View on GitHub
