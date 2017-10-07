@@ -209,11 +209,7 @@ variables:
       </p>
     </div>
 
-    <div class="el-example">
-      {{pagination_example}}
-    </div>
-
-    {% highlight html %}{{pagination_example}}{% endhighlight %}
+    {% include snippet.html content=pagination_example horizontal=true clipped=true %}
 
     <div class="content">
       <p>
@@ -221,11 +217,7 @@ variables:
       </p>
     </div>
 
-    <div class="el-example">
-      {{pagination_options_example}}
-    </div>
-
-    {% highlight html %}{{pagination_options_example}}{% endhighlight %}
+    {% include snippet.html content=pagination_options_example horizontal=true clipped=true %}
 
     <div class="content">
       <p>
@@ -233,40 +225,22 @@ variables:
       </p>
     </div>
 
-    <div class="el-example">
-      {{pagination_centered_example}}
-    </div>
+    {% include snippet.html content=pagination_centered_example horizontal=true clipped=true %}
 
-    {% highlight html %}{{pagination_centered_example}}{% endhighlight %}
+    {% include snippet.html content=pagination_right_example horizontal=true clipped=true %}
 
-    <div class="el-example">
-      {{pagination_right_example}}
-    </div>
-
-    {% highlight html %}{{pagination_right_example}}{% endhighlight %}
-
-    <hr style="margin-bottom: 0;">
-
-    <h2 id="sizes" class="title" style="padding-top: 1.5rem;">
-      Sizes
-    </h2>
+    {% include anchor.html name="Sizes" %}
 
     <p class="content">
       The pagination comes in <strong>3 additional sizes</strong>.<br>
       You only need to append the <strong>modifier</strong> <code>is-small</code>, <code>is-medium</code>, or <code>is-large</code> to the <code>pagination</code> component.
     </p>
 
-    <div class="el-example">
-      {{pagination_small_example}}
-    </div>
+    {% include snippet.html content=pagination_small_example horizontal=true clipped=true %}
 
-    <div class="el-example">
-      {{pagination_medium_example}}
-    </div>
+    {% include snippet.html content=pagination_medium_example horizontal=true clipped=true %}
 
-    <div class="el-example">
-      {{pagination_large_example}}
-    </div>
+    {% include snippet.html content=pagination_large_example horizontal=true clipped=true %}
 
     {% include variables.html %}
 

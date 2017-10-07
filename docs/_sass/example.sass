@@ -49,26 +49,45 @@
   position: relative
   &::before
     content: "Snippet"
-  +tablet
     align-items: stretch
     display: flex
-
-.el-snippet-preview,
-.el-snippet-code
-  +tablet
-    width: 50%
 
 .el-snippet-preview
   padding: 1.5rem
 
 .el-snippet-code
   background-color: $pre-background
-  +tablet
+
+.el-snippet.el-is-clipped
+  .el-snippet-code
+    overflow: auto
+
++desktop
+  .el-snippet.el-is-vertical
     align-items: stretch
     display: flex
-    flex-direction: column
-    .highlight
-      flex-grow: 1
+    justify-content: center
+    .el-snippet-preview,
+    .el-snippet-code
+      width: 50%
+    .el-snippet-code
+      &,
+      .highlight,
+      .highlight pre
+        align-items: stretch
+        display: flex
+        flex-direction: column
+      .highlight,
+      .highlight pre,
+      .highlight .language-html
+        flex-grow: 1
+      .highlight pre
+        white-space: pre
+    &.el-is-one-third
+      .el-snippet-preview
+        width: 33.3333%
+      .el-snippet-code
+        width: 66.6666%
 
 // Highlight
 .highlight.el-is-hovering
@@ -76,7 +95,7 @@
   box-shadow: 0 0 0 2px $yellow
 
 .highlight pre
-  max-height: 480px
+  max-height: 320px
   margin-bottom: 0 !important
   padding: 0
   code
@@ -146,6 +165,9 @@ $structure-invert: $danger-invert
     &:hover
       background-color: $yellow
       color: $yellow-invert
+    &:focus
+    &:active
+      box-shadow: none
   .el-expand
     right: 45px
   +tablet

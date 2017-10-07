@@ -1,8 +1,26 @@
-<div class="el-snippet">
-  <div class="el-snippet-preview">
-    {{ include.content }}
+{% if include.plain %}
+  <div class="columns">
+    <div class="column is-half">
+      <div class="el-example">
+        {{ include.content }}
+      </div>
+    </div>
+    <div class="column is-half">
+      {% highlight html %}{{ include.content }}{% endhighlight %}
+    </div>
   </div>
-  <div class="el-snippet-code">
-    {% highlight html %}{{ include.content }}{% endhighlight %}
+{% else %}
+  <div class="
+    el-snippet
+    {% if include.horizontal %}el-is-horizontal{% else %}el-is-vertical{% endif %}
+    {% if include.clipped %}el-is-clipped{% endif %}
+    {% if include.size %}el-is-{{ include.size }}{% endif %}
+    ">
+    <div class="el-snippet-preview">
+      {{ include.content }}
+    </div>
+    <div class="el-snippet-code {% unless include.clipped %}highlight-full{% endunless %}">
+      {% highlight html %}{{ include.content }}{% endhighlight %}
+    </div>
   </div>
-</div>
+{% endif %}

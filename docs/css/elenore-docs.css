@@ -2706,9 +2706,27 @@ a.box:active {
   border-color: white;
 }
 
+.input.is-white:focus, .input.is-white.is-focused, .input.is-white:active, .input.is-white.is-active,
+.textarea.is-white:focus,
+.textarea.is-white.is-focused,
+.textarea.is-white:active,
+.textarea.is-white.is-active {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25);
+}
+
 .input.is-black,
 .textarea.is-black {
   border-color: #0a0a0a;
+}
+
+.input.is-black:focus, .input.is-black.is-focused, .input.is-black:active, .input.is-black.is-active,
+.textarea.is-black:focus,
+.textarea.is-black.is-focused,
+.textarea.is-black:active,
+.textarea.is-black.is-active {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25);
 }
 
 .input.is-light,
@@ -2716,9 +2734,27 @@ a.box:active {
   border-color: whitesmoke;
 }
 
+.input.is-light:focus, .input.is-light.is-focused, .input.is-light:active, .input.is-light.is-active,
+.textarea.is-light:focus,
+.textarea.is-light.is-focused,
+.textarea.is-light:active,
+.textarea.is-light.is-active {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25);
+}
+
 .input.is-dark,
 .textarea.is-dark {
   border-color: #363636;
+}
+
+.input.is-dark:focus, .input.is-dark.is-focused, .input.is-dark:active, .input.is-dark.is-active,
+.textarea.is-dark:focus,
+.textarea.is-dark.is-focused,
+.textarea.is-dark:active,
+.textarea.is-dark.is-active {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25);
 }
 
 .input.is-primary,
@@ -2726,9 +2762,27 @@ a.box:active {
   border-color: #ffdd57;
 }
 
+.input.is-primary:focus, .input.is-primary.is-focused, .input.is-primary:active, .input.is-primary.is-active,
+.textarea.is-primary:focus,
+.textarea.is-primary.is-focused,
+.textarea.is-primary:active,
+.textarea.is-primary.is-active {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
+}
+
 .input.is-info,
 .textarea.is-info {
   border-color: #3273dc;
+}
+
+.input.is-info:focus, .input.is-info.is-focused, .input.is-info:active, .input.is-info.is-active,
+.textarea.is-info:focus,
+.textarea.is-info.is-focused,
+.textarea.is-info:active,
+.textarea.is-info.is-active {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
 }
 
 .input.is-success,
@@ -2736,14 +2790,41 @@ a.box:active {
   border-color: #23d160;
 }
 
+.input.is-success:focus, .input.is-success.is-focused, .input.is-success:active, .input.is-success.is-active,
+.textarea.is-success:focus,
+.textarea.is-success.is-focused,
+.textarea.is-success:active,
+.textarea.is-success.is-active {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(35, 209, 96, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(35, 209, 96, 0.25);
+}
+
 .input.is-warning,
 .textarea.is-warning {
   border-color: #ffa724;
 }
 
+.input.is-warning:focus, .input.is-warning.is-focused, .input.is-warning:active, .input.is-warning.is-active,
+.textarea.is-warning:focus,
+.textarea.is-warning.is-focused,
+.textarea.is-warning:active,
+.textarea.is-warning.is-active {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(255, 167, 36, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(255, 167, 36, 0.25);
+}
+
 .input.is-danger,
 .textarea.is-danger {
   border-color: #f44034;
+}
+
+.input.is-danger:focus, .input.is-danger.is-focused, .input.is-danger:active, .input.is-danger.is-active,
+.textarea.is-danger:focus,
+.textarea.is-danger.is-focused,
+.textarea.is-danger:active,
+.textarea.is-danger.is-active {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(244, 64, 52, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(244, 64, 52, 0.25);
 }
 
 .input.is-small,
@@ -10211,24 +10292,12 @@ footer.copyright {
 
 .el-snippet::before {
   content: "Snippet";
-}
-
-@media screen and (min-width: 769px), print {
-  .el-snippet {
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 769px), print {
-  .el-snippet-preview,
-  .el-snippet-code {
-    width: 50%;
-  }
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .el-snippet-preview {
@@ -10239,8 +10308,29 @@ footer.copyright {
   background-color: whitesmoke;
 }
 
-@media screen and (min-width: 769px), print {
-  .el-snippet-code {
+.el-snippet.el-is-clipped .el-snippet-code {
+  overflow: auto;
+}
+
+@media screen and (min-width: 1008px) {
+  .el-snippet.el-is-vertical {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .el-snippet.el-is-vertical .el-snippet-preview,
+  .el-snippet.el-is-vertical .el-snippet-code {
+    width: 50%;
+  }
+  .el-snippet.el-is-vertical .el-snippet-code,
+  .el-snippet.el-is-vertical .el-snippet-code .highlight,
+  .el-snippet.el-is-vertical .el-snippet-code .highlight pre {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -10252,10 +10342,21 @@ footer.copyright {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .el-snippet-code .highlight {
+  .el-snippet.el-is-vertical .el-snippet-code .highlight,
+  .el-snippet.el-is-vertical .el-snippet-code .highlight pre,
+  .el-snippet.el-is-vertical .el-snippet-code .highlight .language-html {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+  }
+  .el-snippet.el-is-vertical .el-snippet-code .highlight pre {
+    white-space: pre;
+  }
+  .el-snippet.el-is-vertical.el-is-one-third .el-snippet-preview {
+    width: 33.3333%;
+  }
+  .el-snippet.el-is-vertical.el-is-one-third .el-snippet-code {
+    width: 66.6666%;
   }
 }
 
@@ -10266,7 +10367,7 @@ footer.copyright {
 }
 
 .highlight pre {
-  max-height: 480px;
+  max-height: 320px;
   margin-bottom: 0 !important;
   padding: 0;
 }
@@ -10374,6 +10475,12 @@ footer.copyright {
 .highlight .el-expand:hover {
   background-color: #ffdd57;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.highlight .el-copy:active,
+.highlight .el-expand:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .highlight .el-expand {
