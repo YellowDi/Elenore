@@ -1,5 +1,13 @@
 # Elenore Changelog
 
+## 1.1.2
+
+* Added `$button-focus-box-shadow-size` and `$button-focus-box-shadow-color` for customization
+* Added `$input-focus-box-shadow-size` and `$input-focus-box-shadow-color` for customization
+* Added: `.is-narrow` modifier for `.hero` layout
+* Added: type to Email input
+* Removed: gap between tag and delete button
+
 ## 1.1.1
 
 * Added: a new modifier class for disabling resizability of a textarea
