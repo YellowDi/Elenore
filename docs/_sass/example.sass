@@ -1,18 +1,13 @@
 .el-example,
-.el-structure
-  border: 1px solid $primary
-  border-top-right-radius: $radius
-  color: $primary-invert
-  padding: 1.5rem
+.el-structure,
+.el-snippet
+  border: 1px solid $yellow
   position: relative
-  &:not(:first-child)
-    margin-top: 2rem
-  &:not(:last-child)
-    margin-bottom: 1.5rem
   &:before
-    background: $primary
+    background: $yellow
     border-radius: $radius $radius 0 0
     bottom: 100%
+    color: $yellow-invert
     content: "Example"
     display: inline-block
     font-size: 7px
@@ -29,18 +24,56 @@
       border-right: none
       padding: 0
 
+.el-example,
+.el-structure
+  padding: 1.5rem
+  &:not(:first-child)
+    margin-top: 2rem
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+
 .el-example
   & + .highlight
-    border: 1px solid $primary
+    border: 1px solid $yellow
     border-radius: 0 0 $radius $radius
     border-top: none
     margin-top: -1.5rem
     &:not(:last-child)
       margin-bottom: 1.5rem
 
+// Snippet
+.el-snippet
+  +block
+  border: 1px solid $yellow
+  margin-top: 2rem
+  position: relative
+  &::before
+    content: "Snippet"
+  +tablet
+    align-items: stretch
+    display: flex
+
+.el-snippet-preview,
+.el-snippet-code
+  +tablet
+    width: 50%
+
+.el-snippet-preview
+  padding: 1.5rem
+
+.el-snippet-code
+  background-color: $pre-background
+  +tablet
+    align-items: stretch
+    display: flex
+    flex-direction: column
+    .highlight
+      flex-grow: 1
+
+// Highlight
 .highlight.el-is-hovering
   border-radius: 2px
-  box-shadow: 0 0 0 3px $border
+  box-shadow: 0 0 0 2px $yellow
 
 .highlight pre
   max-height: 480px
@@ -111,8 +144,8 @@ $structure-invert: $danger-invert
     right: 0.25rem
     top: 0.25rem
     &:hover
-      background-color: $text
-      color: $white
+      background-color: $yellow
+      color: $yellow-invert
   .el-expand
     right: 45px
   +tablet

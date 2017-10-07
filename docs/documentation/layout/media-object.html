@@ -1,62 +1,8 @@
 ---
 layout: documentation
-doc-tab: components
+doc-tab: layout
 doc-subtab: media-object
 ---
-
-{% include subnav-components.html %}
-
-<section class="section">
-  <div class="container">
-    <h1 class="title">Media Object</h1>
-    <h2 class="subtitle">The famous <strong>media object</strong> prevalent in social media interfaces, but useful in any context</h2>
-    {%
-      include meta.html
-      colors=false
-      sizes=false
-      variables=false
-    %}
-
-    <hr>
-
-    <div class="content">
-      <p>The <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code">media object</a> is a UI element perfect for repeatable and nestable content.</p>
-    </div>
-
-    <div class="el-structure">
-      <article class="media">
-        <figure class="media-left el-structure-item" title="media-left">
-          <p class="image is-64x64">
-            <img src="{{site.url}}/images/placeholders/128x128.png">
-          </p>
-        </figure>
-        <div class="media-content el-structure-item el-is-structure-right" title="media-content">
-          <div class="content">
-            <p>
-              <strong>Media heading</strong>
-              <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-            </p>
-          </div>
-          <nav class="level">
-            <div class="level-left">
-              <a class="level-item">
-                <span class="icon is-small"><i class="fa fa-reply"></i></span>
-              </a>
-              <a class="level-item">
-                <span class="icon is-small"><i class="fa fa-retweet"></i></span>
-              </a>
-              <a class="level-item">
-                <span class="icon is-small"><i class="fa fa-heart"></i></span>
-              </a>
-            </div>
-          </nav>
-        </div>
-        <div class="media-right bd-structure-item" title="media-right">
-          <button class="delete"></button>
-        </div>
-      </article>
-    </div>
 
 {% capture media_example %}
 <article class="media">
@@ -68,7 +14,7 @@ doc-subtab: media-object
   <div class="media-content">
     <div class="content">
       <p>
-        <strong>Media heading</strong>
+        <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
         <br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
       </p>
@@ -92,16 +38,6 @@ doc-subtab: media-object
   </div>
 </article>
 {% endcapture %}
-<div class="el-example">
-{{media_example}}
-</div>
-{% highlight html %}
-{{media_example}}
-{% endhighlight %}
-
-    <div class="content">
-      <p>You can include <em>any</em> other Bulma element, like inputs, textareas, icons, buttons... or even a <strong>nav bar</strong>.</p>
-    </div>
 
 {% capture media_bis_example %}
 <article class="media">
@@ -133,19 +69,6 @@ doc-subtab: media-object
   </div>
 </article>
 {% endcapture %}
-<div class="el-example">
-{{media_bis_example}}
-</div>
-{% highlight html %}
-{{media_bis_example}}
-{% endhighlight %}
-
-    <hr>
-
-    <h3 class="title">Nesting</h3>
-    <div class="content">
-      <p>You can nest media objects up to <strong>3 levels</strong> deep.</p>
-    </div>
 {% capture media_nested_example %}
 <article class="media">
   <figure class="media-left">
@@ -156,7 +79,7 @@ doc-subtab: media-object
   <div class="media-content">
     <div class="content">
       <p>
-        <strong>Media heading</strong>
+        <strong>Barbara Middleton</strong>
         <br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
         <br>
@@ -173,7 +96,7 @@ doc-subtab: media-object
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Media heading</strong>
+            <strong>Sean Brown</strong>
             <br>
             Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
             <br>
@@ -200,7 +123,7 @@ doc-subtab: media-object
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Media heading</strong>
+            <strong>Kayli Eunice </strong>
             <br>
             Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
             <br>
@@ -231,12 +154,82 @@ doc-subtab: media-object
   </div>
 </article>
 {% endcapture %}
-<div class="el-example">
-{{media_nested_example}}
-</div>
-{% highlight html %}
-{{media_nested_example}}
-{% endhighlight %}
+
+{% include subnav-layout.html %}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Media Object</h1>
+    <h2 class="subtitle">The famous <strong>media object</strong> prevalent in social media interfaces, but useful in any context</h2>
+
+    <hr>
+
+    <div class="content">
+      <p>The <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code">media object</a> is a UI element perfect for repeatable and nestable content.</p>
+    </div>
+
+    <div class="el-structure">
+      <article class="media">
+        <figure class="media-left el-structure-item" title="media-left">
+          <p class="image is-64x64">
+            <img src="{{site.url}}/images/placeholders/128x128.png">
+          </p>
+        </figure>
+        <div class="media-content el-structure-item el-is-structure-right" title="media-content">
+          <div class="content">
+            <p>
+              <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+              <br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+            </p>
+          </div>
+          <nav class="level">
+            <div class="level-left">
+              <a class="level-item">
+                <span class="icon is-small"><i class="fa fa-reply"></i></span>
+              </a>
+              <a class="level-item">
+                <span class="icon is-small"><i class="fa fa-retweet"></i></span>
+              </a>
+              <a class="level-item">
+                <span class="icon is-small"><i class="fa fa-heart"></i></span>
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="media-right el-structure-item" title="media-right">
+          <button class="delete"></button>
+        </div>
+      </article>
+    </div>
+
+    <div class="el-example">
+      {{media_example}}
+    </div>
+
+    {% highlight html %}{{media_example}}{% endhighlight %}
+
+    <div class="content">
+      <p>You can include <em>any</em> other Bulma element, like inputs, textareas, icons, buttons... or even a <strong>nav bar</strong>.</p>
+    </div>
+
+    <div class="el-example">
+      {{media_bis_example}}
+    </div>
+
+    {% highlight html %}{{media_bis_example}}{% endhighlight %}
+
+    {% include anchor.html name="Nesting" %}
+
+    <div class="content">
+      <p>You can nest media objects up to <strong>3 levels</strong> deep.</p>
+    </div>
+
+    <div class="el-example">
+      {{media_nested_example}}
+    </div>
+
+    {% highlight html %}{{media_nested_example}}{% endhighlight %}
 
   </div>
 </section>
