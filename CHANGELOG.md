@@ -3,6 +3,7 @@
 ## 1.1.3
 
 * Added: text-size-adjust: 100% to html
+* Added: navbar color modifiers
 * Removed: unwanted margin-right on `.level-item` at mobile breakpoint
 
 ## 1.1.2
