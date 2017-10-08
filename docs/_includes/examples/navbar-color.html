@@ -1,0 +1,49 @@
+<nav class="navbar is-{{ include.color }}">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{ site.url }}">
+      <img src="{{ site.url }}/images/elenore-icon-outlined.png" alt="Elenore: a modern CSS framework based on Flexbox">
+    </a>
+    <div class="navbar-burger burger" data-target="navMenuColor{{ include.color }}-example">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navMenuColor{{ include.color }}-example" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="{{ site.url }}/">
+        Home
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="/documentation/overview/start/">
+          Docs
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="/documentation/overview/start/">
+            Overview
+          </a>
+          <a class="navbar-item" href="{{ site.url }}/documentation/modifiers/syntax/">
+            Modifiers
+          </a>
+          <a class="navbar-item" href="{{ site.url }}/documentation/columns/basics/">
+            Columns
+          </a>
+          <a class="navbar-item" href="{{ site.url }}/documentation/layout/container/">
+            Layout
+          </a>
+          <a class="navbar-item" href="{{ site.url }}/documentation/form/general/">
+            Form
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="{{ site.url }}/documentation/elements/box/">
+            Elements
+          </a>
+          <a class="navbar-item is-active" href="{{ site.url }}/documentation/components/breadcrumb/">
+            Components
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
