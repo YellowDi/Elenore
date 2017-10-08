@@ -4,10 +4,6 @@
 
 * Added: `text-size-adjust: 100%` to `html`
 * Added: `navbar` color modifiers
-* Added: `$button-focus-box-shadow-size` and `$button-focus-box-shadow-color` for customization
-* Added: `$input-focus-box-shadow-size` and `$input-focus-box-shadow-color` for customization
-* Added: `.is-narrow` modifier for `.hero` layout
-* Added: type to Email input
 
 * Fixed: Support for third party icons
 * Fixed: Font awesome custom `font-size`
@@ -19,6 +15,10 @@
 
 ## 1.1.1
 
+* Added: `$button-focus-box-shadow-size` and `$button-focus-box-shadow-color` for customization
+* Added: `$input-focus-box-shadow-size` and `$input-focus-box-shadow-color` for customization
+* Added: `.is-narrow` modifier for `.hero` layout
+* Added: type to Email input
 * Added: a new modifier class for disabling resizability of a textarea
 * Added: `!important` to non responsive display helpers
 * Fixed: `.navbar-item img` max height
