@@ -2,12 +2,13 @@
 
 ## 1.2.0
 
+* Added: Support for third party icons
+* Added: Navbar tabs
 * Added: `text-size-adjust: 100%` to `html`
 * Added: `navbar` color modifiers
 * Added: `icon` color modifiers
 
 * Fixed: Undefined variable: `$navbar-item`
-* Fixed: Support for third party icons
 * Fixed: Font awesome custom `font-size`
 * Fixed: Font awesome stacked icons
 

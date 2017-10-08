@@ -8,7 +8,7 @@ description:   "Elenore is an open source CSS framework based on Flexbox and bui
 markdown:      kramdown
 permalink:     pretty
 url:           https://yellowdi.github.io/Elenore
-exclude:       ['fontawesome', 'node_modules', 'templates', '.babelrc', 'elenore-docs.sass', 'docker-compose.yml', 'package.json', 'yarn.lock']
+exclude:       ['icons', 'node_modules', 'templates', '.babelrc', 'elenore-docs.sass', 'docker-compose.yml', 'package.json', 'yarn.lock']
 
 # Icons
 
@@ -20,8 +20,8 @@ mdi:           https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicon
 # Variables
 
 documentation: "/documentation/overview/start/"
-download:      https://github.com/YellowDi/Elenore/archive/1.1.1.zip
+download:      https://github.com/YellowDi/Elenore/archive/1.2.0.zip
 github:        https://github.com/YellowDi/Elenore
 twitter:       https://twitter.com/YellowDi
-version:       1.1.1
-vernum:        51
+version:       1.2.0
+vernum:        52
