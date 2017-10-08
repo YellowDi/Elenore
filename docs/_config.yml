@@ -9,6 +9,7 @@ markdown:      kramdown
 permalink:     pretty
 url:           https://yellowdi.github.io/Elenore
 fontawesome:   https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
+mdi:           https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css
 exclude:       ['fontawesome', 'node_modules', 'templates', '.babelrc', 'elenore-docs.sass', 'docker-compose.yml', 'package.json', 'yarn.lock']
 
 # Variables

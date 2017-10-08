@@ -1,18 +1,20 @@
 # Elenore Changelog
 
-## 1.1.3
+## 1.2.0
 
-* Added: text-size-adjust: 100% to html
-* Added: navbar color modifiers
-* Removed: unwanted margin-right on `.level-item` at mobile breakpoint
-
-## 1.1.2
-
+* Added: `text-size-adjust: 100%` to `html`
+* Added: `navbar` color modifiers
 * Added: `$button-focus-box-shadow-size` and `$button-focus-box-shadow-color` for customization
 * Added: `$input-focus-box-shadow-size` and `$input-focus-box-shadow-color` for customization
 * Added: `.is-narrow` modifier for `.hero` layout
 * Added: type to Email input
+
+* Fixed: Font awesome custom `font-size`
+* Fixed: Font awesome stacked icons
+
+* Removed: `vertical-align: top` for icons
 * Removed: gap between tag and delete button
+* Removed: unwanted margin-right on `.level-item` at mobile breakpoint
 
 ## 1.1.1
 
