@@ -9,6 +9,7 @@
 * Added: `.is-narrow` modifier for `.hero` layout
 * Added: type to Email input
 
+* Fixed: Support for third party icons
 * Fixed: Font awesome custom `font-size`
 * Fixed: Font awesome stacked icons
 
