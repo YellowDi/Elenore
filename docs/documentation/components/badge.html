@@ -2,86 +2,119 @@
 layout: documentation
 doc-tab: components
 doc-subtab: badge
+variables:
+- name: $badge-border-size
+  value: .1rem
+- name: $badge-border-radius
+  value: 1rem
 ---
 
 {% include subnav-components.html %}
 
 {% capture badge_example %}
-  <div class="block">
+<button class="button badge" data-badge="8">Button</button>
+{% endcapture %}
+
+{% capture badge_colors_example %}
+<div class="columns">
+  <div class="column">
     <span class="badge" data-badge="">
       Notifications
     </span>
-    <span class="badge is-badge-info" data-badge="">
+  </div>
+  <div class="column">
+    <span class="badge is-badge-success" data-badge="">
       Notifications
     </span>
+  </div>
+  <div class="column">
     <span class="badge is-badge-warning" data-badge="">
       Notifications
     </span>
+  </div>
+  <div class="column">
     <span class="badge is-badge-danger" data-badge="">
       Notifications
     </span>
   </div>
-  <div class="block">
-    <span class="badge" data-badge="32">
-      Notifications
+</div>
+{% endcapture %}
+
+{% capture badge_sizes_example %}
+<div class="columns">
+  <div class="column">
+    <span class="badge is-badge-success is-badge-small" data-badge="1">
+      Small badge
     </span>
-    <span class="badge" data-badge="64">
-      Notifications
+  </div>
+  <div class="column">
+    <span class="badge is-badge-success" data-badge="16">
+      Normal badge
     </span>
-    <span class="badge" data-badge="128">
+  </div>
+  <div class="column">
+    <span class="badge is-badge-warning is-badge-medium" data-badge="32">
+      Medium badge
+    </span>
+  </div>
+  <div class="column">
+    <span class="badge is-badge-danger is-badge-large" data-badge="64">
+      Large badge
+    </span>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture badge_outlined_example %}
+<div class="columns">
+  <div class="column">
+    <span class="badge is-badge-outlined is-badge-danger" data-badge="1">
       Notifications
     </span>
   </div>
-  <div class="block">
-    <a class="button badge" data-badge="">Button</a>
-    <a class="button badge" data-badge="1024">Button</a>
+  <div class="column">
+    <button class="button is-primary badge is-badge-success is-badge-outlined" data-badge="256">Button</button>
   </div>
-  <div class="block">
-    <a class="button is-primary badge" data-badge="">Button</a>
-    <a class="button is-primary badge" data-badge="1024">Button</a>
-  </div>
+</div>
 {% endcapture %}
 
 <section class="section">
   <div class="container">
 
-    <div class="columns" style="margin-bottom: -0.75rem !important;">
-      <div class="column">
-        <h1 class="title">Badge</h1>
-        <h2 class="subtitle">
-          Easily highlight new or unread items by adding a <strong>badge</strong> to links, navs, and more.
-        </h2>
-      </div>
-
-      <div class="column is-narrow">
-        <p class="content">
-          <span class="tag is-success">New!</span>
-          <span class="tag is-info">0.4.5</span>
-        </p>
-      </div>
-    </div>
+    <h1 class="title">Badge</h1>
+    <h2 class="subtitle">
+      Display a <strong>badge</strong> element in front of Elenore's element in different colors.
+    </h2>
+    {%
+      include meta.html
+      colors=true
+      sizes=true
+      variables=true
+    %}
 
     <hr>
 
-    <div class="columns">
-      <div class="column is-4">
-        <div class="content">
-          <p>
-            Badges are most often used as counters, such as an indication of unread notifications. The <code>.badge</code> element is simply a little colored number hover to an element.
-            <br> For example, you can include the number of items on a button
-          </p>
-        </div>
-      </div>
+    {% include snippet.html content=badge_example %}
 
-      <div class="column is-8">
-        {{badge_example}}
-      </div>
+    {% include anchor.html name="Colors" %}
 
+    {% include snippet.html content=badge_colors_example horizontal=true clipped=true %}
+
+    {% include anchor.html name="Sized" %}
+
+    {% include snippet.html content=badge_sizes_example horizontal=true clipped=true %}
+
+    {% include anchor.html name="Styles" %}
+
+    <div class="content">
+      <p>
+        You can display an outlined badge by using <code>.is-badge-outlined</code> modifier.
+      </p>
     </div>
 
-    {% highlight html %}
-    {{badge_example}}
-    {% endhighlight %}
+    {% include snippet.html content=badge_outlined_example %}
+
+    {% include variables.html %}
 
   </div>
 </section>
