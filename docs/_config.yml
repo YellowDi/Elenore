@@ -20,8 +20,8 @@ mdi:           https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicon
 # Variables
 
 documentation: "/documentation/overview/start/"
-download:      https://github.com/YellowDi/Elenore/archive/1.2.1.zip
+download:      https://github.com/YellowDi/Elenore/archive/1.2.2.zip
 github:        https://github.com/YellowDi/Elenore
 twitter:       https://twitter.com/YellowDi
-version:       1.2.1
+version:       1.2.2
 vernum:        52

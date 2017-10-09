@@ -1,5 +1,11 @@
 # Elenore Changelog
 
+## 1.2.2
+
+* Added: `.card-header-title` can be centered with `.is-centered`
+* Added: `.input` readonly and `.is-static`
+* Added: `.textarea` readonly
+
 ## 1.2.1
 
 * Added: `.has-text-justified` support
