@@ -4457,10 +4457,6 @@ a.box:active {
   text-align: left;
 }
 
-.table tr:hover {
-  background-color: #fafafa;
-}
-
 .table tr.is-selected {
   background-color: #ffdd57;
   color: rgba(0, 0, 0, 0.7);
@@ -4508,6 +4504,14 @@ a.box:active {
   width: 100%;
 }
 
+.table.is-hoverable tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.table.is-hoverable.is-striped tbody tr:not(.is-selected):hover {
+  background-color: whitesmoke;
+}
+
 .table.is-narrow td,
 .table.is-narrow th {
   padding: 0.25em 0.5em;
@@ -4515,10 +4519,6 @@ a.box:active {
 
 .table.is-striped tbody tr:not(.is-selected):nth-child(even) {
   background-color: #fafafa;
-}
-
-.table.is-striped tbody tr:not(.is-selected):nth-child(even):hover {
-  background-color: whitesmoke;
 }
 
 .tags {

@@ -2,6 +2,7 @@
 
 ## 1.2.3
 
+* Added: `.table` hover effect is opt-in, by using the `.is-hoverable` modifier class
 * Added: color is consistent with $input-color
 
 ## 1.2.2
