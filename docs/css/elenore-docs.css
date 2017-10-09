@@ -2664,6 +2664,12 @@ a.box:active {
   border-radius: 290486px;
 }
 
+.input[readonly],
+.textarea[readonly] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .input.is-white,
 .textarea.is-white {
   border-color: white;
@@ -2816,6 +2822,15 @@ a.box:active {
 .textarea.is-inline {
   display: inline;
   width: auto;
+}
+
+.input.is-static {
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .textarea {
@@ -5154,6 +5169,12 @@ a.tag:hover {
           flex-grow: 1;
   font-weight: 700;
   padding: 0.75rem;
+}
+
+.card-header-title.is-centered {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card-header-icon {
