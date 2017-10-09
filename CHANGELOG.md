@@ -1,5 +1,13 @@
 # Elenore Changelog
 
+## 1.2.1
+
+* Added: `.has-text-justified` support
+
+* Fixed: `.message .tag` combination
+* Fixed: `pre code`
+* Fixed: `.breadcrumb` alignment
+
 ## 1.2.0
 
 * Added: Support for third party icons
