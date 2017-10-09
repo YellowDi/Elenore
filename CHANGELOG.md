@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 1.2.3
+
+* Added: color is consistent with $input-color
+
 ## 1.2.2
 
 * Added: `.card-header-title` can be centered with `.is-centered`
