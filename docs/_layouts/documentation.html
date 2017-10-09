@@ -2,10 +2,7 @@
 layout: default
 route: documentation
 ---
-
-<div class="container is-widescreen">
-  {% include navbar.html id="Documentation" %}
-</div>
+{% include navbar.html id="Documentation" %}
 
 <section class="hero is-primary">
   <div class="hero-body">
@@ -47,7 +44,7 @@ route: documentation
           </li>
           <li {% if page.doc-tab == 'components' %}class="is-active"{% endif %}>
             {% if site.vernum >= 43 %}
-              <a href="{{ site.url }}/documentation/components/breadcrumb/">Components</a>
+              <a href="{{ site.url }}/documentation/components/badge/">Components</a>
             {% else %}
               <a href="{{ site.url }}/documentation/components/card/">Components</a>
             {% endif %}

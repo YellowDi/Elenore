@@ -27,19 +27,19 @@ initial_colors:
 - name: "$white"
   value: hsl(0, 0%, 100%)
 - name: "$orange"
-  value: hsl(36,  100%, 57%)
+  value: hsl(14, 100%, 53%)
 - name: "$yellow"
   value: hsl(48, 100%, 67%)
 - name: "$green"
   value: hsl(141, 71%, 48%)
 - name: "$turquoise"
-  value: hsl(164, 95%,  43%)
+  value: hsl(171, 100%, 41%)
 - name: "$blue"
   value: hsl(217, 71%, 53%)
 - name: "$purple"
   value: hsl(271, 100%, 71%)
 - name: "$red"
-  value: hsl(4, 90%, 58%)
+  value: hsl(348, 100%, 61%)
 colors:
 - id: "white"
   variable: "$white"
@@ -67,8 +67,8 @@ colors:
   invert_hex: white
 - id: "primary"
   variable: "$primary"
-  value: "$yellow"
-  value_hex: yellow
+  value: "$turquoise"
+  value_hex: turquoise
   invert: "$primary-invert"
   invert_hex: white
 - id: "info"
@@ -85,8 +85,8 @@ colors:
   invert_hex: white
 - id: "warning"
   variable: "$warning"
-  value: "$orange"
-  value_hex: orange
+  value: "$yellow"
+  value_hex: yellow
   invert: "$warning-invert"
   invert_hex: black
 - id: "danger"
@@ -166,10 +166,10 @@ shades:
             </td>
             <td>
               {% if color.invert_hex == "black" %}
-                <span class="el-color" style="background: rgba(0, 0, 0, 0.7);"></span>
+                <span class="bd-color" style="background: rgba(0, 0, 0, 0.7);"></span>
                 <code>rgba(0, 0, 0, 0.7)</code>
               {% else %}
-                <span class="el-color" style="background: #fff;"></span>
+                <span class="bd-color" style="background: #fff;"></span>
                 <code>#fff</code>
               {% endif %}
             </td>
