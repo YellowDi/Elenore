@@ -2,6 +2,8 @@
 
 ## 1.2.3
 
+* Added: `.badge` can display an outlined by using `.is-badge-outlined` modifier
+* Added: `.dropdown` now supports `.is-up` modifier
 * Added: `.table` hover effect is opt-in, by using the `.is-hoverable` modifier class
 * Added: color is consistent with $input-color
 
