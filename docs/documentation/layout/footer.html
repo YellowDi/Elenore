@@ -10,6 +10,23 @@ variables:
 
 {% include subnav-layout.html %}
 
+{% capture footer_example %}
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Elenore</strong> is a modern CSS framework based on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Flexbox</a>.
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/YellowDi/Elenore">
+          <i class="fa fa-github"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+{% endcapture %}
+
 <section class="section">
   <div class="container">
     <h1 class="title">Footer</h1>
@@ -17,39 +34,7 @@ variables:
       A simple responsive <strong>footer</strong> which can include anything: lists, headings, columns, icons, buttons, etc.
     </h2>
 
-<div class="el-example">
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Elenore</strong> is a modern CSS framework based on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Flexbox</a>.
-      </p>
-      <p>
-        <a class="icon" href="https://github.com/YellowDi/Elenore">
-          <i class="fa fa-github"></i>
-        </a>
-      </p>
-    </div>
-  </div>
-</footer>
-</div>
-
-{% highlight html %}
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Elenore</strong> is a modern CSS framework based on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Flexbox</a>.
-      </p>
-      <p>
-        <a class="icon" href="https://github.com/YellowDi/Elenore">
-          <i class="fa fa-github"></i>
-        </a>
-      </p>
-    </div>
-  </div>
-</footer>
-{% endhighlight %}
+    {% include snippet.html content=footer_example horizontal=true more=true %}
 
     {% include variables.html layout=true %}
   </div>

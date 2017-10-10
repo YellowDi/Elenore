@@ -33,6 +33,8 @@
     margin-bottom: 1.5rem
 
 .el-example
+  &.el-is-clipped
+    border-top-right-radius: $radius-large
   & + .highlight
     border: 1px solid $yellow
     border-radius: 0 0 $radius $radius
@@ -58,6 +60,23 @@
 .el-snippet-code
   background-color: $pre-background
 
+.el-snippet-code.el-is-more.el-is-more-clipped
+  .highlight
+    height: 2em
+    overflow: hidden
+    pre
+      overflow: hidden
+    .el-show
+      display: flex
+
+.el-snippet.el-is-horizontal
+  border-radius: $radius-large
+  border-top-left-radius: 0
+  .el-snippet-code.el-is-more.el-is-more-clipped
+    .highlight
+      pre
+        padding-top: 0.325rem
+
 .el-snippet.el-is-clipped
   .el-snippet-code
     overflow: auto
@@ -65,6 +84,8 @@
 +desktop
   .el-snippet.el-is-vertical
     align-items: stretch
+    border-radius: $radius-large
+    border-top-left-radius: 0
     display: flex
     justify-content: center
     .el-snippet-preview,
@@ -75,6 +96,7 @@
       .highlight,
       .highlight pre
         align-items: stretch
+        border-radius: 0 $radius-large $radius-large 0
         display: flex
         flex-direction: column
       .highlight,
@@ -162,11 +184,28 @@ $structure-invert: $danger-invert
     &:hover
       background-color: $yellow
       color: $yellow-invert
-    &:focus
+    &:focus,
     &:active
       box-shadow: none
   .el-expand
     right: 45px
+  .el-show
+    +overlay
+    align-items: center
+    background-color: rgba($background, 0.7)
+    border: none
+    color: rgba(#000, 0.5)
+    cursor: pointer
+    display: none
+    font-size: $size-small
+    justify-content: center
+    width: 100%
+    strong
+      color: currentColor
+      font-weight: $weight-semibold
+    &:hover
+      background-color: rgba($yellow, 0.8)
+      color: rgba(#000, 0.7)
   +tablet
     pre
       white-space: pre-wrap
@@ -181,6 +220,10 @@ $structure-invert: $danger-invert
 
 .section.is-fullwidth
   padding: 0 !important
+  .el-snippet
+    border-left: none
+    border-radius: 0
+    border-right: none
   .el-example
     border-left: none
     border-radius: 0

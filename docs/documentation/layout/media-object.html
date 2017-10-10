@@ -203,33 +203,19 @@ doc-subtab: media-object
       </article>
     </div>
 
-    <div class="el-example">
-      {{media_example}}
-    </div>
-
-    {% highlight html %}{{media_example}}{% endhighlight %}
+    {% include snippet.html content=media_example horizontal=true more=true %}
 
     <div class="content">
       <p>You can include <em>any</em> other Elenore element, like inputs, textareas, icons, buttons... or even a <strong>nav bar</strong>.</p>
     </div>
 
-    <div class="el-example">
-      {{media_bis_example}}
-    </div>
-
-    {% highlight html %}{{media_bis_example}}{% endhighlight %}
-
-    {% include anchor.html name="Nesting" %}
+    {% include snippet.html content=media_bis_example horizontal=true more=true %}
 
     <div class="content">
       <p>You can nest media objects up to <strong>3 levels</strong> deep.</p>
     </div>
 
-    <div class="el-example">
-      {{media_nested_example}}
-    </div>
-
-    {% highlight html %}{{media_nested_example}}{% endhighlight %}
+    {% include snippet.html content=media_nested_example horizontal=true more=true %}
 
   </div>
 </section>

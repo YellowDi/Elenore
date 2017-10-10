@@ -16,10 +16,10 @@
     {% if include.clipped %}el-is-clipped{% endif %}
     {% if include.size %}el-is-{{ include.size }}{% endif %}
     ">
-    <div class="el-snippet-preview">
+    <div class="el-snippet-preview {% if include.paddingless %}is-paddingless{% endif %}">
       {{ include.content }}
     </div>
-    <div class="el-snippet-code {% unless include.clipped %}highlight-full{% endunless %}">
+    <div class="el-snippet-code {% unless include.clipped %}highlight-full{% endunless %} {% if include.more %}el-is-more el-is-more-clipped{% endif %}">
       {% highlight html %}{{ include.content }}{% endhighlight %}
     </div>
   </div>

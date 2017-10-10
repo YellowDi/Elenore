@@ -387,11 +387,7 @@ variables:
       </p>
     </div>
 
-    <div class="el-example">
-      {{table_example}}
-    </div>
-
-    {% highlight html %}{{table_example}}{% endhighlight %}
+    {% include snippet.html content=table_example horizontal=true more=true %}
 
     {% include anchor.html name="Modifiers" %}
 
@@ -501,6 +497,8 @@ variables:
         </table>
       </div>
     </div>
+
+    {% include elements/new-tag.html version="1.2.3" %}
 
     <div class="columns">
       <div class="column">
