@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 1.3.0
+
+* New [Divider](https://yellowdi.github.io/Elenore/documentation/layout/divider)
+
 ## 1.2.3
 
 * Added: `.badge` can display an outlined by using `.is-badge-outlined` modifier

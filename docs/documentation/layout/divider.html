@@ -1,0 +1,58 @@
+---
+title: Divider
+layout: documentation
+doc-tab: layout
+doc-subtab: divider
+variables:
+- name: $divider-background-color
+  value: $grey-lighter
+- name: $divider-font-size
+  value: $size-7
+- name: $divider-color
+value: $grey-light
+---
+
+{% include subnav-layout.html %}
+
+{% capture divider_example %}
+<div class="is-divider" data-content="OR"></div>
+{% endcapture %}
+
+{% capture divider_vertical_example %}
+<div class="columns">
+  <div class="column"></div>
+  <div class="is-divider-vertical" data-content="OR"></div>
+  <div class="column"></div>
+</div>
+{% endcapture %}
+
+<section class="section">
+  <div class="container">
+
+    <h1 class="title">Divider</h1>
+    <h2 class="subtitle">
+      Display a vertical or horizontal <strong>divider</strong> to segment your design.
+    </h2>
+    {%
+      include meta.html
+      variables=true
+    %}
+
+    <hr>
+
+    <div class="content">
+      <p>You can easily display a message on the divider by adding <code>data-content</code> attribute to the divider.</p>
+    </div>
+
+    {% include snippet.html content=divider_example horizontal=true clipped=true %}
+
+    <hr>
+
+    {% include anchor.html name="Vertical" %}
+
+    {% include snippet.html content=divider_vertical_example %}
+
+    {% include variables.html %}
+
+  </div>
+</section>
