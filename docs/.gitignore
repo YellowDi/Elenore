@@ -6,6 +6,7 @@ _config.version.yml
 elenore-test.sass
 elenore-website-local.sass
 css/elenore-test.css
+css/elenore-docs.css.map
 npm-debug.log
 
 # Folders
