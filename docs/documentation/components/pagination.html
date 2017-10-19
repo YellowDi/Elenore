@@ -37,6 +37,8 @@ variables:
   value: $grey-light
 ---
 
+{% include subnav-components.html %}
+
 {% capture pagination_example %}
 <nav class="pagination" role="navigation" aria-label="pagination">
   <a class="pagination-previous">Previous</a>
@@ -164,8 +166,6 @@ variables:
   </ul>
 </nav>
 {% endcapture %}
-
-{% include subnav-components.html %}
 
 <section class="section">
   <div class="container">

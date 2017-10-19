@@ -5,6 +5,8 @@ doc-tab: form
 doc-subtab: textarea
 ---
 
+{% include subnav-form.html %}
+
 {% capture textarea_example %}
 <textarea class="textarea" placeholder="e.g. Hello world"></textarea>
 {% endcapture %}
@@ -122,8 +124,6 @@ doc-subtab: textarea
   <textarea class="textarea" type="text" readonly>This content is readonly</textarea>
 </div>
 {% endcapture %}
-
-{% include subnav-form.html %}
 
 <section class="section">
   <div class="container">

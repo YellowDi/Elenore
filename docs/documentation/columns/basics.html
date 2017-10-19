@@ -5,6 +5,8 @@ doc-tab: columns
 doc-subtab: basics
 ---
 
+{% include subnav-columns.html %}
+
 {% capture columns %}
 <div class="columns">
   <div class="column">
@@ -21,8 +23,6 @@ doc-subtab: basics
   </div>
 </div>
 {% endcapture %}
-
-{% include subnav-columns.html %}
 
 <section class="section">
   <div class="container">
@@ -56,6 +56,6 @@ doc-subtab: basics
     <div class="highlight-full">
       {% highlight html %}{{ columns }}{% endhighlight %}
     </div>
-    
+
   </div>
 </section>

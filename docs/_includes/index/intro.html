@@ -1,0 +1,50 @@
+<section class="hero is-fullheight is-index">
+  <div class="hero-body is-index">
+    <div class="container is-index">
+      <div class="columns">
+  	    <div class="column">
+  	      <h1 id="elenore" class="title is-index">
+  	        Elenore
+  	      </h1>
+  	    </div>
+      </div>
+
+      <div class="columns">
+        <div id="about" class="column is-two-thirds">
+          <p><strong>Elenore</strong> is an open source CSS framework based on <strong>Flexbox</strong> and built with <strong>Sass</strong>. It's 100% responsive, fully modular, and available for <strong>free</strong>.</p>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-half">
+          {% assign npmInstall = 'npm install elenore' %}
+          <pre id="npm" class="intro-npm"><code>{{ npmInstall }}</code><code id="npmCopy" class="intro-npm-copy" data-clipboard-text="{{ npmInstall }}">copy</code></pre>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-half">
+          <div id="download" class="field is-grouped is-grouped-multiline">
+            <div class="control">
+              <a class="button is-primary is-large" href="{{ site.download }}">
+                <span>
+                  <strong>Download</strong>
+                  <small>v{{ site.version }}</small>
+                </span>
+              </a>
+            </div>
+            <div class="control">
+              <a class="button is-light is-large" href="{{ site.documentation }}">
+                <span>
+                  <span>View</span>
+                  <strong>docs</strong>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

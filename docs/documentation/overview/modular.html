@@ -16,18 +16,18 @@ doc-subtab: modular
 
     <div class="content">
       <p>
-        Elenore consists of <strong>40</strong> <code>.sass</code> files that you can import <strong>individually.</strong>
+        Elenore consists of <strong>41</strong> <code>.sass</code> files that you can import <strong>individually.</strong>
       </p>
       <p>
         For example, let's say you only want the Elenore <strong>columns.</strong>
         <br>
-        The file is located in the <code>Elenore/sass/grid</code> folder.
+        The file is located in the <code>elenore/sass/grid</code> folder.
         <br>
         Simply <strong>import</strong> the utilities dependencies, and then the files you need directly:
       </p>
 {% highlight sass %}
-@import "Elenore/sass/utilities/_all"
-@import "Elenore/sass/grid/columns"
+@import "elenore/sass/utilities/_all"
+@import "elenore/sass/grid/columns"
 {% endhighlight %}
       <p>
         Now you can use the classes <code>.columns</code> (for the container) and <code>.column</code> directly:
@@ -48,8 +48,8 @@ doc-subtab: modular
         What if you only want the <strong>button</strong> styles instead?
       </p>
 {% highlight sass %}
-@import "Elenore/sass/utilities/_all"
-@import "Elenore/sass/elements/button.sass"
+@import "elenore/sass/utilities/_all"
+@import "elenore/sass/elements/button.sass"
 {% endhighlight %}
       <p>
         You can now use the <code>.button</code> class, and all its modifiers:

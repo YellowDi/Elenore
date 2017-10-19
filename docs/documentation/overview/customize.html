@@ -5,6 +5,8 @@ doc-tab: overview
 doc-subtab: customize
 ---
 
+{% include subnav-overview.html %}
+
 {% capture sass %}
 // 1. Import the initial variables
 @import "../sass/utilities/initial-variables"
@@ -30,8 +32,6 @@ $family-primary: $family-serif
 // 4. Import the rest of Elenore
 @import "../elenore"
 {% endcapture %}
-
-{% include subnav-overview.html %}
 
 <section class="section">
   <div class="container">

@@ -56,8 +56,6 @@ $curve: cubic-bezier(0, 0.71, 0.29, 1)
   .is-index
     .title
       font-size: 15vw
-    .subtitle
-      font-size: 4vh
     p
       font-size: 3vh
       font-weight: 200
@@ -73,6 +71,45 @@ $curve: cubic-bezier(0, 0.71, 0.29, 1)
     background-repeat: no-repeat
     background-size: 45%
 
+.intro-npm
+  background: $black-ter
+  border-radius: $radius-large
+  color: $white
+  display: flex
+  font-size: 15px
+  justify-content: space-between
+  line-height: 20px
+  padding: 15px 25px
+  position: relative
+  code
+    font-size: inherit
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+  .intro-npm-copy
+    border-radius: $radius
+    color: $yellow
+    cursor: pointer
+    margin: -2px -7px -3px
+    padding: 2px 7px 3px
+    &:hover
+      background-color: $yellow
+      color: $black-ter
+    &.is-success,
+    &.is-error
+      color: $white
+      pointer-events: none
+      text-decoration: none
+    &.is-success
+      background-color: $green
+    &.is-error
+      background-color: $red
+  \::-moz-selection
+    background: $yellow
+    color: $black-ter
+  \::selection
+    background: $yellow
+    color: $black-ter
+
 #elenore
   animation: slideDown 500ms both
 
@@ -84,7 +121,10 @@ $curve: cubic-bezier(0, 0.71, 0.29, 1)
   animation: fadeIn 500ms both
   animation-delay: 0.5s
 
+#npm
+  animation: fadeIn 500ms both
+  animation-delay: 1s
+
 #download
   animation: fadeIn 500ms both
   animation-delay: 1s
-  padding-top: 30px

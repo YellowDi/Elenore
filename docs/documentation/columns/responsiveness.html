@@ -5,6 +5,8 @@ doc-tab: columns
 doc-subtab: responsiveness
 ---
 
+{% include subnav-columns.html %}
+
 {% capture columns_mobile %}
 <div class="columns is-mobile">
   <div class="column">1</div>
@@ -36,8 +38,6 @@ doc-subtab: responsiveness
   <div class="column">1</div>
 </div>
 {% endcapture %}
-
-{% include subnav-columns.html %}
 
 <section class="section">
   <div class="container">

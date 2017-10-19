@@ -2,49 +2,6 @@
 layout: default
 route: index
 ---
-{% include navbar.html id="Documentation" %}
+{% include navbar.html id="Index" transparent=true boxed=true %}
 
-<section class="hero is-medium is-index">
-  <div class="hero-body is-index">
-    <div class="container is-index">
-
-      <div class="columns">
-		    <div class="column is-two-thirds">
-		      <h1 id="elenore" class="title is-index">
-		        Elenore
-		      </h1>
-		      <h2 id="modern-framework" class="subtitle">
-		        A modern CSS framework based on Flexbox
-		      </h2>
-		    </div>
-	    </div>
-
-      <div id="about">
-        <p><strong>Elenore</strong> is an open source CSS framework based on <strong>Flexbox</strong> and built with <strong>Sass</strong>.</p>
-        <p>It's 100% responsive, fully modular, and available for <strong>free</strong>.</p>
-      </div>
-
-      <div id="download" class="field is-grouped is-grouped-multiline">
-        <div class="control">
-          <div class="tags has-addons">
-            <a class="tag is-medium is-info" href="{{ site.download }}">
-              <span class="icon">
-                <i class="fa fa-download"></i>
-              </span>
-              <span>Download</span>
-            </a>
-            <span class="tag is-medium">v{{ site.version }}</span>
-          </div>
-        </div>
-        <div class="control">
-          <div class="tags has-addons">
-            <a class="tag is-medium is-primary" href="{{ site.documentation }}">
-              <span>View docs</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+{% include index/intro.html %}

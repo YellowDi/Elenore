@@ -26,6 +26,8 @@ variables:
   value: $weight-semibold
 ---
 
+{% include subnav-elements.html %}
+
 {% capture default %}
 <h1 class="title">Title</h1>
 <h2 class="subtitle">Subtitle</h2>
@@ -70,8 +72,6 @@ variables:
 <p class="title is-3 is-spaced">Title 3</p>
 <p class="subtitle is-5">Subtitle 5</p>
 {% endcapture %}
-
-{% include subnav-elements.html %}
 
 <section class="section">
   <div class="container">

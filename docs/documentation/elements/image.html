@@ -16,6 +16,8 @@ variables:
   value: 16 24 32 48 64 96 128
 ---
 
+{% include subnav-elements.html %}
+
 {% capture image %}
 <figure class="image is-128x128">
   <img src="{{site.url}}/images/placeholders/128x128.png">
@@ -27,8 +29,6 @@ variables:
   <img src="{{site.url}}/images/placeholders/256x256.png">
 </figure>
 {% endcapture %}
-
-{% include subnav-elements.html %}
 
 <section class="section">
   <div class="container">

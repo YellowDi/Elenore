@@ -5,6 +5,8 @@ doc-tab: form
 doc-subtab: checkbox
 ---
 
+{% include subnav-form.html %}
+
 {% capture checkbox_example %}
 <label class="checkbox">
   <input type="checkbox">
@@ -25,8 +27,6 @@ doc-subtab: checkbox
   Save my preferences
 </label>
 {% endcapture %}
-
-{% include subnav-form.html %}
 
 <section class="section">
   <div class="container">
