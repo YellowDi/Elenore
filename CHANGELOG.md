@@ -1,5 +1,11 @@
 # Elenore Changelog
 
+## 1.3.1
+
+### New features
+
+* New `.is-invisible` helper
+
 ## 1.3.0
 
 ### Breaking changes
