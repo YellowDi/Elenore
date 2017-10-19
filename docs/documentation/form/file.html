@@ -4,27 +4,17 @@ layout: documentation
 doc-tab: form
 doc-subtab: file
 file_name: "Elenore.zip"
-variables:
-- name: $file-border-color
-  value: transparent
-- name: $file-radius
-  value: $radius
-- name: $file-cta-background-color
-  value: $white-ter
-- name: $file-cta-color
-  value: $grey-dark
-- name: $file-cta-hover-color
-  value: $grey-darker
-- name: $file-cta-active-color
-  value: $grey-darker
-- name: $file-name-border-color
-  value: $file-cta-background-color
-- name: $file-name-border-style
-  value: solid
-- name: $file-name-border-width
-  value: 1px 1px 1px 0
-- name: $file-name-max-width
-  value: 16em
+variables_keys:
+- file-border-color
+- file-radius
+- file-cta-background-color
+- file-cta-color
+- file-cta-hover-color
+- file-cta-active-color
+- file-name-border-color
+- file-name-border-style
+- file-name-border-width
+- file-name-max-width
 ---
 
 {% include subnav-form.html %}
@@ -602,7 +592,7 @@ variables:
             With the <code>.has-name</code> modifier combined with the <code>.file-name</code> element, you can add a <strong>placeholder</strong> for the selected file name.
           </p>
         </div>
-        <div class="bd-example">
+        <div class="el-example">
           {{ file_name }}
         </div>
       </div>
@@ -618,7 +608,7 @@ variables:
             You can move the CTA to the <strong>right side</strong> with the <code>.is-right</code> modifier.
           </p>
         </div>
-        <div class="bd-example">
+        <div class="el-example">
           {{ file_name_right }}
         </div>
       </div>
@@ -634,7 +624,7 @@ variables:
             You can also <strong>expand</strong> the name to fill up the space with the <code>.is-fullwidth</code> modifier.
           </p>
         </div>
-        <div class="bd-example">
+        <div class="el-example">
           {{ file_name_fullwidth }}
         </div>
       </div>
@@ -650,7 +640,7 @@ variables:
             You can have a <strong>boxed block</strong> with the <code>.is-boxed</code> modifier.
           </p>
         </div>
-        <div class="bd-example">
+        <div class="el-example">
           {{ file_boxed }}
         </div>
       </div>
@@ -666,7 +656,7 @@ variables:
             You can <strong>combine</strong> <code>.has-name</code> and <code>.is-boxed</code>.
           </p>
         </div>
-        <div class="bd-example">
+        <div class="el-example">
           {{ file_boxed_name }}
         </div>
       </div>
@@ -744,12 +734,44 @@ variables:
     <div class="content">
       <p>
         A file upload input requires JavaScript to <strong>retrieve</strong> the <strong>selected file name</strong>.
-        <br>
-        User <a href="https://github.com/chintanbanugaria"><strong>@chintanbanugaria</strong></a> on GitHub has provided a simple solution <a href="https://jsfiddle.net/chintanbanugaria/uzva5byy/">on JSFiddle</a>.
       </p>
     </div>
 
-    {% include variables.html element=true %}
+    {% include anchor.html name="Variables" %}
+
+    <div class="content">
+      <p>
+        You can use <a href="{{ site.github | append: '/blob/master/sass/elements/form.sass#L25,L36' }}" target="_blank">these variables</a> to <strong>customize</strong> this element. Simply set one or multiple of these variables <em>before</em> importing Elenore. <a href="{{ site.url }}/documentation/overview/customize/">Learn how</a>.
+      </p>
+    </div>
+
+    <table class="table is-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Default value</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Name</th>
+          <th>Default value</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        {% for key in page.variables_keys %}
+          {% assign variable = site.data.variables.elements.form.vars[key] %}
+          <tr>
+            <td>
+              <code>{{ variable.name }}</code>
+            </td>
+            <td>
+              <code>{{ variable.value }}</code>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
 
   </div>
 </section>
