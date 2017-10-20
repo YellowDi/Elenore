@@ -10,6 +10,7 @@
 ### Improvements
 
 * Improve: `tag > icon` spacing
+* Improve: `hamburger` alignment
 
 ### Fixed
 
