@@ -7,6 +7,11 @@
 * [List of buttons](https://yellowdi.github.io/Elenore/documentation/elements/button/#list-of-buttons)
 * New `.is-invisible` helper
 
+### Fixed
+
+* Fixed: `is-selected` row from changing color on hoverable row
+* Fixed: whitespace modification causing full file diff
+
 ## 1.3.0
 
 ### Breaking changes
