@@ -1,4 +1,4 @@
-/*! Elenore.css v1.3.0 | MIT License | github.com/YellowDi/Elenore */
+/*! Elenore.css v1.3.1 | MIT License | github.com/YellowDi/Elenore */
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
@@ -103,7 +103,7 @@ th {
 }
 
 html {
-  background-color: #fff;
+  background-color: #white;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
