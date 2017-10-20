@@ -7,10 +7,13 @@
 * [List of buttons](https://yellowdi.github.io/Elenore/documentation/elements/button/#list-of-buttons)
 * New `.is-invisible` helper
 
+### Improvements
+
+* Improve: `tag > icon` spacing
+
 ### Fixed
 
-* Fixed: `is-selected` row from changing color on hoverable row
-* Fixed: whitespace modification causing full file diff
+* Fixed: able `is-selected` and `is-hoverable` styling issue
 
 ## 1.3.0
 
