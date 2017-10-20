@@ -4,6 +4,7 @@
 
 ### New features
 
+* [List of buttons](https://yellowdi.github.io/Elenore/documentation/elements/button/#list-of-buttons)
 * New `.is-invisible` helper
 
 ## 1.3.0
