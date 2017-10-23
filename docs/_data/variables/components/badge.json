@@ -1,0 +1,20 @@
+{
+  "dir_name": "components",
+  "file_name": "badge",
+  "file_relative_path": "components/badge.sass",
+  "file_line_from": 1,
+  "file_line_to": 2,
+  "file_url": "https://github.com/YellowDi/Elenore/blob/master/sass/components/badge.sass#L1,L2",
+  "vars": {
+    "badge-border-size": {
+      "id": "badge-border-size",
+      "name": "$badge-border-size",
+      "value": ".1rem"
+    },
+    "badge-border-radius": {
+      "id": "badge-border-radius",
+      "name": "$badge-border-radius",
+      "value": "1rem"
+    }
+  }
+}

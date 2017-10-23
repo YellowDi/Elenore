@@ -1,4 +1,4 @@
-/*! Elenore.css v1.3.1 | MIT License | github.com/YellowDi/Elenore */
+/*! Elenore.css v1.3.2 | MIT License | github.com/YellowDi/Elenore */
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
@@ -4578,6 +4578,7 @@ a.box:active {
 
 .progress::-ms-fill {
   background-color: #4a4a4a;
+  border: none;
 }
 
 .progress.is-white::-webkit-progress-value {
@@ -5196,7 +5197,7 @@ a.tag:hover {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-size: 1rem;
+  font-size: 0;
   height: 20px;
   max-height: 20px;
   max-width: 20px;
@@ -6501,7 +6502,7 @@ a.dropdown-item.is-active {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-size: 1rem;
+  font-size: 0;
   height: 20px;
   max-height: 20px;
   max-width: 20px;

@@ -1,0 +1,25 @@
+{
+  "dir_name": "layout",
+  "file_name": "divider",
+  "file_relative_path": "layout/divider.sass",
+  "file_line_from": 1,
+  "file_line_to": 3,
+  "file_url": "https://github.com/YellowDi/Elenore/blob/master/sass/layout/divider.sass#L1,L3",
+  "vars": {
+    "divider-background-color": {
+      "id": "divider-background-color",
+      "name": "$divider-background-color",
+      "value": "$grey-lighter"
+    },
+    "divider-font-size": {
+      "id": "divider-font-size",
+      "name": "$divider-font-size",
+      "value": "$size-7"
+    },
+    "divider-color": {
+      "id": "divider-color",
+      "name": "$divider-color",
+      "value": "$grey-light"
+    }
+  }
+}
