@@ -5,6 +5,8 @@ doc-tab: grid
 doc-subtab: columns
 ---
 
+<meta http-equiv="refresh" content="0; url={{ site.url }}/documentation/columns/basics/">
+
 {% capture columns %}
 <div class="columns">
   <div class="column">
@@ -23,6 +25,17 @@ doc-subtab: columns
 {% endcapture %}
 
 {% capture columns_sizes %}
+<div class="columns">
+  <div class="column is-four-fifths">
+    <p class="el-notification is-info">
+      <code class="html">is-four-fifths</code>
+    </p>
+  </div>
+  <div class="column">
+    <p class="el-notification is-warning">Auto</p>
+  </div>
+</div>
+
 <div class="columns">
   <div class="column is-three-quarters">
     <p class="el-notification is-info">
@@ -87,6 +100,23 @@ doc-subtab: columns
   </div>
   <div class="column">
     <p class="el-notification is-success">Auto</p>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column is-one-fifth">
+    <p class="el-notification is-info">
+      <code class="html">is-one-fifth</code>
+    </p>
+  </div>
+  <div class="column">
+    <p class="el-notification is-success">Auto</p>
+  </div>
+  <div class="column">
+    <p class="el-notification is-warning">Auto</p>
+  </div>
+  <div class="column">
+    <p class="el-notification is-danger">Auto</p>
   </div>
 </div>
 {% endcapture %}
@@ -296,6 +326,8 @@ doc-subtab: columns
   </div>
 </div>
 {% endcapture %}
+
+{% include subnav-grid.html %}
 
 <section class="section">
   <div class="container">
@@ -967,6 +999,15 @@ doc-subtab: columns
       </div>
       <div class="column is-one-quarter">
         <p class="el-notification is-warning"><code>is-one-quarter</code></p>
+      </div>
+      <div class="column is-two-fifths">
+        <p class="el-notification is-warning"><code>is-two-fifths</code></p>
+      </div>
+      <div class="column is-one-fifth">
+        <p class="el-notification is-success"><code>is-one-fifth</code></p>
+      </div>
+      <div class="column is-two-fifths">
+        <p class="el-notification is-danger"><code>is-two-fifths</code></p>
       </div>
       <div class="column is-one-quarter">
         <p class="el-notification is-danger"><code>is-one-quarter</code></p>

@@ -1,5 +1,11 @@
 # Elenore Changelog
 
+## 1.3.2
+
+### New features
+
+* Support for five column grid: `.is-one-fifth, .is-two-fifths, .is-three-fifths, .is-four-fifths`
+
 ## 1.3.1
 
 ### New features
