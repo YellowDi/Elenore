@@ -6,6 +6,10 @@
 
 * Support for five column grid: `.is-one-fifth, .is-two-fifths, .is-three-fifths, .is-four-fifths`
 
+### Fixed
+
+* Fixed: progress bar colors in IE
+
 ## 1.3.1
 
 ### New features
