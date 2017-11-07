@@ -4,6 +4,7 @@
 
 * Added: `.is-expanded` modifier for `navbar-item`
 * Added: `.is-centered` and `.is-right` modifiers for `tags`
+* Added: `.is-empty` modifier for `file`
 
 ## 1.3.2
 
