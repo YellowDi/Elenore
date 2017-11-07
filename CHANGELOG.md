@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 1.3.3
+
+* Added: `.is-expanded` modifier for `navbar-item`
+
 ## 1.3.2
 
 ### New features

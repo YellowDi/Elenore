@@ -58,37 +58,32 @@
     {
       "id":"orange",
       "name":"Orange",
-      "value": "hsl(14, 100%, 53%)"
+      "value": "hsl(33, 98%, 63%)"
     },
     {
       "id":"yellow",
       "name":"Yellow",
-      "value": "hsl(48, 100%, 67%)"
+      "value": "hsl(46, 99%, 61%)"
     },
     {
       "id":"green",
       "name":"Green",
-      "value": "hsl(141, 71%, 48%)"
-    },
-    {
-      "id":"turquoise",
-      "name":"Turquoise",
-      "value": "hsl(171, 100%, 41%)"
-    },
-    {
-      "id":"cyan",
-      "name":"Cyan",
-      "value": "hsl(204, 86%, 53%)"
+      "value": "hsl(164, 58%, 44%)"
     },
     {
       "id":"blue",
       "name":"Blue",
-      "value": "hsl(217, 71%, 53%)"
+      "value": "hsl(210, 100%, 55%)"
+    },
+    {
+      "id":"indigo",
+      "name":"Indigo",
+      "value": "hsl(225, 55%, 56%)"
     },
     {
       "id":"purple",
       "name":"Purple",
-      "value": "hsl(271, 100%, 71%)"
+      "value": "hsl(247, 40%, 58%)"
     },
     {
       "id":"red",
@@ -119,17 +114,12 @@
     },
     {
       "id": "primary",
-      "valueId": "turquoise",
-      "invertValue": "#fff"
-    },
-    {
-      "id": "link",
       "valueId": "blue",
       "invertValue": "#fff"
     },
     {
       "id": "info",
-      "valueId": "cyan",
+      "valueId": "indigo",
       "invertValue": "#fff"
     },
     {

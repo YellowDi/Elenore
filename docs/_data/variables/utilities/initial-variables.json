@@ -64,37 +64,32 @@
     "orange": {
       "id": "orange",
       "name": "$orange",
-      "value": "hsl(14,  100%, 53%)"
+      "value": "hsl(33, 98%, 63%)"
     },
     "yellow": {
       "id": "yellow",
       "name": "$yellow",
-      "value": "hsl(48,  100%, 67%)"
+      "value": "hsl(46, 99%, 61%)"
     },
     "green": {
       "id": "green",
       "name": "$green",
-      "value": "hsl(141, 71%,  48%)"
-    },
-    "turquoise": {
-      "id": "turquoise",
-      "name": "$turquoise",
-      "value": "hsl(171, 100%, 41%)"
-    },
-    "cyan": {
-      "id": "cyan",
-      "name": "$cyan",
-      "value": "hsl(204, 86%,  53%)"
+      "value": "hsl(164, 58%, 44%)"
     },
     "blue": {
       "id": "blue",
       "name": "$blue",
-      "value": "hsl(217, 71%,  53%)"
+      "value": "hsl(210, 100%, 55%)"
+    },
+    "indigo": {
+      "id": "indigo",
+      "name": "$indigo",
+      "value": "hsl(225, 55%, 56%)"
     },
     "purple": {
       "id": "purple",
       "name": "$purple",
-      "value": "hsl(271, 100%, 71%)"
+      "value": "hsl(247, 40%, 58%)"
     },
     "red": {
       "id": "red",
