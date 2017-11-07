@@ -3,6 +3,7 @@
 ## 1.3.3
 
 * Added: `.is-expanded` modifier for `navbar-item`
+* Added: `.is-centered` and `.is-right` modifiers for `tags`
 
 ## 1.3.2
 
