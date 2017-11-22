@@ -1,7 +1,4 @@
-<nav id="navbar" class="navbar {% if include.fixed %}is-fixed-top has-shadow{% endif %} {% if include.transparent %}is-transparent{% endif %}">
-  {% if include.has_container %}
-    <div class="container">
-  {% endif %}
+<nav class="navbar{% if include.transparent %} is-transparent{% endif %}">
   <div class="navbar-brand">
     <a class="navbar-item" href="{{ site.url }}">
       <img src="{{ site.url }}/images/elenore-logo.png" alt="{{ site.title }}">
@@ -42,7 +39,4 @@
 
   </div>
 
-  {% if include.has_container %}
-    </div>
-  {% endif %}
 </nav>

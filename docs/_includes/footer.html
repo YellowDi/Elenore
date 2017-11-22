@@ -29,3 +29,7 @@
 
 <script src="{{ site.url }}/vendor/clipboard-1.7.1.min.js"></script>
 <script src="{{ site.url }}/lib/main.js"></script>
+{% if page.doc-subtab == 'navbar' %}
+  {% include examples/navbar-bottom.html %}
+  <script type="text/javascript" src="{{ site.url }}/lib/navbar.js"></script>
+{% endif %}
