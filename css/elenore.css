@@ -4393,6 +4393,7 @@ a.box:active {
   position: absolute !important;
   right: 0.625em;
   top: 0.625em;
+  z-index: 4;
 }
 
 .control.is-loading.is-small:after {
@@ -6527,7 +6528,7 @@ a.dropdown-item.is-active {
           justify-content: center;
   overflow: hidden;
   position: fixed;
-  z-index: 20;
+  z-index: 40;
 }
 
 .modal.is-active {

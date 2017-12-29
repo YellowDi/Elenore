@@ -6528,7 +6528,7 @@ a.dropdown-item.is-active {
           justify-content: center;
   overflow: hidden;
   position: fixed;
-  z-index: 20;
+  z-index: 40;
 }
 
 .modal.is-active {
@@ -11309,10 +11309,6 @@ body.page-grid .column > .notification {
   .header-item .button + .button {
     margin-left: 0.75rem;
   }
-}
-
-html {
-  border: 10px solid #ffdd57;
 }
 
 #placeholder {
