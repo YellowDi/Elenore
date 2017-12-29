@@ -8,6 +8,9 @@
 * Added: `.is-empty` modifier for `file`
 * Added: `.is-selected` class allow on `<td>` and `<th>` tags
 
+* Fixed: Bug dropdown in `hero` (primary) menu items not visible
+* Fixed: Safari momentum translation
+
 ## 1.3.2
 
 ### New features
