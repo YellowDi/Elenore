@@ -2,6 +2,7 @@
 
 ## 1.3.3
 
+* Added: New Rounded buttons, inputs, pagination and toggle tabs
 * Added: New `.is-italic` helper
 * Added: `sub` and `sup` title sizes
 * Added: `.is-expanded` modifier for `navbar-item`

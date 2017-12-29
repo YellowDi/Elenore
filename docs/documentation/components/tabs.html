@@ -5,8 +5,6 @@ doc-tab: components
 doc-subtab: tabs
 ---
 
-{% include subnav-components.html %}
-
 {% capture tabs_example %}
 <div class="tabs">
   <ul>
@@ -137,6 +135,37 @@ doc-subtab: tabs
 
 {% capture tabs_toggle_example %}
 <div class="tabs is-toggle">
+  <ul>
+    <li class="is-active">
+      <a>
+        <span class="icon is-small"><i class="fa fa-image"></i></span>
+        <span>Pictures</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small"><i class="fa fa-music"></i></span>
+        <span>Music</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small"><i class="fa fa-film"></i></span>
+        <span>Videos</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small"><i class="fa fa-file-text-o"></i></span>
+        <span>Documents</span>
+      </a>
+    </li>
+  </ul>
+</div>
+{% endcapture %}
+
+{% capture tabs_toggle_rounded_example %}
+<div class="tabs is-toggle is-toggle-rounded">
   <ul>
     <li class="is-active">
       <a>
@@ -315,6 +344,8 @@ doc-subtab: tabs
 </div>
 {% endcapture %}
 
+{% include subnav-components.html %}
+
 <section class="section">
   <div class="container">
     <h1 class="title">Tabs</h1>
@@ -353,7 +384,7 @@ doc-subtab: tabs
     {% include anchor.html name="Icons" %}
 
     <div class="content">
-      <p>You can use any of the <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> <strong>icons</strong>.</p>
+      <p>You can use any of the <a href="http://fontawesome.io/">Font Awesome</a> <strong>icons</strong>.</p>
     </div>
 
     {% include snippet.html content=tabs_icons_example horizontal=true more=true %}
@@ -384,6 +415,14 @@ doc-subtab: tabs
     </p>
 
     {% include snippet.html content=tabs_toggle_example horizontal=true more=true %}
+
+    {% include elements/new-tag.html version="1.3.3" %}
+
+    <p class="content">
+      If you use both <code>is-toggle</code> and <code>is-toggle-rounded</code>, the first and last items will be <strong>rounded</strong>.
+    </p>
+
+    {% include snippet.html content=tabs_toggle_rounded_example horizontal=true more=true %}
 
     <p class="content">
       If you want the tabs to take up the <strong>whole width</strong> available, use <code>is-fullwidth</code>.
