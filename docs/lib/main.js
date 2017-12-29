@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Modals
 
-  var $html = document.documentElement;
+  var rootEl = document.documentElement;
   var $modals = getAll('.modal');
   var $modalButtons = getAll('.modal-button');
   var $modalCloses = getAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button');
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
       $el.addEventListener('click', function () {
         var target = $el.dataset.target;
         var $target = document.getElementById(target);
-        $html.classList.add('is-clipped');
+        rootEl.classList.add('is-clipped');
         $target.classList.add('is-active');
       });
     });
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function closeModals() {
-    $html.classList.remove('is-clipped');
+    rootEl.classList.remove('is-clipped');
     $modals.forEach(function ($el) {
       $el.classList.remove('is-active');
     });
@@ -160,56 +160,99 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  var npmClipboard = new Clipboard('#npmCopy');
-
-  npmClipboard.on('onclick', function (e) {
-    console.log('CLICK');
-  });
-
-  npmClipboard.on('success', function (e) {
-    e.trigger.innerText = 'copied!';
-    e.trigger.classList.add('is-success');
-    setTimeout(function () {
-      e.trigger.innerText = 'copy';
-      e.trigger.classList.remove('is-success');
-    }, 500);
-    e.clearSelection();
-  });
-
-  npmClipboard.on('error', function (e) {
-    e.trigger.innerText = 'error!';
-    e.trigger.classList.add('is-error');
-    setTimeout(function () {
-      e.trigger.innerText = 'copy';
-      e.trigger.classList.remove('is-error');
-    }, 500);
-  });
-
   // Functions
 
   function getAll(selector) {
     return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
   }
 
-  var latestKnownScrollY = 0;
-  var ticking = false;
+  // Scrolling
 
-  function scrollUpdate() {
-    ticking = false;
-    // do stuff
-  }
+  var navbarEl = document.getElementById('navbar');
+  var navbarBurger = document.getElementById('navbarBurger');
+  var specialShadow = document.getElementById('specialShadow');
+  var navbarHeight = 52;
+  var navbarOpen = false;
+  var pinned = false;
+  var horizon = navbarHeight;
+  var whereYouStoppedScrolling = 0;
+  var threshold = 200;
+  var scrollFactor = 0;
 
-  function onScroll() {
-    latestKnownScrollY = window.scrollY;
-    scrollRequestTick();
-  }
+  navbarBurger.addEventListener('click', function (el) {
+    navbarOpen = !navbarOpen;
 
-  function scrollRequestTick() {
-    if (!ticking) {
-      requestAnimationFrame(scrollUpdate);
+    if (navbarOpen) {
+      rootEl.classList.add('el-is-clipped-touch');
+    } else {
+      rootEl.classList.remove('el-is-clipped-touch');
     }
-    ticking = true;
+  });
+
+  function upOrDown(lastY, currentY) {
+    if (currentY >= lastY) {
+      return goingDown(currentY);
+    }
+    return goingUp(currentY);
   }
 
-  window.addEventListener('scroll', onScroll, false);
+  function goingDown(currentY) {
+    var trigger = navbarHeight;
+    whereYouStoppedScrolling = currentY;
+
+    if (currentY > horizon) {
+      horizon = currentY;
+    }
+
+    translateHeader(currentY);
+  }
+
+  function goingUp(currentY) {
+    var trigger = 0;
+
+    if (currentY < whereYouStoppedScrolling - navbarHeight) {
+      horizon = currentY + navbarHeight;
+    }
+
+    translateHeader(currentY);
+  }
+
+  function constrainDelta(delta) {
+    return Math.max(0, Math.min(delta, navbarHeight));
+  }
+
+  function translateHeader(currentY) {
+    var delta = constrainDelta(Math.abs(currentY - horizon));
+    var translateValue = delta - navbarHeight;
+    var translateFactor = 1 + translateValue / navbarHeight;
+    var navbarStyle = '\n      transform: translateY(' + translateValue + 'px);\n    ';
+
+    if (currentY > threshold) {
+      scrollFactor = 1;
+    } else {
+      scrollFactor = currentY / threshold;
+    }
+    specialShadow.style.opacity = scrollFactor;
+    specialShadow.style.transform = 'scaleY(' + translateFactor + ')';
+
+    navbarEl.setAttribute('style', navbarStyle);
+  }
+
+  translateHeader(window.scrollY);
+
+  var ticking = false;
+  var lastY = 0;
+  window.addEventListener('scroll', function () {
+    var currentY = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        upOrDown(lastY, currentY);
+        ticking = false;
+        lastY = currentY;
+      });
+    }
+
+    ticking = true;
+  });
 });
