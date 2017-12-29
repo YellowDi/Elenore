@@ -10,6 +10,7 @@
 * Added: `.is-empty` modifier for `file`
 * Added: `.is-selected` class allow on `<td>` and `<th>` tags
 
+* Fixed: `$variable-columns` to disable `--columnGap`
 * Fixed: Bug dropdown in `hero` (primary) menu items not visible
 * Fixed: Safari momentum translation
 

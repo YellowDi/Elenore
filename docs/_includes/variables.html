@@ -59,8 +59,8 @@
     {% for variable_hash in variables %}
       {% assign variable = variable_hash[1] %}
       <tr>
-        <td>
-          <code>{{ variable.name }}</code>
+        <td >
+          <code style="white-space: nowrap;">{{ variable.name }}</code>
         </td>
         <td>
           <code>{{ variable.value }}</code>
