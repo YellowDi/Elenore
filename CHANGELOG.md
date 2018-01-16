@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 1.3.4
+
+* Fixed: spacing of the delete button in notification element
+
 ## 1.3.3
 
 * Added: New Rounded buttons, inputs, pagination and toggle tabs
