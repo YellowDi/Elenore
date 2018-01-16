@@ -3,6 +3,8 @@
 ## 1.3.4
 
 * Fixed: spacing of the delete button in notification element
+* Fixed: missing use of `$pagination-color` variable
+* Fixed: navbar-menu background-color
 
 ## 1.3.3
 
