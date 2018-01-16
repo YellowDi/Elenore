@@ -4519,8 +4519,8 @@ a.box:active {
 
 .notification > .delete {
   position: absolute;
-  right: 0.5em;
-  top: 0.5em;
+  right: 0.5rem;
+  top: 0.5rem;
 }
 
 .notification .title,
@@ -5543,7 +5543,6 @@ a.tag:hover {
 .badge[data-badge]::after {
   position: absolute;
   left: 100%;
-  z-index: 99;
   margin: 0;
   background: #1a8cff;
   background-clip: padding-box;
@@ -7847,6 +7846,7 @@ a.navbar-link.is-active {
 .pagination-previous,
 .pagination-next,
 .pagination-link {
+  color: #363636;
   border-color: #dbdbdb;
   min-width: 2.25em;
 }
