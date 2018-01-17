@@ -6,20 +6,22 @@
 
   <title>{% if page.fulltitle %}{{ page.fulltitle }}{% else %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endif %}</title>
 
-  <link rel="stylesheet" href="{{ site.fontawesome }}">
+  {% if page.fontawesome4 %}
+    <link rel="stylesheet" href="{{ site.data.icons.fontawesome4 }}">
+  {% endif %}
   {% if page.iconic %}
-    <link rel="stylesheet" href="{{ site.iconic }}">
+    <link rel="stylesheet" href="{{ site.data.icons.iconic }}">
   {% endif %}
   {% if page.ionicons %}
-    <link rel="stylesheet" href="{{ site.ionicons }}">
+    <link rel="stylesheet" href="{{ site.data.icons.ionicons }}">
   {% endif %}
   {% if page.mdi %}
-    <link rel="stylesheet" href="{{ site.mdi }}">
+    <link rel="stylesheet" href="{{ site.data.icons.mdi }}">
   {% endif %}
   <link rel="stylesheet" href="{{ site.url }}/css/elenore-docs.css?v={{ site.time | date: "%Y%m%d%H%M" }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
 
-  <link rel="shortcut icon" href="{{ site.url }}/images/elenore-icon.png">
+  <script defer src="{{ site.data.icons.fontawesome5 }}"></script>
 </head>

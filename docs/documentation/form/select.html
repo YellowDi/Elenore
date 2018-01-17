@@ -5,8 +5,6 @@ doc-tab: form
 doc-subtab: select
 ---
 
-{% include subnav-form.html %}
-
 {% capture select_example %}
 <div class="select">
   <select>
@@ -206,7 +204,7 @@ doc-subtab: select
       </select>
     </div>
     <div class="icon is-small is-left">
-      <i class="fa fa-globe"></i>
+      <i class="fas fa-globe"></i>
     </div>
   </div>
 </div>
@@ -222,7 +220,7 @@ doc-subtab: select
     </select>
   </div>
   <span class="icon is-small is-left">
-    <i class="fa fa-envelope"></i>
+    <i class="fas fa-globe"></i>
   </span>
 </div>
 {% endcapture %}
@@ -237,7 +235,7 @@ doc-subtab: select
     </select>
   </div>
   <span class="icon is-left">
-    <i class="fa fa-envelope"></i>
+    <i class="fas fa-globe"></i>
   </span>
 </div>
 {% endcapture %}
@@ -252,7 +250,7 @@ doc-subtab: select
     </select>
   </div>
   <span class="icon is-medium is-left">
-    <i class="fa fa-envelope"></i>
+    <i class="fas fa-globe"></i>
   </span>
 </div>
 {% endcapture %}
@@ -267,10 +265,12 @@ doc-subtab: select
     </select>
   </div>
   <span class="icon is-large is-left">
-    <i class="fa fa-envelope"></i>
+    <i class="fas fa-globe"></i>
   </span>
 </div>
 {% endcapture %}
+
+{% include subnav-form.html %}
 
 <section class="section">
   <div class="container">
@@ -335,8 +335,6 @@ doc-subtab: select
     </div>
 
     {% include anchor.html name="Styles" %}
-
-    {% include elements/new-tag.html version="1.3.3" %}
 
     <div class="columns">
       <div class="column is-half">

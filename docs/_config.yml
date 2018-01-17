@@ -10,13 +10,6 @@ permalink:     pretty
 url:           https://yellowdi.github.io/Elenore
 exclude:       ['icons', 'node_modules', 'templates', '.babelrc', 'elenore-docs.sass', 'docker-compose.yml', 'package.json', 'yarn.lock']
 
-# Icons
-
-fontawesome:   https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
-iconic:        https://cdn.bootcss.com/open-iconic/1.1.1/font/css/open-iconic.min.css
-ionicons:      https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css
-mdi:           https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css
-
 # Variables
 
 documentation: "/documentation/overview/start/"
