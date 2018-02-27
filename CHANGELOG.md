@@ -6,6 +6,7 @@
 * Fixed: missing use of `$pagination-color` variable
 * Fixed: navbar-menu background-color
 * Fixed: `media-content` overflow
+* Fixed: change dropdown-menu `padding-top: unset` to support IE11
 
 ## 1.3.3
 

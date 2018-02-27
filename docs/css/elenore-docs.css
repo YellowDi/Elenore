@@ -5941,7 +5941,7 @@ a.tag:hover {
 .dropdown.is-up .dropdown-menu {
   bottom: 100%;
   padding-bottom: 4px;
-  padding-top: unset;
+  padding-top: initial;
   top: auto;
 }
 
