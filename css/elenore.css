@@ -4519,8 +4519,8 @@ a.box:active {
 
 .notification > .delete {
   position: absolute;
-  right: 0.5em;
-  top: 0.5em;
+  right: 0.5rem;
+  top: 0.5rem;
 }
 
 .notification .title,
@@ -5543,7 +5543,6 @@ a.tag:hover {
 .badge[data-badge]::after {
   position: absolute;
   left: 100%;
-  z-index: 99;
   margin: 0;
   background: #1a8cff;
   background-clip: padding-box;
@@ -7847,6 +7846,7 @@ a.navbar-link.is-active {
 .pagination-previous,
 .pagination-next,
 .pagination-link {
+  color: #363636;
   border-color: #dbdbdb;
   min-width: 2.25em;
 }
@@ -10993,8 +10993,167 @@ label.panel-block:hover {
 }
 
 .footer {
+  padding: 3rem 1.5rem 3rem;
+}
+
+.footer.is-white {
+  background-color: white;
+  color: #0a0a0a;
+}
+
+.footer.is-white a,
+.footer.is-white strong {
+  color: #0a0a0a;
+  opacity: 0.9;
+}
+
+.footer.is-white a:hover,
+.footer.is-white strong:hover {
+  opacity: 1;
+}
+
+.footer.is-black {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.footer.is-black a,
+.footer.is-black strong {
+  color: white;
+  opacity: 0.9;
+}
+
+.footer.is-black a:hover,
+.footer.is-black strong:hover {
+  opacity: 1;
+}
+
+.footer.is-light {
   background-color: whitesmoke;
-  padding: 3rem 1.5rem 6rem;
+  color: #363636;
+}
+
+.footer.is-light a,
+.footer.is-light strong {
+  color: #363636;
+  opacity: 0.9;
+}
+
+.footer.is-light a:hover,
+.footer.is-light strong:hover {
+  opacity: 1;
+}
+
+.footer.is-dark {
+  background-color: #363636;
+  color: whitesmoke;
+}
+
+.footer.is-dark a,
+.footer.is-dark strong {
+  color: whitesmoke;
+  opacity: 0.9;
+}
+
+.footer.is-dark a:hover,
+.footer.is-dark strong:hover {
+  opacity: 1;
+}
+
+.footer.is-primary {
+  background-color: #1a8cff;
+  color: #fff;
+}
+
+.footer.is-primary a,
+.footer.is-primary strong {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.footer.is-primary a:hover,
+.footer.is-primary strong:hover {
+  opacity: 1;
+}
+
+.footer.is-link {
+  background-color: #363636;
+  color: whitesmoke;
+}
+
+.footer.is-link a,
+.footer.is-link strong {
+  color: whitesmoke;
+  opacity: 0.9;
+}
+
+.footer.is-link a:hover,
+.footer.is-link strong:hover {
+  opacity: 1;
+}
+
+.footer.is-info {
+  background-color: #5170cd;
+  color: #fff;
+}
+
+.footer.is-info a,
+.footer.is-info strong {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.footer.is-info a:hover,
+.footer.is-info strong:hover {
+  opacity: 1;
+}
+
+.footer.is-success {
+  background-color: #2fb18f;
+  color: #fff;
+}
+
+.footer.is-success a,
+.footer.is-success strong {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.footer.is-success a:hover,
+.footer.is-success strong:hover {
+  opacity: 1;
+}
+
+.footer.is-warning {
+  background-color: #fed039;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.footer.is-warning a,
+.footer.is-warning strong {
+  color: rgba(0, 0, 0, 0.7);
+  opacity: 0.9;
+}
+
+.footer.is-warning a:hover,
+.footer.is-warning strong:hover {
+  opacity: 1;
+}
+
+.footer.is-danger {
+  background-color: #ff3860;
+  color: #fff;
+}
+
+.footer.is-danger a,
+.footer.is-danger strong {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.footer.is-danger a:hover,
+.footer.is-danger strong:hover {
+  opacity: 1;
 }
 
 .is-divider, .is-divider-vertical {

@@ -1,5 +1,14 @@
-$footer-background-color: $background !default
-
 .footer
-  background-color: $footer-background-color
-  padding: 3rem 1.5rem 6rem
+  padding: 3rem 1.5rem 3rem
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      background-color: $color
+      color: $color-invert
+      a,
+      strong
+        color: $color-invert
+        opacity: 0.9
+        &:hover
+          opacity: 1
