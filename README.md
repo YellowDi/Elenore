@@ -4,7 +4,7 @@
 
 Elenore is a modern CSS framework based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
 
-<a href="https://yellowdi.github.io/Elenore/"><img src="https://raw.githubusercontent.com/YellowDi/Elenore/master/images/elenore-logo.png" alt="Elenore: a Flexbox CSS framework" style="max-width:100%;" width="600"></a>
+<a href="https://yellowdi.github.io/Elenore/"><img src="https://raw.githubusercontent.com/YellowDi/Elenore/master/docs/images/elenore-logo.png" alt="Elenore: a Flexbox CSS framework" style="max-width:100%;" width="600"></a>
 
 ## Quick install
 
