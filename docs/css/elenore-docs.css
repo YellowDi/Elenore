@@ -7297,11 +7297,13 @@ a.dropdown-item.is-active {
   top: 0;
 }
 
-html.has-navbar-fixed-top {
+html.has-navbar-fixed-top,
+body.has-navbar-fixed-top {
   padding-top: 3.25rem;
 }
 
-html.has-navbar-fixed-bottom {
+html.has-navbar-fixed-bottom,
+body.has-navbar-fixed-bottom {
   padding-bottom: 3.25rem;
 }
 

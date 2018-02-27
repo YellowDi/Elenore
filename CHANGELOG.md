@@ -2,6 +2,9 @@
 
 ## 1.3.4
 
+* Added: `.has-navbar-fixed-somewhere` support to body tag
+* Added: `.footer` support color customize
+
 * Fixed: spacing of the delete button in notification element
 * Fixed: missing use of `$pagination-color` variable
 * Fixed: navbar-menu background-color
