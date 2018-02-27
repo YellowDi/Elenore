@@ -152,11 +152,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  new Clipboard('.el-copy', {
-    target: function(trigger) {
-      return trigger.previousSibling;
-    }
-  });
+  setTimeout(() => {
+    new Clipboard('.el-copy', {
+      target: trigger => {
+        return trigger.previousElementSibling.firstElementChild;
+      }
+    });
+  }, 100);
 
   // Functions
 

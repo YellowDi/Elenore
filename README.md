@@ -51,4 +51,4 @@ Browse the [online documentation here.](https://yellowdi.github.io/Elenore/)
 
 ## Copyright and license
 
-Code copyright 2017 YellowDi. Code released under [the MIT license](https://github.com/YellowDi/Elenore/blob/master/LICENSE).
+Code copyright 2018 YellowDi. Code released under [the MIT license](https://github.com/YellowDi/Elenore/blob/master/LICENSE).

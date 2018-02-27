@@ -1,4 +1,4 @@
-/*! Elenore.css v1.3.3 | MIT License | github.com/YellowDi/Elenore */
+/*! Elenore.css v1.3.4 | MIT License | github.com/YellowDi/Elenore */
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
@@ -10994,6 +10994,7 @@ label.panel-block:hover {
 }
 
 .footer {
+  background-color: whitesmoke;
   padding: 3rem 1.5rem 3rem;
 }
 

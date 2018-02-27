@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var $parent = $el.parentNode;
       if ($parent && $parent.classList.contains('el-is-more')) {
-        var showEl = '<button class="el-show"><div><span class="icon"><i class="fa fa-code"></i></span> <strong>Show code</strong></div></button>';
+        var showEl = '<button class="el-show"><div><span class="icon"><i class="fas fa-code"></i></span> <strong>Show code</strong></div></button>';
         $el.insertAdjacentHTML('beforeend', showEl);
       } else if ($el.firstElementChild.scrollHeight > 480 && $el.firstElementChild.clientHeight <= 480) {
         $el.insertAdjacentHTML('beforeend', expandEl);
@@ -154,11 +154,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  new Clipboard('.el-copy', {
-    target: function target(trigger) {
-      return trigger.previousSibling;
-    }
-  });
+  setTimeout(function () {
+    new Clipboard('.el-copy', {
+      target: function target(trigger) {
+        return trigger.previousElementSibling.firstElementChild;
+      }
+    });
+  }, 100);
 
   // Functions
 

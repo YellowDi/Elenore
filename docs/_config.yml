@@ -13,7 +13,7 @@ exclude:       ['icons', 'node_modules', 'templates', '.babelrc', 'elenore-docs.
 # Variables
 
 documentation: "/documentation/overview/start/"
-download:      https://github.com/YellowDi/Elenore/archive/1.3.3.zip
+download:      https://github.com/YellowDi/Elenore/archive/1.3.4.zip
 github:        https://github.com/YellowDi/Elenore
 twitter:       https://twitter.com/YellowDi
-version:       1.3.3
+version:       1.3.4

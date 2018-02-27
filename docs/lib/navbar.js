@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var navbarTopEl = document.getElementById('navbar');
   var navbarBottomEl = document.getElementById('navbarBottom');
   var fixBottomEl = document.getElementById('navbarFixBottom');
-  var fixBottomElIcon = fixBottomEl.querySelector('.fa');
+  var fixBottomElIcon = fixBottomEl.querySelector('.far');
   var fixedBottom = false;
 
   fixBottomEl.addEventListener('click', function (event) {
@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (fixedBottom) {
       fixBottomEl.className = 'button is-success';
-      fixBottomElIcon.className = 'fa fa-check-square-o';
+      fixBottomElIcon.className = 'far fa-check-square';
       rootEl.classList.add('has-navbar-fixed-bottom');
       navbarBottomEl.classList.remove('is-hidden');
     } else {
       fixBottomEl.className = 'button is-link';
-      fixBottomElIcon.className = 'fa fa-square-o';
+      fixBottomElIcon.className = 'far fa-square';
       rootEl.classList.remove('has-navbar-fixed-bottom');
       navbarBottomEl.classList.add('is-hidden');
     }
