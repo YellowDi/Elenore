@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 1.3.5
+
+* Added: `.box` support color customize
+
 ## 1.3.4
 
 * Added: `.has-navbar-fixed-somewhere` support to body tag

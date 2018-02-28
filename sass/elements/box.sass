@@ -1,4 +1,3 @@
-$box-color: $text !default
 $box-background-color: $white !default
 $box-radius: $radius !default
 $box-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default
@@ -11,10 +10,35 @@ $box-link-active-shadow: inset 0 1px 2px rgba($black, 0.2), 0 0 0 1px $link !def
   +block
   background-color: $box-background-color
   border-radius: $box-radius
-  box-shadow: $box-shadow
-  color: $box-color
-  display: block
   padding: $box-padding
+  box-shadow: $box-shadow
+  display: block
+  position: relative
+  a:not(.button)
+    color: currentColor
+    text-decoration: underline
+  strong
+    color: currentColor
+  code,
+  pre
+    background: $white
+  pre code
+    background: transparent
+  & > .delete
+    position: absolute
+    right: 0.5rem
+    top: 0.5rem
+  .title,
+  .subtitle,
+  .content
+    color: currentColor
+  // Colors
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      background-color: $color
+      color: $color-invert
 
 a.box
   &:hover,

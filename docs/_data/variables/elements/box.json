@@ -6,11 +6,6 @@
   "file_line_to": 8,
   "file_url": "https://github.com/YellowDi/Elenore/blob/master/sass/elements/box.sass#L1,L8",
   "vars": {
-    "box-color": {
-      "id": "box-color",
-      "name": "$box-color",
-      "value": "$text"
-    },
     "box-background-color": {
       "id": "box-background-color",
       "name": "$box-background-color",

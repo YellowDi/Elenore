@@ -1283,15 +1283,95 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 .box {
   background-color: white;
   border-radius: 3px;
+  padding: 1.25rem;
   -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
           box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-  color: #4a4a4a;
   display: block;
-  padding: 1.25rem;
+  position: relative;
 }
 
 .box:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+
+.box a:not(.button) {
+  color: currentColor;
+  text-decoration: underline;
+}
+
+.box strong {
+  color: currentColor;
+}
+
+.box code,
+.box pre {
+  background: white;
+}
+
+.box pre code {
+  background: transparent;
+}
+
+.box > .delete {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.box .title,
+.box .subtitle,
+.box .content {
+  color: currentColor;
+}
+
+.box.is-white {
+  background-color: white;
+  color: #0a0a0a;
+}
+
+.box.is-black {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.box.is-light {
+  background-color: whitesmoke;
+  color: #363636;
+}
+
+.box.is-dark {
+  background-color: #363636;
+  color: whitesmoke;
+}
+
+.box.is-primary {
+  background-color: #1a8cff;
+  color: #fff;
+}
+
+.box.is-link {
+  background-color: #363636;
+  color: whitesmoke;
+}
+
+.box.is-info {
+  background-color: #5170cd;
+  color: #fff;
+}
+
+.box.is-success {
+  background-color: #2fb18f;
+  color: #fff;
+}
+
+.box.is-warning {
+  background-color: #fed039;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.box.is-danger {
+  background-color: #ff3860;
+  color: #fff;
 }
 
 a.box:hover, a.box:focus {
