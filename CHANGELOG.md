@@ -3,6 +3,8 @@
 ## 1.3.5
 
 * Added: `.box` support color customize
+* Added: `.card` support color customize
+* Added: New `.is-hover` helper
 
 ## 1.3.4
 

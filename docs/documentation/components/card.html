@@ -7,32 +7,79 @@ doc-subtab: card
 
 {% include subnav-components.html %}
 
-{% capture card_example %}
+{% capture card_default %}
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Card
+    </p>
+    <a href="#" class="card-header-icon" aria-label="more options">
+      <div class="tags has-addons">
+        <span class="tag">Package</span>
+        <span class="tag is-primary">Elenore</span>
+      </div>
+    </a>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="#" class="card-footer-item">Save</a>
+    <a href="#" class="card-footer-item">Edit</a>
+    <a href="#" class="card-footer-item">Delete</a>
+  </footer>
+</div>
+{% endcapture %}
+
+{% capture card_hover %}
+<div class="card is-hover">
+  <div class="card-header">
+    <h3 class="card-header-title">
+      Default
+    </h3>
+  </div>
+  <div class="card-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture card_color %}
+<div class="card is-primary">
+  <div class="card-header">
+    <h3 class="card-header-title">
+      Primary
+    </h3>
+  </div>
+  <div class="card-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture card_media %}
 <div class="card">
   <div class="card-image">
-    <figure class="image is-4by3">
-      <img src="{{site.url}}/images/placeholders/1280x960.png" alt="Placeholder image">
+    <figure class="image">
+      <img src="{{ site.url }}/images/media.png">
     </figure>
   </div>
   <div class="card-content">
     <div class="media">
       <div class="media-left">
         <figure class="image is-48x48">
-          <img src="{{site.url}}/images/placeholders/96x96.png" alt="Placeholder image">
+          <img src="{{ site.url }}/images/avatar.jpg">
         </figure>
       </div>
       <div class="media-content">
-        <p class="title is-4">John Smith</p>
-        <p class="subtitle is-6">@johnsmith</p>
+        <p class="title is-4">Asuka Langley</p>
+        <p class="subtitle is-6">@Asuka</p>
       </div>
     </div>
-
     <div class="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris.
-      <a href="#">#css</a> <a href="#">#responsive</a>
-      <br>
-      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </div>
   </div>
 </div>
@@ -66,31 +113,6 @@ doc-subtab: card
 </div>
 {% endcapture %}
 
-{% capture card_title_example %}
-<div class="card">
-  <div class="card-content">
-    <p class="title">
-      “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
-    </p>
-    <p class="subtitle">
-      Jeff Atwood
-    </p>
-  </div>
-  <footer class="card-footer">
-    <p class="card-footer-item">
-      <span>
-        View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-      </span>
-    </p>
-    <p class="card-footer-item">
-      <span>
-        Share on <a href="#">Facebook</a>
-      </span>
-    </p>
-  </footer>
-</div>
-{% endcapture %}
-
 <section class="section">
   <div class="container">
     <h1 class="title">Card</h1>
@@ -98,7 +120,7 @@ doc-subtab: card
     {%
       include meta.html
       variables=true
-      colors=false
+      colors=true
       sizes=false
     %}
 
@@ -140,47 +162,87 @@ doc-subtab: card
       </ul>
     </div>
 
-    <div class="tags has-addons">
-      <span class="tag">New</span>
-      <span class="tag is-info">1.2.2</span>
-    </div>
-
     <div class="content">
       <p>
         You can center the <code>card-header-title</code> by appending the <code>is-centered</code> modifier.
       </p>
     </div>
 
-    <hr>
-
     <div class="columns">
       <div class="column is-one-third">
-        {{card_example}}
+        {{card_default}}
       </div>
       <div class="column highlight-full">
-        {% highlight html %}{{card_example}}{% endhighlight %}
+        {% highlight html %}{{card_default}}{% endhighlight %}
       </div>
     </div>
 
-    <hr>
+    <div class="tags has-addons">
+      <span class="tag">New</span>
+      <span class="tag is-info">1.3.5</span>
+    </div>
+
+    <div class="content">
+      <p>
+        To create a hover effect on the card, add the <code>.is-hover</code> class. This comes in handy when working with anchors and can be combined with the other card modifiers.
+      </p>
+    </div>
 
     <div class="columns">
       <div class="column is-one-third">
-        {{card_header_example}}
+        {{card_hover}}
       </div>
       <div class="column highlight-full">
-        {% highlight html %}{{card_header_example}}{% endhighlight %}
+        {% highlight html %}{{card_hover}}{% endhighlight %}
       </div>
     </div>
 
-    <hr>
+    {% include anchor.html name="Colors" %}
+
+    <div class="content">
+      <p>
+        You can change the background color of the <code>card</code> by using one of the <strong>9 color modifiers:</strong>
+      </p>
+      <ul>
+        <li><code>is-primary</code></li>
+        <li><code>is-link</code></li>
+        <li><code>is-info</code></li>
+        <li><code>is-success</code></li>
+        <li><code>is-warning</code></li>
+        <li><code>is-danger</code></li>
+        <li><code>is-black</code></li>
+        <li><code>is-dark</code></li>
+        <li><code>is-light</code></li>
+        <li><code>is-white</code></li>
+      </ul>
+    </div>
 
     <div class="columns">
       <div class="column is-one-third">
-        {{card_title_example}}
+        {{card_color}}
       </div>
       <div class="column highlight-full">
-        {% highlight html %}{{card_title_example}}{% endhighlight %}
+        {% highlight html %}{{card_color}}{% endhighlight %}
+      </div>
+    </div>
+
+    {% include anchor.html name="Style" %}
+
+    <div class="content">
+      <p>
+        To display an image inside a <code>card</code> without any spacing, add one of the following classes to the <code>card-image</code> element. Mind that you need to modify the source order accordingly.
+      </p>
+      <p>
+        You can also divide a card into header and footer — around the default body. Just add the <code>.card-header</code> or <code>.card-footer</code> class to a element inside the card.
+      </p>
+    </div>
+
+    <div class="columns">
+      <div class="column is-one-third">
+        {{card_media}}
+      </div>
+      <div class="column highlight-full">
+        {% highlight html %}{{card_media}}{% endhighlight %}
       </div>
     </div>
 
