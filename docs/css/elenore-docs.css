@@ -1296,8 +1296,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   background-color: white;
   border-radius: 3px;
   padding: 1.25rem;
-  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-          box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  -webkit-box-shadow: 0 5px 15px rgba(10, 10, 10, 0.08);
+          box-shadow: 0 5px 15px rgba(10, 10, 10, 0.08);
   display: block;
   position: relative;
 }
@@ -6147,8 +6147,8 @@ a.tag:hover {
 .dropdown-content {
   background-color: white;
   border-radius: 3px;
-  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-          box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  -webkit-box-shadow: 0 5px 15px rgba(10, 10, 10, 0.08);
+          box-shadow: 0 5px 15px rgba(10, 10, 10, 0.08);
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
 }
@@ -7462,8 +7462,8 @@ a.dropdown-item.is-active {
 }
 
 .navbar.has-shadow {
-  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
-          box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+  -webkit-box-shadow: 0 5px 15px rgba(10, 10, 10, 0.08);
+          box-shadow: 0 5px 15px rgba(10, 10, 10, 0.08);
 }
 
 .navbar.is-fixed-bottom, .navbar.is-fixed-top {
@@ -7860,8 +7860,8 @@ a.navbar-link.is-active {
   .navbar-dropdown.is-boxed {
     border-radius: 5px;
     border-top: none;
-    -webkit-box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-            box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    -webkit-box-shadow: 0 5px 15px rgba(10, 10, 10, 0.08);
+            box-shadow: 0 5px 15px rgba(10, 10, 10, 0.08);
     display: block;
     opacity: 0;
     pointer-events: none;

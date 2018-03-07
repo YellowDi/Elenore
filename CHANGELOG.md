@@ -1,7 +1,7 @@
 # Elenore Changelog
 
 ## 1.3.5
-
+* Changed: Add box-shadow to dropbar slide
 * Added: `.box` support color customize
 * Added: `.card` support color customize
 * Added: New `.is-hover` helper
