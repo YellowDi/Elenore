@@ -5,6 +5,7 @@
 * Added: `.box` support color customize
 * Added: `.card` support color customize
 * Added: New `.is-hover` helper
+* Added: New `.is-overflow` helper
 
 ## 1.3.4
 
