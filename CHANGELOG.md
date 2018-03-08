@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 1.3.6
+
+* Fixed: `.card` link color
+
 ## 1.3.5
 
 * Changed: New `.button` design

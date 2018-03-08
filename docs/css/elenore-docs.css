@@ -6133,8 +6133,28 @@ a.tag:hover {
   color: #0a0a0a;
 }
 
+.card.is-white a:not(.button),
+.card.is-white strong {
+  color: inherit;
+}
+
+.card.is-white a:hover, .card.is-white a.is-active {
+  background-color: #f2f2f2;
+  color: #0a0a0a;
+}
+
 .card.is-black {
   background-color: #0a0a0a;
+  color: white;
+}
+
+.card.is-black a:not(.button),
+.card.is-black strong {
+  color: inherit;
+}
+
+.card.is-black a:hover, .card.is-black a.is-active {
+  background-color: black;
   color: white;
 }
 
@@ -6143,8 +6163,28 @@ a.tag:hover {
   color: #363636;
 }
 
+.card.is-light a:not(.button),
+.card.is-light strong {
+  color: inherit;
+}
+
+.card.is-light a:hover, .card.is-light a.is-active {
+  background-color: #e8e8e8;
+  color: #363636;
+}
+
 .card.is-dark {
   background-color: #363636;
+  color: whitesmoke;
+}
+
+.card.is-dark a:not(.button),
+.card.is-dark strong {
+  color: inherit;
+}
+
+.card.is-dark a:hover, .card.is-dark a.is-active {
+  background-color: #292929;
   color: whitesmoke;
 }
 
@@ -6153,8 +6193,28 @@ a.tag:hover {
   color: #fff;
 }
 
+.card.is-primary a:not(.button),
+.card.is-primary strong {
+  color: inherit;
+}
+
+.card.is-primary a:hover, .card.is-primary a.is-active {
+  background-color: #107ae5;
+  color: #fff;
+}
+
 .card.is-secondary {
   background-color: #363636;
+  color: whitesmoke;
+}
+
+.card.is-secondary a:not(.button),
+.card.is-secondary strong {
+  color: inherit;
+}
+
+.card.is-secondary a:hover, .card.is-secondary a.is-active {
+  background-color: #292929;
   color: whitesmoke;
 }
 
@@ -6163,8 +6223,28 @@ a.tag:hover {
   color: #fff;
 }
 
+.card.is-link a:not(.button),
+.card.is-link strong {
+  color: inherit;
+}
+
+.card.is-link a:hover, .card.is-link a.is-active {
+  background-color: #107ae5;
+  color: #fff;
+}
+
 .card.is-info {
   background-color: #209cee;
+  color: #fff;
+}
+
+.card.is-info a:not(.button),
+.card.is-info strong {
+  color: inherit;
+}
+
+.card.is-info a:hover, .card.is-info a.is-active {
+  background-color: #118fe4;
   color: #fff;
 }
 
@@ -6173,13 +6253,43 @@ a.tag:hover {
   color: #fff;
 }
 
+.card.is-success a:not(.button),
+.card.is-success strong {
+  color: inherit;
+}
+
+.card.is-success a:hover, .card.is-success a.is-active {
+  background-color: #20bc56;
+  color: #fff;
+}
+
 .card.is-warning {
   background-color: #ffdd57;
   color: rgba(0, 0, 0, 0.7);
 }
 
+.card.is-warning a:not(.button),
+.card.is-warning strong {
+  color: inherit;
+}
+
+.card.is-warning a:hover, .card.is-warning a.is-active {
+  background-color: #ffd83d;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .card.is-danger {
   background-color: #f0516e;
+  color: #fff;
+}
+
+.card.is-danger a:not(.button),
+.card.is-danger strong {
+  color: inherit;
+}
+
+.card.is-danger a:hover, .card.is-danger a.is-active {
+  background-color: #ee3a5b;
   color: #fff;
 }
 

@@ -19,6 +19,14 @@ $card-footer-border-top: 1px solid $border !default
     &.is-#{$name}
       background-color: $color
       color: $color-invert
+      a:not(.button),
+      strong
+        color: inherit
+      a
+        &:hover,
+        &.is-active
+          background-color: darken($color, 5%)
+          color: $color-invert
 
 .card-header
   align-items: stretch
