@@ -33,25 +33,21 @@ doc-subtab: button
 {% endcapture %}
 
 {% capture button_outlined_example %}
-<a class="button is-outlined">Outlined</a>
-<a class="button is-primary is-outlined">Outlined</a>
-<a class="button is-info is-outlined">Outlined</a>
-<a class="button is-success is-outlined">Outlined</a>
-<a class="button is-danger is-outlined">Outlined</a>
+<a class="button is-primary is-outlined">Primary</a>
+<a class="button is-secondary is-outlined">Secondary</a>
+<a class="button is-danger is-outlined">Danger</a>
 {% endcapture %}
 
 {% capture button_inverted_example %}
-<a class="button is-primary is-inverted">Inverted</a>
-<a class="button is-info is-inverted">Inverted</a>
-<a class="button is-success is-inverted">Inverted</a>
-<a class="button is-danger is-inverted">Inverted</a>
+<a class="button is-primary is-inverted">Primary</a>
+<a class="button is-secondary is-inverted">Secondary</a>
+<a class="button is-danger is-inverted">Danger</a>
 {% endcapture %}
 
 {% capture button_inverted_outlined_example %}
-<a class="button is-primary is-inverted is-outlined">Invert Outlined</a>
-<a class="button is-info is-inverted is-outlined">Invert Outlined</a>
-<a class="button is-success is-inverted is-outlined">Invert Outlined</a>
-<a class="button is-danger is-inverted is-outlined">Invert Outlined</a>
+<a class="button is-primary is-inverted is-outlined">Primary</a>
+<a class="button is-secondary is-inverted is-outlined">Secondary</a>
+<a class="button is-danger is-inverted is-outlined">Danger</a>
 {% endcapture %}
 
 {% capture button_rounded_example %}
@@ -63,48 +59,68 @@ doc-subtab: button
 {% endcapture %}
 
 {% capture button_normal_example %}
-<a class="button">Normal</a>
-<a class="button is-primary">Normal</a>
-<a class="button is-info">Normal</a>
-<a class="button is-success">Normal</a>
-<a class="button is-warning">Normal</a>
-<a class="button is-danger">Normal</a>
+<p class="field">
+  <a class="button">Normal</a>
+  <a class="button is-primary">Normal</a>
+  <a class="button is-secondary">Normal</a>
+</p>
+<p class="field">
+  <a class="button is-success">Normal</a>
+  <a class="button is-warning">Normal</a>
+  <a class="button is-danger">Normal</a>
+</p>
 {% endcapture %}
 
 {% capture button_hover_example %}
-<a class="button is-hovered">Hover</a>
-<a class="button is-primary is-hovered">Hover</a>
-<a class="button is-info is-hovered">Hover</a>
-<a class="button is-success is-hovered">Hover</a>
-<a class="button is-warning is-hovered">Hover</a>
-<a class="button is-danger is-hovered">Hover</a>
+<p class="field">
+  <a class="button is-hovered">Hover</a>
+  <a class="button is-hovered is-primary">Hover</a>
+  <a class="button is-hovered is-secondary">Hover</a>
+</p>
+<p class="field">
+  <a class="button is-hovered is-success">Hover</a>
+  <a class="button is-hovered is-warning">Hover</a>
+  <a class="button is-hovered is-danger">Hover</a>
+</p>
 {% endcapture %}
 
 {% capture button_focus_example %}
-<a class="button is-focused">Focus</a>
-<a class="button is-primary is-focused">Focus</a>
-<a class="button is-info is-focused">Focus</a>
-<a class="button is-success is-focused">Focus</a>
-<a class="button is-warning is-focused">Focus</a>
-<a class="button is-danger is-focused">Focus</a>
+<p class="field">
+  <a class="button is-focused">Focus</a>
+  <a class="button is-focused is-primary">Focus</a>
+  <a class="button is-focused is-secondary">Focus</a>
+</p>
+<p class="field">
+  <a class="button is-focused is-success">Focus</a>
+  <a class="button is-focused is-warning">Focus</a>
+  <a class="button is-focused is-danger">Focus</a>
+</p>
 {% endcapture %}
 
 {% capture button_active_example %}
-<a class="button is-active">Active</a>
-<a class="button is-primary is-active">Active</a>
-<a class="button is-info is-active">Active</a>
-<a class="button is-success is-active">Active</a>
-<a class="button is-warning is-active">Active</a>
-<a class="button is-danger is-active">Active</a>
+<p class="field">
+  <a class="button is-active">Active</a>
+  <a class="button is-active is-primary">Active</a>
+  <a class="button is-active is-secondary">Active</a>
+</p>
+<p class="field">
+  <a class="button is-active is-success">Active</a>
+  <a class="button is-active is-warning">Active</a>
+  <a class="button is-active is-danger">Active</a>
+</p>
 {% endcapture %}
 
 {% capture button_loading_example %}
-<a class="button is-loading">Loading</a>
-<a class="button is-primary is-loading">Loading</a>
-<a class="button is-info is-loading">Loading</a>
-<a class="button is-success is-loading">Loading</a>
-<a class="button is-warning is-loading">Loading</a>
-<a class="button is-danger is-loading">Loading</a>
+<p class="field">
+  <a class="button is-loading">Loading</a>
+  <a class="button is-loading is-primary">Loading</a>
+  <a class="button is-loading is-secondary">Loading</a>
+</p>
+<p class="field">
+  <a class="button is-loading is-success">Loading</a>
+  <a class="button is-loading is-warning">Loading</a>
+  <a class="button is-loading is-danger">Loading</a>
+</p>
 {% endcapture %}
 
 {% capture button_static_example %}
@@ -112,12 +128,16 @@ doc-subtab: button
 {% endcapture %}
 
 {% capture button_disabled_example %}
-<a class="button" title="Disabled button" disabled>Disabled</a>
-<a class="button is-primary" title="Disabled button" disabled>Disabled</a>
-<a class="button is-info" title="Disabled button" disabled>Disabled</a>
-<a class="button is-success" title="Disabled button" disabled>Disabled</a>
-<a class="button is-warning" title="Disabled button" disabled>Disabled</a>
-<a class="button is-danger" title="Disabled button" disabled>Disabled</a>
+<p class="field">
+  <a class="button" title="Disabled button" disabled>Disabled</a>
+  <a class="button is-primary" title="Disabled button" disabled>Disabled</a>
+  <a class="button is-secondary" title="Disabled button" disabled>Disabled</a>
+</p>
+<p class="field">
+  <a class="button is-success" title="Disabled button" disabled>Disabled</a>
+  <a class="button is-warning" title="Disabled button" disabled>Disabled</a>
+  <a class="button is-danger" title="Disabled button" disabled>Disabled</a>
+</p>
 {% endcapture %}
 
 {% capture button_fa_example %}
@@ -139,12 +159,6 @@ doc-subtab: button
   </a>
 </p>
 <p class="field">
-  <a class="button">
-    <span class="icon">
-      <i class="fab fa-github"></i>
-    </span>
-    <span>GitHub</span>
-  </a>
   <a class="button is-primary">
     <span class="icon">
       <i class="fab fa-twitter"></i>
@@ -475,7 +489,7 @@ doc-subtab: button
       </ul>
     </div>
 
-    {% include snippet.html content=button_tags_example %}
+    {% include snippet.html content=button_tags_example horizontal=true more=true %}
 
     {% include anchor.html name="Colors" %}
 
@@ -489,13 +503,22 @@ doc-subtab: button
 
     {% include anchor.html name="Sizes" %}
 
-    {% include snippet.html content=button_sizes_example %}
+    {% include snippet.html content=button_sizes_example horizontal=true more=true %}
 
     {% include anchor.html name="Styles" %}
 
     <h4 class="subtitle">Outlined</h4>
 
-    {% include snippet.html content=button_outlined_example %}
+    <div class="columns">
+      <div class="column">
+        <div class="el-callout">
+          {{button_outlined_example}}
+        </div>
+      </div>
+      <div class="column">
+        {% highlight html %}{{button_outlined_example}}{% endhighlight %}
+      </div>
+    </div>
 
     <h4 class="subtitle">Inverted (the text color becomes the background color, and vice-versa)</h4>
 
@@ -514,7 +537,7 @@ doc-subtab: button
 
     <div class="columns">
       <div class="column">
-        <div class="el-callout is-primary">
+        <div class="el-callout is-dark">
           {{button_inverted_outlined_example}}
         </div>
       </div>
@@ -525,15 +548,9 @@ doc-subtab: button
 
     <h4 class="subtitle">Rounded buttons</h4>
 
-    <div class="columns">
-      <div class="column">
-        {% include elements/new-tag.html version="1.3.3" %}
-        {{ button_rounded_example }}
-      </div>
-      <div class="column">
-        {% highlight html %}{{ button_rounded_example }}{% endhighlight %}
-      </div>
-    </div>
+    {% include elements/new-tag.html version="1.3.3" %}
+
+    {% include snippet.html content=button_rounded_example horizontal=true more=true %}
 
     {% include anchor.html name="States" %}
 
@@ -633,7 +650,7 @@ doc-subtab: button
       <p>If you want to <strong>group</strong> buttons together on a <strong>single line</strong>, use the <code>is-grouped</code> modifier on the <code>field</code> container:</p>
     </div>
 
-    {% include snippet.html content=button_group_example %}
+    {% include snippet.html content=button_group_example horizontal=true more=true %}
 
     {% include anchor.html name="Button addons" %}
 
@@ -641,7 +658,7 @@ doc-subtab: button
       <p>If you want to use buttons as <strong>addons</strong>, use the <code>has-addons</code> modifier on the <code>field</code> container:</p>
     </div>
 
-    {% include snippet.html content=button_addons_example %}
+    {% include snippet.html content=button_addons_example horizontal=true more=true %}
 
     {% include anchor.html name="Button group with addons" %}
 
@@ -649,7 +666,7 @@ doc-subtab: button
       <p>You can group together addons as well:</p>
     </div>
 
-    {% include snippet.html content=button_group_addons_example %}
+    {% include snippet.html content=button_group_addons_example horizontal=true more=true %}
 
     {% include anchor.html name="List of buttons" %}
 
