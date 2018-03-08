@@ -2,6 +2,7 @@
 
 ## 1.3.6
 
+* Added: New `.has-background-*` helper
 * Fixed: `.card` link color
 
 ## 1.3.5

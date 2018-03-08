@@ -319,6 +319,12 @@ table th {
   background-attachment: fixed !important;
 }
 
+@media screen and (max-width: 1023px) {
+  .has-background-fixed {
+    background-attachment: scroll !important;
+  }
+}
+
 .is-size-1 {
   font-size: 3rem !important;
 }
