@@ -1,0 +1,29 @@
+<nav id="navbar" class="navbar has-shadow is-fixed-top {% if include.transparent %}is-transparent{% endif %}">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="http://localhost:4000/images/elenore-icon.png" alt="Elenore: a modern CSS framework based on Flexbox">
+      </a>
+
+      <div id="navbarBurger" class="navbar-burger burger" data-target="navMenu{{ include.id }}">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+    <div id="navMenu{{ include.id }}" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="button" href="{{ site.url }}/documentation/overview/start/#examples">
+            <span class="icon">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </span>
+            <span>Back</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
