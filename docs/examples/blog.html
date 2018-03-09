@@ -1,0 +1,138 @@
+---
+layout: examples
+route: blog
+---
+
+<nav id="navbar" class="navbar is-fixed-top {% if include.transparent %}is-transparent{% endif %}">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="http://localhost:4000/images/elenore-icon.png" alt="Elenore: a modern CSS framework based on Flexbox">
+      </a>
+
+      <div id="navbarBurger" class="navbar-burger burger" data-target="navMenu{{ include.id }}">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+    <div id="navMenu{{ include.id }}" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="button">
+            <span class="icon">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </span>
+            <span>Back</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero is-medium is-dark">
+  <div class="hero-body has-background-norepeat has-background-center-center has-background-cover" style="background-image: url('{{ site.url }}/images/wallpaper.jpg');">
+    <div class="container has-text-centered">
+      <h1 class="title is-1 is-light">
+        Lorem ipsum dolor sit amet
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-two-thirds">
+        <div class="columns is-multiline">
+
+          <div class="column is-12">
+            <div class="card is-white is-hover" id="articleCard">
+              <div class="card-header">
+                <a class="card-header-title" href="#">Title</a>
+              </div>
+              <div class="card-content">
+                <p>Lorem ipsum dolor sit <a href="#">amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-12">
+            <div class="card is-white is-hover" id="articleCard">
+              <div class="card-header">
+                <a class="card-header-title" href="#">Title</a>
+              </div>
+              <div class="card-content">
+                <p>Lorem ipsum dolor sit <a href="#">amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-12">
+            <div class="card is-white is-hover" id="articleCard">
+              <div class="card-header">
+                <a class="card-header-title" href="#">Title</a>
+              </div>
+              <div class="card-content">
+                <p>Lorem ipsum dolor sit <a href="#">amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <nav class="pagination" role="navigation" aria-label="pagination">
+              <a class="pagination-previous" title="This is the first page" disabled>Previous</a>
+              <a class="pagination-next">Next page</a>
+            </nav>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="{{ site.url }}/images/media.png">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="{{ site.url }}/images/avatar.jpg">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Asuka Langley</p>
+                <p class="subtitle is-6">@Asuka</p>
+              </div>
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <nav class="level is-mobile">
+              <div class="level-item has-text-centered">
+                <a class="fab fa-lg fa-github" href="#"></a>
+              </div>
+              <div class="level-item has-text-centered">
+                <a class="fab fa-lg fa-twitter" href="#"></a>
+              </div>
+              <div class="level-item has-text-centered">
+                <a class="fab fa-lg fa-instagram" href="#"></a>
+              </div>
+              <div class="level-item has-text-centered">
+                <a class="fab fa-lg fa-weibo" href="#"></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
