@@ -3,7 +3,7 @@ layout: examples
 route: blog
 ---
 
-<nav id="navbar" class="navbar is-fixed-top {% if include.transparent %}is-transparent{% endif %}">
+<nav id="navbar" class="navbar has-shadow is-fixed-top {% if include.transparent %}is-transparent{% endif %}">
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item">
@@ -20,7 +20,7 @@ route: blog
     <div id="navMenu{{ include.id }}" class="navbar-menu">
       <div class="navbar-end">
         <div class="navbar-item">
-          <a class="button">
+          <a class="button" href="{{ site.url }}/documentation/overview/start/">
             <span class="icon">
               <i class="fas fa-chevron-left" aria-hidden="true"></i>
             </span>
@@ -34,7 +34,7 @@ route: blog
 </nav>
 
 <section class="hero is-medium is-dark">
-  <div class="hero-body has-background-norepeat has-background-center-center has-background-cover" style="background-image: url('{{ site.url }}/images/wallpaper.jpg');">
+  <div class="hero-body has-background-norepeat has-background-center-center has-background-cover" style="background-image: url('{{ site.url }}/images/wallpaper.png');">
     <div class="container has-text-centered">
       <h1 class="title is-1 is-light">
         Lorem ipsum dolor sit amet
@@ -94,43 +94,71 @@ route: blog
       </div>
 
       <div class="column">
-        <div class="card">
-          <div class="card-image">
-            <figure class="image">
-              <img src="{{ site.url }}/images/media.png">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="{{ site.url }}/images/avatar.jpg">
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="{{ site.url }}/images/media.png">
                 </figure>
               </div>
-              <div class="media-content">
-                <p class="title is-4">Asuka Langley</p>
-                <p class="subtitle is-6">@Asuka</p>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="{{ site.url }}/images/avatar.jpg">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Asuka Langley</p>
+                    <p class="subtitle is-6">@Asuka</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-item has-text-centered">
+                    <a class="fab fa-lg fa-github" href="#"></a>
+                  </div>
+                  <div class="level-item has-text-centered">
+                    <a class="fab fa-lg fa-twitter" href="#"></a>
+                  </div>
+                  <div class="level-item has-text-centered">
+                    <a class="fab fa-lg fa-instagram" href="#"></a>
+                  </div>
+                  <div class="level-item has-text-centered">
+                    <a class="fab fa-lg fa-weibo" href="#"></a>
+                  </div>
+                </nav>
               </div>
             </div>
-            <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </div>
-            <nav class="level is-mobile">
-              <div class="level-item has-text-centered">
-                <a class="fab fa-lg fa-github" href="#"></a>
-              </div>
-              <div class="level-item has-text-centered">
-                <a class="fab fa-lg fa-twitter" href="#"></a>
-              </div>
-              <div class="level-item has-text-centered">
-                <a class="fab fa-lg fa-instagram" href="#"></a>
-              </div>
-              <div class="level-item has-text-centered">
-                <a class="fab fa-lg fa-weibo" href="#"></a>
-              </div>
-            </nav>
           </div>
-        </div>
+
+          <div class="column is-12">
+            <div class="card">
+              <div class="card-content">
+                <aside class="menu">
+                  <p class="menu-label">
+                    Archives
+                  </p>
+                  <ul class="menu-list">
+                    <li><a>2016</a></li>
+                    <li>
+                      <a class="is-active">2017</a>
+                      <ul>
+                        <li><a>September</a></li>
+                        <li><a>August</a></li>
+                        <li><a>July</a></li>
+                      </ul>
+                    </li>
+                    <li><a>2018</a></li>
+                  </ul>
+                </aside>
+              </div>
+            </div>
+          </div>
+
       </div>
 
     </div>
