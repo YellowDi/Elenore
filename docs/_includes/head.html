@@ -6,6 +6,8 @@
 
   <title>{% if page.fulltitle %}{{ page.fulltitle }}{% else %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{% endif %}</title>
 
+  <link rel="shortcut icon" href="{{ site.url }}/images/elenore-icon.png">
+
   {% if page.fontawesome4 %}
     <link rel="stylesheet" href="{{ site.data.icons.fontawesome4 }}">
   {% endif %}
@@ -24,4 +26,5 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
 
   <script defer src="{{ site.data.icons.fontawesome5 }}"></script>
+
 </head>
