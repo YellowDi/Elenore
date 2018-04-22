@@ -64,32 +64,37 @@
     "orange": {
       "id": "orange",
       "name": "$orange",
-      "value": "hsl(33, 98%, 63%)"
+      "value": "hsl(14,  100%, 53%)"
     },
     "yellow": {
       "id": "yellow",
       "name": "$yellow",
-      "value": "hsl(46, 99%, 61%)"
+      "value": "hsl(48,  100%, 67%)"
     },
     "green": {
       "id": "green",
       "name": "$green",
-      "value": "hsl(164, 58%, 44%)"
+      "value": "hsl(141, 71%,  48%)"
+    },
+    "turquoise": {
+      "id": "turquoise",
+      "name": "$turquoise",
+      "value": "hsl(171, 100%, 41%)"
+    },
+    "cyan": {
+      "id": "cyan",
+      "name": "$cyan",
+      "value": "hsl(204, 86%,  53%)"
     },
     "blue": {
       "id": "blue",
       "name": "$blue",
-      "value": "hsl(210, 100%, 55%)"
-    },
-    "indigo": {
-      "id": "indigo",
-      "name": "$indigo",
-      "value": "hsl(225, 55%, 56%)"
+      "value": "hsl(217, 71%,  53%)"
     },
     "purple": {
       "id": "purple",
       "name": "$purple",
-      "value": "hsl(247, 40%, 58%)"
+      "value": "hsl(271, 100%, 71%)"
     },
     "red": {
       "id": "red",
@@ -191,10 +196,20 @@
       "name": "$widescreen",
       "value": "1152px + (2 * $gap)"
     },
+    "widescreen-enabled": {
+      "id": "widescreen-enabled",
+      "name": "$widescreen-enabled",
+      "value": "true"
+    },
     "fullhd": {
       "id": "fullhd",
       "name": "$fullhd",
       "value": "1344px + (2 * $gap)"
+    },
+    "fullhd-enabled": {
+      "id": "fullhd-enabled",
+      "name": "$fullhd-enabled",
+      "value": "true"
     },
     "easing": {
       "id": "easing",

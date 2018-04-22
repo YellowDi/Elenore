@@ -2,6 +2,7 @@
 
 ## 1.4.1
 
+* Added: `$widescreen-enabled` and `$fullhd-enabled`variables, now you can set them to `false` to disable each breakpoint
 * Added: `$control-border-width` and `$button-border-width` variables
 * Fixed: position of delete button on `.tag`
 * Fixed: `is-text-right` precedence over `is-text-left-mobile`
