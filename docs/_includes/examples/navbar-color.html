@@ -2,9 +2,9 @@
   <div class="navbar-brand">
     <a class="navbar-item" href="{{ site.url }}">
       {% if include.light %}
-        <img src="{{ site.url }}/images/elenore-logo.png" alt="Elenore: a modern CSS framework based on Flexbox" width="112" height="28">
+        <img src="{{ site.url }}/images/elenore-logo.png" alt="{{ site.data.meta.title }}" width="112" height="28">
       {% else %}
-        <img src="{{ site.url }}/images/elenore-logo-white.png" alt="Elenore: a modern CSS framework based on Flexbox" width="112" height="28">
+        <img src="{{ site.url }}/images/elenore-logo-white.png" alt="{{ site.data.meta.title }}" width="112" height="28">
       {% endif %}
     </a>
     <div class="navbar-burger burger" data-target="navMenuColor{{ include.color }}-example">

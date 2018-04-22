@@ -9,11 +9,41 @@ doc-subtab: box
 
 {% capture box_example %}
 <div class="box">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</div>
-<div class="box is-danger">
-  <button class="delete"></button>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="{{site.url}}/images/placeholders/128x128.png" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>YellowDi</strong> <small>@yellowdi</small> <small>1998.02.07</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+        </p>
+      </div>
+      <nav class="level is-mobile">
+        <div class="level-left">
+          <a class="level-item" aria-label="reply">
+            <span class="icon is-small">
+              <i class="fas fa-reply" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a class="level-item" aria-label="retweet">
+            <span class="icon is-small">
+              <i class="fas fa-retweet" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a class="level-item" aria-label="like">
+            <span class="icon is-small">
+              <i class="fas fa-heart" aria-hidden="true"></i>
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </article>
 </div>
 {% endcapture %}
 
@@ -25,7 +55,7 @@ doc-subtab: box
     </h2>
     {%
       include meta.html
-      colors=true
+      colors=false
       sizes=false
       variables=true
     %}
@@ -35,10 +65,12 @@ doc-subtab: box
     <div class="content">
       <p>
         The <code>.box</code> element is simply a container with a shadow, a border, a radius, and some padding.
+        <br>
+        For example, you can include a media object:
       </p>
     </div>
 
-    {% include snippet.html content=box_example %}
+    {% include snippet.html content=box_example more=true %}
 
     {% include variables.html type='element' %}
 

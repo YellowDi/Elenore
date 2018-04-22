@@ -1,5 +1,7 @@
 # Meta
 
+docs_file:     "elenore-docs.min"
+
 # Build
 
 markdown:      kramdown
