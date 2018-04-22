@@ -3,6 +3,7 @@
 ## 1.4.1
 
 * Fixed: position of delete button on `.tag`
+* Fixed: `is-text-right` precedence over `is-text-left-mobile`
 
 ## 1.4.0
 
