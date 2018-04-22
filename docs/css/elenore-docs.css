@@ -1381,8 +1381,8 @@ a.box:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
   text-align: center;
   white-space: nowrap;
 }
@@ -2574,6 +2574,12 @@ a.box:active {
 
 .buttons.has-addons .button:focus:hover, .buttons.has-addons .button.is-focused:hover, .buttons.has-addons .button:active:hover, .buttons.has-addons .button.is-active:hover, .buttons.has-addons .button.is-selected:hover {
   z-index: 4;
+}
+
+.buttons.has-addons .button.is-expanded {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .buttons.is-centered {
