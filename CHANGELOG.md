@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 1.3.7
+
+* Added: minified bundle with cleancss
+
 ## 1.3.6
 
 * Added: New `.has-background-*` helper

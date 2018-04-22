@@ -5,7 +5,7 @@
   "author": "YellowDi <yellowdi@me.com>",
   "description": "Modern CSS framework based on Flexbox",
   "main": "elenore.sass",
-  "style": "Elenore/css/elenore.css",
+  "style": "Elenore/css/elenore.min.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YellowDi/Elenore.git"
@@ -23,23 +23,27 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
+    "clean-css-cli": "^4.1.11",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.1.0",
     "rimraf": "^2.6.1"
   },
   "scripts": {
-    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/elenore.css css/elenore.css",
+    "build-cleancss": "cleancss -o css/elenore.min.css css/elenore.css",
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true elenore.sass css/elenore.css",
     "deploy": "npm run build && npm run docs",
-    "docs": "npm run docs-sass && npm run docs-autoprefix",
+    "docs": "npm run docs-sass && npm run docs-autoprefix && npm run docs-cleancss",
     "docs-autoprefix": "postcss --use autoprefixer --map false --output docs/css/elenore-docs.css docs/css/elenore-docs.css",
+    "docs-cleancss": "cleancss -o docs/css/elenore-docs.min.css docs/css/elenore-docs.css",
     "docs-sass": "node-sass --output-style expanded docs/elenore-docs.sass docs/css/elenore-docs.css",
     "start": "npm run build-sass -- --watch",
     "start-docs": "npm run docs-sass -- --watch",
     "start-test": "npm run test-sass -- --watch",
-    "test-sass": "node-sass --output-style expanded docs/elenore-test.sass docs/css/elenore-test.css"
+    "test-sass": "node-sass --output-style expanded docs/elenore-test.sass docs/css/elenore-test.css",
+    "test-scss": "node-sass --output-style expanded docs/elenore-test.scss docs/css/elenore-test.css"
   },
   "files": [
     "css",
