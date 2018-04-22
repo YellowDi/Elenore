@@ -1,6 +1,6 @@
 # Elenore Changelog
 
-## 1.3.7
+## 1.4.0
 
 * Added: minified bundle with cleancss
 * Added: `$custom-colors` and `$custom-shades` variable for adding your own colors and shades to Elenore's `$colors` and `$shades` maps respectively
