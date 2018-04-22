@@ -5,6 +5,8 @@ doc-tab: components
 doc-subtab: pagination
 ---
 
+{% include subnav/subnav-components.html %}
+
 {% capture pagination_example %}
 <nav class="pagination" role="navigation" aria-label="pagination">
   <a class="pagination-previous">Previous</a>
@@ -148,8 +150,6 @@ doc-subtab: pagination
   </ul>
 </nav>
 {% endcapture %}
-
-{% include subnav-components.html %}
 
 <section class="section">
   <div class="container">

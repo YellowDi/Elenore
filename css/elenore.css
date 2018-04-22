@@ -5264,6 +5264,17 @@ a.box:active {
   background-color: #fafafa;
 }
 
+.table-container {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+.table-container:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
 .tags {
   -webkit-box-align: center;
       -ms-flex-align: center;

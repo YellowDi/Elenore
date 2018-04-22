@@ -1,17 +1,17 @@
 <nav class="nav">
   <div class="nav-left">
     <a class="nav-item is-brand" href="{{ site.url }}">
-      <img src="{{ site.url }}/images/elenore-logo.png" alt="{{ site.title }}" width="112" height="28">
+      <img src="{{ site.url }}/images/elenore-logo.png" alt="{{ site.data.meta.title }}" width="112" height="28">
     </a>
   </div>
 
   <div class="nav-center">
-    <a class="nav-item" href="{{ site.github }}">
+    <a class="nav-item" href="{{ site.data.meta.github }}">
       <span class="icon">
         <i class="fab fa-github"></i>
       </span>
     </a>
-    <a class="nav-item" href="{{ site.twitter }}">
+    <a class="nav-item" href="{{ site.data.meta.twitter }}">
       <span class="icon">
         <i class="fab fa-twitter"></i>
       </span>
@@ -28,8 +28,8 @@
     <a class="nav-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.url }}/">
       Home
     </a>
-    <a class="nav-item {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.documentation }}">
-      Documentation
+    <a class="nav-item {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.data.meta.documentation }}">
+     Documentation
     </a>
 
     <div class="nav-item">
@@ -41,7 +41,7 @@
             data-social-action="tweet"
             data-social-target="{{ site.url }}"
             target="_blank"
-            href="https://twitter.com/intent/tweet?text={{ site.title | urlencode }}&url={{ site.url }}&via=YellowDi">
+            href="https://twitter.com/intent/tweet?text={{ site.data.meta.title | urlencode }}&url={{ site.url }}&via=YellowDi">
             <span class="icon">
               <i class="fab fa-twitter"></i>
             </span>
@@ -49,7 +49,7 @@
           </a>
         </p>
         <p class="control">
-          <a class="button is-primary" href="{{ site.download }}">
+          <a class="button is-primary" href="{{ site.data.meta.download }}">
             <span class="icon">
               <i class="fab fa-download"></i>
             </span>

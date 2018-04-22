@@ -5,6 +5,8 @@ doc-tab: elements
 doc-subtab: button
 ---
 
+{% include subnav/subnav-elements.html %}
+
 {% capture button_example %}
 <a class="button">Button</a>
 {% endcapture %}
@@ -443,8 +445,6 @@ doc-subtab: button
   <span class="button is-danger is-selected">No</span>
 </div>
 {% endcapture %}
-
-{% include subnav-elements.html %}
 
 <section class="section">
   <div class="container">
