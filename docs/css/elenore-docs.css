@@ -245,10 +245,6 @@ table th {
   float: right !important;
 }
 
-.is-overflow {
-  overflow: auto !important;
-}
-
 .is-clipped {
   overflow: hidden !important;
 }
@@ -259,70 +255,6 @@ table th {
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.has-background-cover,
-.has-background-contain {
-  background-position: 50% 50% !important;
-  background-repeat: no-repeat !important;
-}
-
-.has-background-cover {
-  background-size: cover !important;
-}
-
-.has-background-contain {
-  background-size: contain !important;
-}
-
-.has-background-top-left {
-  background-position: 0 0 !important;
-}
-
-.has-background-top-center {
-  background-position: 50% 0 !important;
-}
-
-.has-background-top-right {
-  background-position: 100% 0 !important;
-}
-
-.has-background-center-left {
-  background-position: 0 50% !important;
-}
-
-.has-background-center-center {
-  background-position: 50% 50% !important;
-}
-
-.has-background-center-right {
-  background-position: 100% 50% !important;
-}
-
-.has-background-bottom-left {
-  background-position: 0 100% !important;
-}
-
-.has-background-bottom-center {
-  background-position: 50% 100% !important;
-}
-
-.has-background-bottom-right {
-  background-position: 100% 100% !important;
-}
-
-.has-background-norepeat {
-  background-repeat: no-repeat !important;
-}
-
-.has-background-fixed {
-  background-attachment: fixed !important;
-}
-
-@media screen and (max-width: 1023px) {
-  .has-background-fixed {
-    background-attachment: scroll !important;
-  }
 }
 
 .is-size-1 {
@@ -753,12 +685,20 @@ a.has-text-white:hover, a.has-text-white:focus {
   color: #e6e6e6 !important;
 }
 
+.has-background-white {
+  background-color: white !important;
+}
+
 .has-text-black {
   color: #0a0a0a !important;
 }
 
 a.has-text-black:hover, a.has-text-black:focus {
   color: black !important;
+}
+
+.has-background-black {
+  background-color: #0a0a0a !important;
 }
 
 .has-text-light {
@@ -769,12 +709,20 @@ a.has-text-light:hover, a.has-text-light:focus {
   color: #dbdbdb !important;
 }
 
+.has-background-light {
+  background-color: whitesmoke !important;
+}
+
 .has-text-dark {
   color: #363636 !important;
 }
 
 a.has-text-dark:hover, a.has-text-dark:focus {
   color: #1c1c1c !important;
+}
+
+.has-background-dark {
+  background-color: #363636 !important;
 }
 
 .has-text-primary {
@@ -785,12 +733,20 @@ a.has-text-primary:hover, a.has-text-primary:focus {
   color: #009e86 !important;
 }
 
+.has-background-primary {
+  background-color: #00d1b2 !important;
+}
+
 .has-text-link {
   color: #3273dc !important;
 }
 
 a.has-text-link:hover, a.has-text-link:focus {
   color: #205bbc !important;
+}
+
+.has-background-link {
+  background-color: #3273dc !important;
 }
 
 .has-text-info {
@@ -801,12 +757,20 @@ a.has-text-info:hover, a.has-text-info:focus {
   color: #0f81cc !important;
 }
 
+.has-background-info {
+  background-color: #209cee !important;
+}
+
 .has-text-success {
   color: #23d160 !important;
 }
 
 a.has-text-success:hover, a.has-text-success:focus {
   color: #1ca64c !important;
+}
+
+.has-background-success {
+  background-color: #23d160 !important;
 }
 
 .has-text-warning {
@@ -817,12 +781,20 @@ a.has-text-warning:hover, a.has-text-warning:focus {
   color: #ffd324 !important;
 }
 
+.has-background-warning {
+  background-color: #ffdd57 !important;
+}
+
 .has-text-danger {
   color: #ff3860 !important;
 }
 
 a.has-text-danger:hover, a.has-text-danger:focus {
   color: #ff0537 !important;
+}
+
+.has-background-danger {
+  background-color: #ff3860 !important;
 }
 
 .has-text-black-bis {
@@ -1346,18 +1318,6 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.is-hover {
-  -webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
-  transition: -webkit-box-shadow 0.1s ease-in-out;
-  transition: box-shadow 0.1s ease-in-out;
-  transition: box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
-}
-
-.is-hover:hover {
-  -webkit-box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16) !important;
-          box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16) !important;
 }
 
 .box {
@@ -2826,10 +2786,6 @@ a.box:active {
 .content table th {
   color: #363636;
   text-align: left;
-}
-
-.content table tr:hover {
-  background-color: whitesmoke;
 }
 
 .content table thead td,

@@ -4,6 +4,7 @@
 
 * Added: minified bundle with cleancss
 * Added: `$custom-colors` and `$custom-shades` variable for adding your own colors and shades to Elenore's `$colors` and `$shades` maps respectively
+* Added: `.has-background` helpers for block background colors, like `.has-text`
 
 ## 1.3.6
 
