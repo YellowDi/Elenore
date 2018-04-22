@@ -25,7 +25,7 @@ $navbar-dropdown-radius: $radius-large !default
 $navbar-dropdown-z: 20 !default
 
 $navbar-dropdown-boxed-radius: $radius-large !default
-$navbar-dropdown-boxed-shadow: $shadow !default
+$navbar-dropdown-boxed-shadow: 0 8px 8px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default
 
 $navbar-dropdown-item-hover-color: $black !default
 $navbar-dropdown-item-hover-background-color: $background !default
@@ -93,7 +93,7 @@ $navbar-divider-background-color: $border !default
     min-height: $navbar-height
     width: 100%
   &.has-shadow
-    box-shadow: $shadow
+    box-shadow: 0 2px 3px rgba($black, 0.1)
   &.is-fixed-bottom,
   &.is-fixed-top
     +navbar-fixed
