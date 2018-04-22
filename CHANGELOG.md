@@ -1,5 +1,9 @@
 # Elenore Changelog
 
+## 1.4.1
+
+* Fixed: position of delete button on `.tag`
+
 ## 1.4.0
 
 * Added: minified bundle with cleancss
